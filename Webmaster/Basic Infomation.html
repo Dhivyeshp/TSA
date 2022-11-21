@@ -18,8 +18,30 @@
         background-color: #f1f1f1;
         padding: 10px;
       }   
+      .wrapper 
+      {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 100px;
+      }
 
-      .grid-container {
+      .box1 
+      {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+      .box2 
+      {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        grid-row-end: 5;
+      }
+
+      /* .grid-container 
+      {
         display: grid;
         grid-template-columns: auto auto;
         padding: 0px;
@@ -30,7 +52,8 @@
       padding: 10px;
       font-size: 30px;
       text-align: center;
-      }     
+      }     */
+      
   </style>
 <title>Page Title</title>
 </head>
@@ -47,19 +70,12 @@
 <article><p><b3>Subtitle 2</b3></p>
 <p3>Lorem ipsum is placeholder text commonly used in the graphic, print, publishing industries for previewing layouts and visual mockups.</p3></article>
 -->
-<div class="grid-container">
-  <div class="grid-item">1</div>
-  <div class="grid-item">2</div>
-  <div class="grid-item">3</div>  
-  <div class="grid-item">4</div>
-  <div class="grid-item">5</div>
-  <div class="grid-item">6</div>  
-  <div class="grid-item">7</div>
-  <div class="grid-item">8</div>
-  <div class="grid-item">9</div>  
-  <div class="grid-item">10</div>
-  <div class="grid-item">11</div>
-  <div class="grid-item">12</div>  
+<div class="wrapper">
+  <div class="box1">One</div>
+  <div class="box2">Two</div>
+  <div class="box3">Three</div>
+  <div class="box4">Four</div>
+  <div class="box5">Five</div>
 </div>
     </body>
 </html>
