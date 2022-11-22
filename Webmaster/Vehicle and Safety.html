@@ -11,9 +11,12 @@
 
         body
         {
+<<<<<<< HEAD
             background-image:url('https://media.tenor.com/18SBZln9s3AAAAAC/black-space-outer-space.gif'); background-repeat:repeat; 
+=======
+            background-image:url('https://live.staticflickr.com/1700/23412278894_25cda29b4d_b.jpg'); background-repeat:repeat;
+>>>>>>> 0203d015ac89983f887fad41ad88cd1428f644cd
             text-align: center;
-
         }
 
         header
@@ -56,6 +59,16 @@
             grid-row-end: 6;
             filter: blur(10px);
 
+            position: relative;
+            animation-name: imageSlideIn;
+            animation-duration: 2s;  
+            animation-delay: 0s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes imageSlideIn {
+            from {left: -1000px;}
+            to {left: 0px;}
         }
 
         .box3 
@@ -89,30 +102,31 @@
             grid-column-end: 3;
             grid-row-start: 6;
             grid-row-end: 10;
-        }
 
-        .box6 
-        {
-            border: 2px solid rgba(0, 0, 0, 2);
-            grid-column-start: 1;
-            grid-column-end: 4;
-            grid-row-start: 10;
-            grid-row-end: 12;
-        }
-
-        div {
-            
             position: relative;
-            animation-name: example;
-            animation-duration: 3s;  
+            animation-name: imageSlideIn1;
+            animation-duration: 2s;  
             animation-delay: 0s;
             animation-fill-mode: both;
         }
 
-        @keyframes example {
-            from {top: 0px; background-color: yellow;}
-            to {top: 200px; background-color: blue;}
+        @keyframes imageSlideIn1 {
+            from {right: -1000px;}
+            to {right: 0px;}
         }
+
+        .box6 
+        {
+            border: 2px solid rgba(265, 0, 0, 2);
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 10;
+            grid-row-end: 12;
+
+            font-size:20px;
+            color:white;
+        }
+
         
     </style>
 
@@ -120,13 +134,14 @@
         <div class="wrapper">
             <div class="box1">Vehicle & Safety</div>
             <div class="box2"><img src= "https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQzNi0xLWlzczA0M2UxOTM1NTYuanBn.jpg?s=oPICZzXth7W5mFcmThsDvXdhJVsPrNvTXh6DPELb_kw" alt="Looking at Earth from Spacecraft" height="300" width="650"></div>
+            <div class="box2">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</div>
             <div class="box3">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</div>
             <div class="box4">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</div>
             <div class="box5"><img src = "https://images.pexels.com/photos/355956/pexels-photo-355956.jpeg" alt="Protection from the harsh environment of space" height="300" width="650"></div>
             <div class="box6">Sign Up</div>
         </div>
 
-        <div></div>
+        
     </body>
 
     <header>
