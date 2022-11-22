@@ -11,14 +11,14 @@
 
         body
         {
-            /*background-image:url('https://media.tenor.com/18SBZln9s3AAAAAC/black-space-outer-space.gif'); background-repeat:repeat;*/
+            background-image:url('https://media.tenor.com/18SBZln9s3AAAAAC/black-space-outer-space.gif'); background-repeat:repeat;
             text-align: center;
 
         }
 
         header
         {
-            height: 10vh;
+            height: 1vh;
             width: 202vh;
             display: flex;
             background-repeat: no-repeat;
@@ -40,6 +40,11 @@
             grid-column-end: 5;
             grid-row-start: 1;
             grid-row-end: 2;
+
+            font-size:70px;
+            color:white;
+            vertical-align: middle;
+            
         }
 
         .box2 
@@ -49,6 +54,7 @@
             grid-column-end: 2;
             grid-row-start: 2;
             grid-row-end: 6;
+
         }
 
         .box3 
@@ -58,6 +64,9 @@
             grid-column-end: 3;
             grid-row-start: 2;
             grid-row-end: 6;
+
+            font-size:20px;
+            color:white;
         }
 
         .box4 
@@ -67,6 +76,9 @@
             grid-column-end: 2;
             grid-row-start: 6;
             grid-row-end: 10;
+
+            font-size:20px;
+            color:white;
         }
 
         .box5 
@@ -86,18 +98,34 @@
             grid-row-start: 10;
             grid-row-end: 12;
         }
+
+        div {
+            
+            position: relative;
+            animation-name: example;
+            animation-duration: 3s;  
+            animation-delay: 0s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes example {
+            from {top: 0px; background-color: yellow;}
+            to {top: 200px; background-color: blue;}
+        }
         
     </style>
 
     <body>
         <div class="wrapper">
             <div class="box1">Vehicle & Safety</div>
-            <div class="box2">Two</div>
-            <div class="box3">Three</div>
-            <div class="box4">Four</div>
-            <div class="box5">Five</div>
-            <div class="box6">Six</div>
+            <div class="box2"><img src= "https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQzNi0xLWlzczA0M2UxOTM1NTYuanBn.jpg?s=oPICZzXth7W5mFcmThsDvXdhJVsPrNvTXh6DPELb_kw" alt="Looking at Earth from Spacecraft" height="300" width="650"></div>
+            <div class="box3">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</div>
+            <div class="box4">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</div>
+            <div class="box5"><img src = "https://images.pexels.com/photos/355956/pexels-photo-355956.jpeg" alt="Protection from the harsh environment of space" height="300" width="650"></div>
+            <div class="box6">Sign Up</div>
         </div>
+
+        <div></div>
     </body>
 
     <header>
