@@ -97,20 +97,37 @@
             grid-column-end: 4;
             grid-row-start: 10;
             grid-row-end: 12;
+
+            font-size:20px;
+            color:white;
         }
 
-        div {
+        .box2 {
             
             position: relative;
-            animation-name: example;
-            animation-duration: 3s;  
+            animation-name: imageSlideIn;
+            animation-duration: 2s;  
             animation-delay: 0s;
             animation-fill-mode: both;
         }
 
-        @keyframes example {
-            from {top: 0px; background-color: yellow;}
-            to {top: 200px; background-color: blue;}
+        @keyframes imageSlideIn {
+            from {left: -1000px;}
+            to {left: 0px;}
+        }
+
+        .box5 {
+            
+            position: relative;
+            animation-name: imageSlideIn1;
+            animation-duration: 2s;  
+            animation-delay: 0s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes imageSlideIn1 {
+            from {right: -1000px;}
+            to {right: 0px;}
         }
         
     </style>
