@@ -12,12 +12,14 @@
         {
             background-image:url('https://wallpaperaccess.com/full/1268171.jpg');
             text-align: center;
-            height: 1vh;
+            
             width: 202vh;
             display: flex;
             background-repeat: no-repeat;
             background-attachment:fixed;
             background-size: 100% 100%;
+
+            
         }
 
         .wrapper 
@@ -118,9 +120,39 @@
             
         }
 
-        .signUp
+        button
         {
+            border-top-style: groove;
+            border-right-style: groove;
+            border-left-style: groove;
+            border-bottom-style:groove;
+
+            background-color: Transparent;
+            cursor:pointer;
             border-color: white;
+            color: white;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            border-length: 50px;
+        }
+
+        input
+        {
+            border-top-style: groove;
+            border-right-style: groove;
+            border-left-style: groove;
+            border-bottom-style:groove;
+
+            background-color: transparent;
+            border-color: white;
+            color: white;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        ::placeholder
+        {
+            color:white;
         }
 
         
@@ -134,8 +166,10 @@
             <div class="box4">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</div>
             <div class="box5"><img src = "https://wallpaperaccess.com/full/3981469.jpg" alt="Protection from the harsh environment of space" height="300" width="550"></div>
             <div class="box6">Enter your email to sign up for Space Horizon updates:<br><br>
-                <input class="signUp" type="text" id="Name" name="Name" placeholder="Email Address"></input>
-                <label class="signUp" for="Name">Sign Up</label>
+                <input type="text" id="Name" name="Name" placeholder="Email Address"></input>
+                <button type="button"> Sign Up</button><br><br><br>
+                Would you want to supply Space Horizon? Contact us at supplier@spacehorizon.com.<br>
+                Click here for information about Space Horizon's trademarks, copyrights, and other intellectual property.
             </div>
         </div>
     </body>
