@@ -10,15 +10,25 @@
 }
 header{
     height: 100vh;
-    width: 270vh;
-    background-image: url(https://uhdwallpapers.org/uploads/converted/18/11/05/travel-into-space-image-1920x1080_74544-lm-90.jpg);
-    background-size: cover;
+    width: 260vh;
+   /* background-image: url(https://uhdwallpapers.org/uploads/converted/18/11/05/travel-into-space-image-1920x1080_74544-lm-90.jpg);
+    */
+	background-color: black;
+	background-size: cover;
     display: flex;
 }
 
+img{
+	float:left;
+	width:320px;
+	height:320px;
+	position: absolute;
+	top: -86px;
+}
+ 
 .navbar {
     position: absolute;
-    padding: 50px;
+	padding: 50px;
     display: flex;
     justify-content: space-between;
     align-items: left;
@@ -29,26 +39,20 @@ header{
 .navbar a{
     color: white;
 }
- 
-.navbar .logo{
-    color: white;
-    font-weight: bold;
-	
-}
- 
+
 .navbar .nav-links ul {
     display: flex;
 }
  
 .navbar .nav-links ul li {
-    margin: 0 25px;
+    margin: 0 50px;
 }
 
 nav ul li{
 	list-style: none;
 	text-decoration: none;
 	display: inline-block;
-	padding: 13px 1px;
+	padding: 013px 1px;
 	margin: 10px;
 	font-size: 18px;
 	font-weight: 200;
@@ -57,8 +61,10 @@ nav ul li{
 	transition: color 0.5s;
 }
 
-/* Style 3: Just animate the :after element's width from 0 to 100% */
+.menu3 li{
+	right: -1230px;
 
+}
 .menu3 li:after {
 	content: "";
 	position: absolute;
@@ -74,9 +80,6 @@ nav ul li{
 	background-color: #fff;
   }
 
-
-
-
   .btn-hover{ 
   position: absolute;
   top: 28px;
@@ -86,13 +89,13 @@ nav ul li{
 
 
   .btn-hover {
-    width: 200px;
+    width: 120px;
     font-size: 16px;
     font-weight: 600;
     color: #fff;
     cursor: pointer;
     margin: 20px;
-    height: 55px;
+    height: 46px;
     text-align:center;
     border: none;
     background-size: 300% 100%;
@@ -121,4 +124,7 @@ nav ul li{
 }
 
 
-  
+
+
+
+
