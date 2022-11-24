@@ -36,7 +36,7 @@
         {
             grid-column-start: 1;
             grid-column-end: 5;
-            grid-row-start: 1;
+            grid-row-start: 2;
             grid-row-end: 4;
 
             font-size:60px;
@@ -51,7 +51,7 @@
         {
             grid-column-start: 1;
             grid-column-end: 2;
-            grid-row-start: 2;
+            grid-row-start: 3;
             grid-row-end: 6;
 
             position: relative;
@@ -71,7 +71,7 @@
         {
             grid-column-start: 2;
             grid-column-end: 3;
-            grid-row-start: 2;
+            grid-row-start: 3;
             grid-row-end: 6;
 
             padding-right: 100px;
@@ -92,7 +92,7 @@
         {
             grid-column-start: 1;
             grid-column-end: 2;
-            grid-row-start: 6;
+            grid-row-start: 7;
             grid-row-end: 10;
 
             padding-right: 100px;
@@ -113,7 +113,7 @@
         {
             grid-column-start: 2;
             grid-column-end: 3;
-            grid-row-start: 6;
+            grid-row-start: 7;
             grid-row-end: 10;
             position: relative;
             animation-name: imageSlideIn1;
@@ -132,8 +132,8 @@
         {
             grid-column-start: 1;
             grid-column-end: 4;
-            grid-row-start: 10;
-            grid-row-end: 12;
+            grid-row-start: 11;
+            grid-row-end: 13;
 
             font-size:20px;
             color:white;
@@ -174,10 +174,7 @@
             transition: 0.5s;
         }
 
-        .button:hover span 
-        {
-            padding-right: 20px;
-        }
+        .button:hover span {padding-right: 20px;}
 
         .button:hover span:after 
         {
@@ -200,72 +197,64 @@
             padding: 10px;
         }
 
-        ::placeholder
-        {
-            color:white;
-        }
+        ::placeholder {color:white;}
 
 /* ------------------------------------------------Image Shadow Code----------------------------------------------------------- */         
-        .shadow
-        {
-            box-shadow: 10px 10px 10px black;
-        }
+        .shadow {box-shadow: 10px 10px 10px black;}
 
 /* ------------------------------------------------Menu Bar Code----------------------------------------------------------- */         
-/* .navbar {
-    position: absolute;
-	padding: 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: left;
-    width: 100%; /*change this to move links*/
-    box-sizing: border-box;
-}
+    .navbar 
+    {
+        position: absolute;
+        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+        width: 100%; /*change this to move links*/
+        box-sizing: border-box;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
 
-.navbar a{
-    color: white;
-}
+    }
 
-.navbar .nav-links ul {
-    display: flex;
-}
+    .navbar a {color: white;}
+
+    .navbar .nav-links ul {display: flex;}
  
-.navbar .nav-links ul li {
-    margin: 0 50px;
-}
+    .navbar .nav-links ul li {margin: 0 50px;}
 
-nav ul li{
-	list-style: none;
-	text-decoration: none;
-	display: inline-block;
-	padding: 013px 1px;
-	margin: 10px;
-	font-size: 20px;
-	cursor: pointer;
-	position: relative;
-	transition: color 0.5s;
-}
+    nav ul li
+    {
+        list-style: none;
+        text-decoration: none;
+        display: inline-block;
+        padding: 013px 1px;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        position: relative;
+        transition: color 0.5s;
+    }
 
-.menu3 li{
-	right: 1000px;
+    .menu3 li {right: 1350px;}
 
-}
+    .menu3 li:after 
+    {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 1px;
+        display: block;
+        transition: all 0.3s ease;
+        bottom: 100%;
+    }
 
-.menu3 li:after {
-	content: "";
-	position: absolute;
-	width: 0%;
-	height: 1px;
-	display: block;
-	transition: all 0.3s ease;
-	bottom: 100%;
-  }
-  .menu3 li:hover::after {
-	width: 100%;
-	height: 1px;
-	background-color: #fff;
-  } */
-
+    .menu3 li:hover::after 
+    {
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+    }
 
     </style>
 
@@ -292,19 +281,17 @@ nav ul li{
         </div>
     </body>
 
-    <!-- <header>
-        <div class="container">
-              <nav class="navbar">
-                  <div class="nav-links">
-                  <ul class="menu3">
-                        <li><a href="Basic Infomation.html">Basic Information</a></li>
-                        <li><a href="Vehicle and Safety.html">Vehicles & Safety</a></li>
-                        <li><a href="#">Launch & Recovery</a></li>
-                        <li><button class="btn-hover">Fly With Us</button></li>
-                  </ul>
-                  </div>
-              </nav>
-       </div>
-  </header> -->
+    <header>
+      <nav class="navbar">
+          <div class="nav-links">
+              <ul class="menu3">
+                    <li><a href="Basic Infomation.html">Basic Information</a></li>
+                    <li><a href="Vehicle and Safety.html">Vehicles & Safety</a></li>
+                    <li><a href="#">Launch & Recovery</a></li>
+                    <li><button class="btn-hover">Fly With Us</button></li>
+              </ul>
+          </div>
+      </nav>
+  </header>
 
 </html>
