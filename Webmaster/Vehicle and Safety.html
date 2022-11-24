@@ -20,6 +20,7 @@
             background-repeat: no-repeat;
             background-attachment:fixed;
             background-size: 100% 100%;
+            backdrop-filter: blur(10px);
         }
 
 /* ------------------------------------------------Grid Layout Code----------------------------------------------------------- */        
@@ -52,8 +53,6 @@
             grid-column-end: 2;
             grid-row-start: 2;
             grid-row-end: 6;
-
-            
 
             position: relative;
             animation-name: imageSlideIn;
@@ -206,14 +205,75 @@
             color:white;
         }
 
-        
+/* ------------------------------------------------Image Shadow Code----------------------------------------------------------- */         
+        .shadow
+        {
+            box-shadow: 10px 10px 10px black;
+        }
+
+/* ------------------------------------------------Menu Bar Code----------------------------------------------------------- */         
+/* .navbar {
+    position: absolute;
+	padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    width: 100%; /*change this to move links*/
+    box-sizing: border-box;
+}
+
+.navbar a{
+    color: white;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+ 
+.navbar .nav-links ul li {
+    margin: 0 50px;
+}
+
+nav ul li{
+	list-style: none;
+	text-decoration: none;
+	display: inline-block;
+	padding: 013px 1px;
+	margin: 10px;
+	font-size: 20px;
+	cursor: pointer;
+	position: relative;
+	transition: color 0.5s;
+}
+
+.menu3 li{
+	right: 1000px;
+
+}
+
+.menu3 li:after {
+	content: "";
+	position: absolute;
+	width: 0%;
+	height: 1px;
+	display: block;
+	transition: all 0.3s ease;
+	bottom: 100%;
+  }
+  .menu3 li:hover::after {
+	width: 100%;
+	height: 1px;
+	background-color: #fff;
+  } */
+
+
     </style>
 
     <body>
         <div class="wrapper">
             <div class="box1">Vehicle & Safety</div>
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-            <div class="box2"><img src= "https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQzNi0xLWlzczA0M2UxOTM1NTYuanBn.jpg?s=oPICZzXth7W5mFcmThsDvXdhJVsPrNvTXh6DPELb_kw" alt="Looking at Earth from Spacecraft" height="300" width="550"></div>
+            <div class="box2"><img class="shadow" src= "https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQzNi0xLWlzczA0M2UxOTM1NTYuanBn.jpg?s=oPICZzXth7W5mFcmThsDvXdhJVsPrNvTXh6DPELb_kw" alt="Looking at Earth from Spacecraft" height="300" width="550"></div>
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
             <div class="box3">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
                 Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</div>
@@ -221,7 +281,7 @@
             <div class="box4">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
                 Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</div>
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-            <div class="box5"><img src = "https://wallpaperaccess.com/full/3981469.jpg" alt="Protection from the harsh environment of space" height="300" width="550"></div>
+            <div class="box5"><img class="shadow" src = "https://wallpaperaccess.com/full/3981469.jpg" alt="Protection from the harsh environment of space" height="300" width="550"></div>
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
             <div class="box6">Enter your email to sign up for Space Horizon updates:<br><br>
                 <input type="text" id="Name" name="Name" placeholder="Email Address" size="30"></input>
@@ -231,5 +291,20 @@
             </div>
         </div>
     </body>
+
+    <!-- <header>
+        <div class="container">
+              <nav class="navbar">
+                  <div class="nav-links">
+                  <ul class="menu3">
+                        <li><a href="Basic Infomation.html">Basic Information</a></li>
+                        <li><a href="Vehicle and Safety.html">Vehicles & Safety</a></li>
+                        <li><a href="#">Launch & Recovery</a></li>
+                        <li><button class="btn-hover">Fly With Us</button></li>
+                  </ul>
+                  </div>
+              </nav>
+       </div>
+  </header> -->
 
 </html>
