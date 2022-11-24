@@ -8,18 +8,22 @@
     </head>
 
     <style>
+
+/* ------------------------------------------------Background Code----------------------------------------------------------- */
         body
         {
             background-image:url('https://wallpaperaccess.com/full/1268171.jpg');
             text-align: center;
-            height: 1vh;
+            
             width: 202vh;
             display: flex;
             background-repeat: no-repeat;
             background-attachment:fixed;
             background-size: 100% 100%;
+            backdrop-filter: blur(10px);
         }
 
+/* ------------------------------------------------Grid Layout Code----------------------------------------------------------- */        
         .wrapper 
         {
             display: grid;
@@ -27,6 +31,7 @@
             grid-auto-rows: 100px;
         }
 
+/* ------------------------------------------------Title Code----------------------------------------------------------- */
         .box1 
         {
             grid-column-start: 1;
@@ -38,16 +43,16 @@
             color:white;
             vertical-align: middle;
             font-family:'Courier New', Courier, monospace;
+            font-weight: 900;
         }
 
+/* ------------------------------------------------Vehicle Image Code----------------------------------------------------------- */
         .box2 
         {
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row-start: 2;
             grid-row-end: 6;
-
-            
 
             position: relative;
             animation-name: imageSlideIn;
@@ -61,6 +66,7 @@
             to {left: 0px;}
         }
 
+/* ------------------------------------------------Vehicle Text Code----------------------------------------------------------- */    
         .box3 
         {
             grid-column-start: 2;
@@ -68,11 +74,20 @@
             grid-row-start: 2;
             grid-row-end: 6;
 
+            padding-right: 100px;
+            padding-left: 100px;
             font-size:20px;
             color:white;
             font-family:'Courier New', Courier, monospace;
+
+            position: relative;
+            animation-name: imageSlideIn;
+            animation-duration: 2s;  
+            animation-delay: 0s;
+            animation-fill-mode: both;
         }
 
+/* ------------------------------------------------Spacesuit Text Code----------------------------------------------------------- */
         .box4 
         {
             grid-column-start: 1;
@@ -80,18 +95,26 @@
             grid-row-start: 6;
             grid-row-end: 10;
 
+            padding-right: 100px;
+            padding-left: 100px;
             font-size:20px;
             color:white;
             font-family:'Courier New', Courier, monospace;
+
+            position: relative;
+            animation-name: imageSlideIn1;
+            animation-duration: 2s;  
+            animation-delay: 0s;
+            animation-fill-mode: both;
         }
 
+/* ------------------------------------------------Spacesuit Image Code----------------------------------------------------------- */
         .box5 
         {
             grid-column-start: 2;
             grid-column-end: 3;
             grid-row-start: 6;
             grid-row-end: 10;
-
             position: relative;
             animation-name: imageSlideIn1;
             animation-duration: 2s;  
@@ -104,6 +127,7 @@
             to {right: 0px;}
         }
 
+/* ------------------------------------------------Sign Up Box Code----------------------------------------------------------- */
         .box6 
         {
             grid-column-start: 1;
@@ -118,26 +142,169 @@
             
         }
 
-        .signUp
+/* ------------------------------------------------Button Code----------------------------------------------------------- */
+        .button 
         {
-            border-color: white;
+            background-color: transparent;
+            border-color:white;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+            transition: all 0.5s;
+            cursor: pointer;
+            font-family: 'Courier New', Courier, monospace;
         }
 
-        
+        .button span 
+        {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after 
+        {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span 
+        {
+            padding-right: 20px;
+        }
+
+        .button:hover span:after 
+        {
+            opacity: 10;
+            right: 0;
+        }
+/* ------------------------------------------------Text Input Code----------------------------------------------------------- */        
+        input
+        {
+            border-top-style: groove;
+            border-right-style: groove;
+            border-left-style: groove;
+            border-bottom-style:groove;
+
+            background-color: transparent;
+            border-color: white;
+            color: white;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 10px;
+        }
+
+        ::placeholder
+        {
+            color:white;
+        }
+
+/* ------------------------------------------------Image Shadow Code----------------------------------------------------------- */         
+        .shadow
+        {
+            box-shadow: 10px 10px 10px black;
+        }
+
+/* ------------------------------------------------Menu Bar Code----------------------------------------------------------- */         
+/* .navbar {
+    position: absolute;
+	padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    width: 100%; /*change this to move links*/
+    box-sizing: border-box;
+}
+
+.navbar a{
+    color: white;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+ 
+.navbar .nav-links ul li {
+    margin: 0 50px;
+}
+
+nav ul li{
+	list-style: none;
+	text-decoration: none;
+	display: inline-block;
+	padding: 013px 1px;
+	margin: 10px;
+	font-size: 20px;
+	cursor: pointer;
+	position: relative;
+	transition: color 0.5s;
+}
+
+.menu3 li{
+	right: 1000px;
+
+}
+
+.menu3 li:after {
+	content: "";
+	position: absolute;
+	width: 0%;
+	height: 1px;
+	display: block;
+	transition: all 0.3s ease;
+	bottom: 100%;
+  }
+  .menu3 li:hover::after {
+	width: 100%;
+	height: 1px;
+	background-color: #fff;
+  } */
+
+
     </style>
 
     <body>
         <div class="wrapper">
             <div class="box1">Vehicle & Safety</div>
-            <div class="box2"><img src= "https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQzNi0xLWlzczA0M2UxOTM1NTYuanBn.jpg?s=oPICZzXth7W5mFcmThsDvXdhJVsPrNvTXh6DPELb_kw" alt="Looking at Earth from Spacecraft" height="300" width="550"></div>
-            <div class="box3">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</div>
-            <div class="box4">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</div>
-            <div class="box5"><img src = "https://wallpaperaccess.com/full/3981469.jpg" alt="Protection from the harsh environment of space" height="300" width="550"></div>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+            <div class="box2"><img class="shadow" src= "https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQzNi0xLWlzczA0M2UxOTM1NTYuanBn.jpg?s=oPICZzXth7W5mFcmThsDvXdhJVsPrNvTXh6DPELb_kw" alt="Looking at Earth from Spacecraft" height="300" width="550"></div>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+            <div class="box3">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</div>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+            <div class="box4">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</div>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+            <div class="box5"><img class="shadow" src = "https://wallpaperaccess.com/full/3981469.jpg" alt="Protection from the harsh environment of space" height="300" width="550"></div>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
             <div class="box6">Enter your email to sign up for Space Horizon updates:<br><br>
-                <input class="signUp" type="text" id="Name" name="Name" placeholder="Email Address"></input>
-                <label class="signUp" for="Name">Sign Up</label>
+                <input type="text" id="Name" name="Name" placeholder="Email Address" size="30"></input>
+                <button class="button"><span>Sign Up </span></button><br><br><br>
+                Would you want to supply Space Horizon? Contact us at supplier@spacehorizon.com.<br>
+                Click here for information about Space Horizon's trademarks, copyrights, and other intellectual property.
             </div>
         </div>
     </body>
+
+    <!-- <header>
+        <div class="container">
+              <nav class="navbar">
+                  <div class="nav-links">
+                  <ul class="menu3">
+                        <li><a href="Basic Infomation.html">Basic Information</a></li>
+                        <li><a href="Vehicle and Safety.html">Vehicles & Safety</a></li>
+                        <li><a href="#">Launch & Recovery</a></li>
+                        <li><button class="btn-hover">Fly With Us</button></li>
+                  </ul>
+                  </div>
+              </nav>
+       </div>
+  </header> -->
 
 </html>
