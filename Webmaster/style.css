@@ -55,15 +55,14 @@ header{
 
 
 .main-subtext {
-  font-family:Arial, Helvetica, sans-serif;
   filter: drop-shadow(10px 5px 10px #000000);
 
   position: absolute;
-  font-size: 30px;
+  font-size: 50px;
   left: 900px;
   top: 450px;
   color: white;
-  font-weight: lighter;
+	font-family: Arial, Helvetica, sans-serif;
   max-width: 80ch;
   text-align: center;
   transform: scale(0.94);
@@ -519,11 +518,13 @@ nav ul li{
     }
  
     .section {
-        height: 400px;
+        background-image: url(https://www.pixel4k.com/wp-content/uploads/2020/08/blur-abstract_1596927849-2048x1152.jpg);
+        background-position-y: 80vh;
+        background-size: cover;
+        height: 500px;
         display: flex;
         align-items: center;
         justify-content: center;
-        max-width: 90%;
         margin: auto;
     }
      
@@ -537,6 +538,14 @@ nav ul li{
     }
 
 
+
+
+
+
+
+    .paras{
+      color: white;
+    }
 
 
 
