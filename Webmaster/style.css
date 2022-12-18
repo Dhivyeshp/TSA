@@ -11,12 +11,162 @@
 header{
     height: 100vh;
     width: 260vh;
-    background-image: url(https://uhdwallpapers.org/uploads/converted/18/11/05/travel-into-space-image-1920x1080_74544-lm-90.jpg);
-    
+    background-image: url(https://cdn.sanity.io/images/2yyup5mx/production/9baaedba7f7f8462da0bd9397858b6906e86b189-3840x2160.jpg?w=2048&q=75&fit=clip&auto=format);
 	background-color: black;
 	background-size: cover;
-    display: flex;
+  display: flex;
 }
+
+
+
+
+
+
+
+
+@keyframes fadeInOutAnimation {
+    0% {
+      opacity: 0;
+
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .nav-links,.navbar,.learn,.box,.fade-in {
+    
+    cursor: pointer;
+    animation: fadeInOutAnimation 1.5s ease-in;
+    animation-timing-function: ease-in;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-subtext {
+  filter: drop-shadow(10px 5px 10px #000000);
+
+  position: absolute;
+  font-size: 50px;
+  left: 900px;
+  top: 450px;
+  color: white;
+	font-family: Arial, Helvetica, sans-serif;
+  max-width: 80ch;
+  text-align: center;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(8) {
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(9) {
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(10) {
+  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(11) {
+  animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(12) {
+  animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(13) {
+  animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(14) {
+  animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+/*
+span:nth-child(15) {
+  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(16) {
+  animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(17) {
+  animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(18) {
+  animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+*/
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+
+
+
+
+
+
+
+
 
 img{
 	float:left;
@@ -34,6 +184,7 @@ img{
     align-items: left;
     width: 70%; /*change this to move links*/
     box-sizing: border-box;
+    
 }
 
 .navbar a{
@@ -80,13 +231,16 @@ nav ul li{
 	background-color: #fff;
   }
 
+
+
+
+
   .btn-hover{ 
   position: absolute;
   top: 28px;
   right: -600px;
 
   }
-
 
   .btn-hover {
     width: 120px;
@@ -130,6 +284,112 @@ nav ul li{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-discover{ 
+  position: absolute;
+  top: 308px;
+  right: -500px;
+  border-radius: 50px;
+
+
+  }
+  .btn-discover {
+    width: 120px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 46px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-discover:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-discover:focus {
+    outline: none;
+}
+
+.btn-discover {
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+
+
+
+
+
+
+  
+    .btn-learn {
+      width: 120px;
+      position: absolute;
+      bottom: 40px;
+
+      font-size: 16px;
+      font-weight: 100;
+      color: black;
+      cursor: pointer;
+      height: 36px;
+      text-align:center;
+      border: none;
+      background-size: 300% 100%;
+      border-radius: 50px;
+      -moz-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+  }
+  
+  .btn-learn:hover {
+      background-position: 100% 0;
+      -moz-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+  }
+  
+  .btn-learn:focus {
+      outline: none;
+  }
+  
+  .btn-learn {
+      background-image: linear-gradient(to right, #ffffff, #ffffff, #fff5f5, #f7fcff);
+      box-shadow: 0 4px 15px 0 rgba(66, 66, 66, 0.75);
+  }
+  
+
+
+
+
+
+
+
 @property --angle {
     syntax: '<angle>';
     initial-value: 90deg;
@@ -153,18 +413,22 @@ nav ul li{
     font-size: 25px;
   }
   .box {
+    position: absolute; top: 200px; left: 850px;
       font-family: Raleway, sans-serif;
       text-align: center;
       font-size: 10px;
+      width: 300px;
       margin: 0;
       padding: 1rem;
-      background-color: rgba(10, 12, 18, 1);
-      color: white;
+      background-color: rgb(18, 18, 20);
+      color: rgb(255, 255, 255);
       min-height: 2vh;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
+      box-shadow: 0.4rem 0.4rem 0.45rem rgba(0, 0, 30, 1);
+
   }
   
   p {
@@ -172,6 +436,7 @@ nav ul li{
   }
   
   :root {
+    border-radius: 10px;
       --d: 2500ms;
       --angle: 90deg;
       --gradX: 100%;
@@ -181,6 +446,8 @@ nav ul li{
   }
   
   .wrapper {
+    border-radius: 10px;
+
       min-width: min(40rem, 100%);
   }
   
@@ -200,3 +467,92 @@ nav ul li{
       }
   }
   
+  .drop-shadow {
+
+    filter: drop-shadow(0.4rem 0.4rem 0.45rem rgba(0, 0, 30, 0.5));
+    
+    }
+
+
+  .firstsection {
+    background-image: url(https://cdn.sanity.io/images/2yyup5mx/production/03be7c2a156be29539d57f03cb9063937a9a1d8d-8000x4500.jpg?w=2048&q=75&fit=clip&auto=format);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    box-shadow: 0.4rem 0.4rem 0.45rem rgba(0, 0, 30, 1);
+    scroll-behavior: smooth;
+    }
+ 
+    .secondsection {
+        background-image: url(https://cdn.sanity.io/images/2yyup5mx/production/d5a915cd9db3444998926f61645b6f83a53aced0-5000x2813.jpg?w=2048&q=75&fit=clip&auto=format);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 800px;
+        scroll-behavior: smooth;
+    }
+ 
+    .box-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        max-width: 50%;
+        position: absolute;
+        left: 60px;
+        padding-top: 500px;
+
+        height: 80%;
+    }
+ 
+    .text-big {
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+    
+        font-size: 35px;
+    }
+ 
+    .text-small {
+        padding-top: 10px;
+        font-size: 18px;
+        font-weight: normal;
+    }
+ 
+    .section {
+        background-image: url(https://www.pixel4k.com/wp-content/uploads/2020/08/blur-abstract_1596927849-2048x1152.jpg);
+        background-position-y: 80vh;
+        background-size: cover;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+     
+    .text-footer {
+        text-align: center;
+        padding: 30px 0;
+        font-family: 'Ubuntu', sans-serif;
+        display: flex;
+        justify-content: center;
+        color: black;
+    }
+
+
+
+
+
+
+
+    .paras{
+      color: white;
+    }
+
+
+
+
+
+
+
+
+
+
