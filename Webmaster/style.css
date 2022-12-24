@@ -59,26 +59,31 @@ header{
 
   position: absolute;
   font-size: 50px;
-  left: 900px;
+  left: 450px;
   top: 450px;
   color: white;
 	font-family: Arial, Helvetica, sans-serif;
   max-width: 80ch;
   text-align: center;
+  font-weight: 1;
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
 @keyframes scale {
   100% {
     transform: scale(1);
+    text-align: center;
+
   }
 }
 
 span {
+  
   display: inline-block;
   opacity: 0;
   filter: blur(4px);
 }
+
 
 span:nth-child(1) {
   animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
@@ -158,6 +163,75 @@ span:nth-child(18) {
     filter: blur(0);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn {
+  align-items: center;
+  position: absolute;
+  top: 550px;
+  right: 1200px;
+
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 0.5px solid #ffffff;
+  border-radius: 2px;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 100;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #01a0fc;
+} 
+
+.btn:hover svg {
+  stroke-dashoffset: -400;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -293,51 +367,6 @@ nav ul li{
 
 
 
-
-
-
-.btn-discover{ 
-  position: absolute;
-  top: 308px;
-  right: -500px;
-  border-radius: 50px;
-
-
-  }
-  .btn-discover {
-    width: 120px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    cursor: pointer;
-    margin: 20px;
-    height: 46px;
-    text-align:center;
-    border: none;
-    background-size: 300% 100%;
-    border-radius: 50px;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-}
-
-.btn-discover:hover {
-    background-position: 100% 0;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-}
-
-.btn-discover:focus {
-    outline: none;
-}
-
-.btn-discover {
-    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
-    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
-}
 
 
 
@@ -556,3 +585,5 @@ nav ul li{
 
 
 
+
+    
