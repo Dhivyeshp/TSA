@@ -3,7 +3,7 @@ $(document).ready(function(){
         $(".fade-in").each(function(){
             /* Check if the element is in view */
             if(isInView($(this))){
-                /* Add the class "in-view" to the element */
+                /* Add the in-view class */
                 $(this).addClass("in-view");
             }
         });
