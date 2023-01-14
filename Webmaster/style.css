@@ -630,28 +630,24 @@ nav ul li{
 
 
 
-
-
 /* Define the keyframe animation for fading in */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-/* Apply the animation to the desired element and add class to trigger the animation */
+/* Apply the animation to the desired element */
 .fade-in {
   animation: fadeIn 1s ease-in;
-  animation-fill-mode: forwards; /* Keep the end state after animation */
+  animation-fill-mode: both; /* Keep the end state after animation */
   opacity: 0; /* Start with opacity 0 */
-  visibility: hidden; /* Keep element hidden until it's in view */
+  visibility: hidden; /* Hide the element */
 }
 
-/* Add a class when element is in view */
+/* Show the element when it is in view */
 .fade-in.in-view {
-  visibility: visible; /* Make element visible */
-  animation-name: fadeIn; /* Trigger the animation */
+  visibility: visible;
 }
-
 
 
 
