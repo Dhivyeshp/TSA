@@ -649,6 +649,11 @@ nav ul li{
   visibility: visible;
 }
 
+.in-view {
+  animation: fade-in 1s ease-in;
+  animation-fill-mode: both;
+  visibility: visible;
+}
 
 
 
