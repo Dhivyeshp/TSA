@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Space Horizon</title>
-    <script src="Webmaster\animation.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+    
+    <link href="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
+
+  
 </head>
 <body>
     <header>
@@ -67,17 +72,23 @@
 
             </header>
 
-    <section class="firstsection ">
+    <section class="firstsection" >
         <div class="box-main">
-            <div class="firstHalf">
-                <h1 class="text-big in-view" id="web">
+            <div class="firstHalf"   
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-middle"d
+            ata-aos-delay="200"
+            data-aos-duration="500"
+            data-aos-easing="ease-in"
+            data-aos-once="false">
+                <h1 class="text-big" id="web">
                     Artfully designed for life-changing experiences.                 </h1>          
                 <p class="text-small">
                     Propelled by a SpaceBalloon™ - a technology used for decades by the likes of NASA - Spaceship Neptune is the first carbon-neutral way to travel to space.
                 </p>
-                <div class="fade-in">This text will fade in</div>
                 <button class="btn-learn" class="fade-in">Learn More</button>
         </div>
+        
     </section>
  
     <section class="secondsection">
