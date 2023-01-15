@@ -628,34 +628,6 @@ nav ul li{
       color: white;
     }
 
-
-
-/* Define the keyframe animation for fading in */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-/* Apply the animation to the desired element */
-.fade-in {
-  animation: fadeIn 1s ease-in;
-  animation-fill-mode: both; /* Keep the end state after animation */
-  opacity: 0; /* Start with opacity 0 */
-  visibility: hidden; /* Hide the element */
-}
-
-/* Show the element when it is in view */
-.fade-in.in-view {
-  visibility: visible;
-}
-
-.in-view {
-  animation: fade-in 1s ease-in;
-  animation-fill-mode: both;
-  visibility: visible;
-}
-
-
-
-
-    
+    html{
+      scroll-behavior: smooth;
+    }
