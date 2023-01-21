@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="style.css">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
 
 <style>
 /* ------------------------------------------------Background Code----------------------------------------------------------- */
+
         body
         {
             background-image:url('https://wallpaperaccess.com/full/1268171.jpg');
@@ -29,6 +31,20 @@
             grid-template-columns: repeat(2, 1fr);
             grid-auto-rows: 100px;
         }
+
+/* ------------------------------------------------Menu Bar----------------------------------------------------------- */
+        .navbar
+        {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            font-family: Arial, Helvetica, sans-serif;
+      
+            background-size: cover;
+            display: flex;
+        }
+
 
 /* ------------------------------------------------Title Code----------------------------------------------------------- */
         .box1 
@@ -201,11 +217,33 @@
 /* ------------------------------------------------Image Shadow Code----------------------------------------------------------- */         
         .shadow {box-shadow: 10px 10px 10px black;}
 
+header
+{
+
+}
+
 
 </style>
     <body>
         <h1 id="msg"></h1>
         <div class="wrapper">
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+            <div class="box0">
+                <nav class="navbar" class="box1">
+                    <img src="images/logo.png" alt="Smiley face">
+                    <div class="nav-links">
+                          <ul class="menu3">
+                              <li><a href="Basic Infomation.html">Basic Information</a></li>
+                              <li><a href="Vehicle and Safety.html">Vehicles & Safety</a></li>
+                              <li><a href="#">Launch & Recovery</a></li>
+                              <li><a href="#">News</a></li>
+                          </ul>
+                          <button class="btn-hover">Fly With Us</button>
+                    </div>
+                  </nav>
+                <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400&display=swap" rel="stylesheet">
+            </div>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
             <div class="box1">Vehicle & Safety</div>
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
             <div class="box2"><img class="shadow" src= "https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQzNi0xLWlzczA0M2UxOTM1NTYuanBn.jpg?s=oPICZzXth7W5mFcmThsDvXdhJVsPrNvTXh6DPELb_kw" alt="Looking at Earth from Spacecraft" height="300" width="550"></div>
@@ -229,7 +267,7 @@
                         e.preventDefault();
                         document.querySelector("#sub").value="Submiting...";
                         let data = new FormData(form);
-                        fetch("https://script.google.com/macros/s/AKfycbwZ02QXgW3prYyVOZ6B4KZE8iZmNp-c2aXQXIyBXMUxBKQBbXiXw1a79ivRJyZ4H-ddrQ/exec", {
+                        fetch("https://script.google.com/macros/s/AKfycbwLmiGVpKPNsYv9z12S8HjIARF4owCiJ6eG1PNJofNNoSUfcH6TuUUHS7VEMXD68NTMfg/exec", {
                             method:"post",
                             body: data
                         })
@@ -237,7 +275,7 @@
                             .then(data =>{
                                 document.querySelector("#msg").innerHTML=data;
                                 document.querySelector("#sub").value="Submit";
-                            } );
+                            });
                     })
                 </script>
                 Would you want to supply Space Horizon? Contact us at supplier@spacehorizon.com.<br>
