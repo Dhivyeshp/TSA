@@ -204,6 +204,7 @@
 
 </style>
     <body>
+        <h1 id="msg"></h1>
         <div class="wrapper">
             <div class="box1">Vehicle & Safety</div>
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
@@ -218,10 +219,27 @@
             <div class="box5"><img class="shadow" src = "https://wallpaperaccess.com/full/3981469.jpg" alt="Protection from the harsh environment of space" height="300" width="550"></div>
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
             <div class="box6">Enter your email to sign up for Space Horizon updates:<br><br>
-                <form action="https://script.google.com/macros/s/AKfycbztg-gka7CHN3eNDTK3kvzHi--a6T7AtiGXzEt0m1KdGiOkqftd-mGmtiRK1kxVIgyuCA/exec" method="post">
-                    <input type="text" name="Name" placeholder="Email Address" size="30"></input>
-                    <button class="button"><span>Sign Up </span></button><br><br><br>
+                <form>
+                    <input type="text" name="email" placeholder="Email Address" size="30"></input>
+                    <button class="button" id="sub"><span>Sign Up </span></button><br><br><br>
                 </form>
+                <script>
+                    let form = document.querySelector("form");
+                    form.addEventListener("submit", (e)=>{
+                        e.preventDefault();
+                        document.querySelector("#sub").value="Submiting...";
+                        let data = new FormData(form);
+                        fetch("https://script.google.com/macros/s/AKfycbwZ02QXgW3prYyVOZ6B4KZE8iZmNp-c2aXQXIyBXMUxBKQBbXiXw1a79ivRJyZ4H-ddrQ/exec", {
+                            method:"post",
+                            body: data
+                        })
+                            .then(res => res.text())
+                            .then(data =>{
+                                document.querySelector("#msg").innerHTML=data;
+                                document.querySelector("#sub").value="Submit";
+                            } );
+                    })
+                </script>
                 Would you want to supply Space Horizon? Contact us at supplier@spacehorizon.com.<br>
                 Click here for information about Space Horizon's trademarks, copyrights, and other intellectual property.
             </div>
