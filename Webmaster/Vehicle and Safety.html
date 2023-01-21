@@ -201,6 +201,16 @@
 /* ------------------------------------------------Image Shadow Code----------------------------------------------------------- */         
         .shadow {box-shadow: 10px 10px 10px black;}
 
+header
+{
+    height: 100vh;
+    width: 260vh;
+    font-family: Arial, Helvetica, sans-serif;
+	background-color: black;
+	background-size: cover;
+    display: flex;
+}
+
 
 </style>
     <body>
@@ -229,7 +239,7 @@
                         e.preventDefault();
                         document.querySelector("#sub").value="Submiting...";
                         let data = new FormData(form);
-                        fetch("https://script.google.com/macros/s/AKfycbwZ02QXgW3prYyVOZ6B4KZE8iZmNp-c2aXQXIyBXMUxBKQBbXiXw1a79ivRJyZ4H-ddrQ/exec", {
+                        fetch("https://script.google.com/macros/s/AKfycbwLmiGVpKPNsYv9z12S8HjIARF4owCiJ6eG1PNJofNNoSUfcH6TuUUHS7VEMXD68NTMfg/exec", {
                             method:"post",
                             body: data
                         })
@@ -237,7 +247,7 @@
                             .then(data =>{
                                 document.querySelector("#msg").innerHTML=data;
                                 document.querySelector("#sub").value="Submit";
-                            } );
+                            });
                     })
                 </script>
                 Would you want to supply Space Horizon? Contact us at supplier@spacehorizon.com.<br>
@@ -245,4 +255,24 @@
             </div>
         </div>
     </body>
+
+
+    <header>
+        <div class="container">
+              <nav class="navbar" class="box1">
+                  <div class="nav-links">
+                        <ul class="menu3">
+                            <li><a href="Basic Infomation.html">Basic Information</a></li>
+                            <li><a href="Vehicle and Safety.html">Vehicles & Safety</a></li>
+                            <li><a href="#">Launch & Recovery</a></li>
+                            <li><a href="#">News</a></li>
+                        </ul>
+                        <button class="btn-hover">Fly With Us</button>
+                  </div>
+                </nav>
+
+
+              <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400&display=swap" rel="stylesheet">
+          </div>  
+      </header>
 </html>
