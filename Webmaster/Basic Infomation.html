@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="navbar.css">
   <title>Basic Information</title>
 </head>
   <style>
@@ -17,6 +18,7 @@
         background-attachment:fixed;
         background-size: 100% 100%;
         vertical-align: middle;
+
       }
       .wrapper 
       {
@@ -31,7 +33,7 @@
         grid-row-start: 1;
         grid-row-end: 1;
         font-size:25px;
-        align-items: center;
+        /* align-items: center; */
       }
       .box2 
       {
@@ -147,15 +149,17 @@
         grid-row-start: 11;
         grid-row-end: 13;
       }
+
       body
       {
-        background-image:url('https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616__340.jpg');
+        background-image:url('https://wallpaperaccess.com/full/1268171.jpg');
         background-repeat: no-repeat;
         background-attachment:fixed;
         background-size: 100% 100%;
         text-align: center;
       
       }
+      
       .blur
       {
         filter: blur(10px);
@@ -172,8 +176,6 @@
             font-size:20px;
             color:white;
             font-family:'Courier New', Courier, monospace;
-
-            
         }
 
       .button 
@@ -229,23 +231,36 @@
             font-family: 'Courier New', Courier, monospace;
             padding: 10px;
         }
-
-        ::placeholder {color:white;}
-        .shadow {box-shadow: 10px 10px 10px black;}
   </style>
-<body>
+  <header>
+    <div class="container">
+      <nav class="navbar">
+          <img src="images/logo.png" alt="Smiley face">
+          <div class="nav-links">
+          <ul class="menu3">
+      <li><a href="Basic Infomation.html">Basic Information</a></li>
+      <li><a href="Vehicle and Safety.html">Vehicles & Safety</a></li>
+      <li><a href="#">Launch & Recovery</a></li>
+      <li><a href="#">News</a></li>
+          </ul>
+          <button class="btn-hover">Fly With Us</button>
+          </div>
+      </nav>
+  </header>>
+
+  <body>
     <div class="wrapper">
       <div class="box1"><header><h1>Basic Information</h1></header></div>
       <div class="box2"><p><b1>ABOUT US</b1></p><p1>Lorem ipsum is placeholder text commonly used in the graphic, print, publishing industries for previewing layouts and visual mockups.</p1></div> 
-      <div class="box3"><img src= "https://physicsworld.com/wp-content/uploads/2020/10/PortClimb.jpg" height="198" width="498"></div>
-      <div class="box4"><img src= "https://wallpaperaccess.com/full/2599387.jpg" height="198" width="498"></div>
-       <div class="box5"><p><b2>Subtitle 1</b2></p><p2>Lorem ipsum is placeholder text commonly used in the graphic, print, publishing industries for previewing layouts and visual mockups.</p2></div>
+      <div class="box3"><img src= "https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQzNi0xLWlzczA0M2UxOTM1NTYuanBn.jpg?s=oPICZzXth7W5mFcmThsDvXdhJVsPrNvTXh6DPELb_kw" alt="Looking at Earth from Spacecraft" height="198" width="498"></div>
+      <div class="box4"><img src= "https://wallpaperaccess.com/full/3981469.jpg" height="198" width="498"></div>
+      <div class="box5"><p><b2>Subtitle 1</b2></p><p2>Lorem ipsum is placeholder text commonly used in the graphic, print, publishing industries for previewing layouts and visual mockups.</p2></div>
       <div class="box6"><p><b2>Subtitle 2</b2></p><p2>Lorem ipsum is placeholder text commonly used in the graphic, print, publishing industries for previewing layouts and visual mockups.</p2></div>
       <div class="box7"><img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHkB_kzy2AcPhif6fSrl3yXDTV7ZCBTDnO7A&usqp=CAU" height="198" width="498"></div>
       <div class="box8"><img src= "https://qph.cf2.quoracdn.net/main-qimg-598b58d7dc85f17065b240677426de84-lq" height="198" width="498"></div>
       <div class="box9">Enter your email to sign up for Space Horizon updates:<br><br>
-        <input type="text" id="Name" name="Name" placeholder="Email Address"></input>
-        <button type="button"> Sign Up</button><br><br><br>
+      <input type="text" id="Name" name="Name" placeholder="Email Address"></input>
+      <button class="button"><span>Sign Up </span></button><br><br><br>
         Would you want to supply Space Horizon? Contact us at supplier@spacehorizon.com.<br>
         Click here for information about Space Horizon's trademarks, copyrights, and other intellectual property.
     </div>    
