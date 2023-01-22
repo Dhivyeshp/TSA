@@ -1,24 +1,4 @@
 
-
-    console.log("in the fuction");
-    const form = document.getElementById("myForm");
-    form.addEventListener("submit", (event) => {
-      console.log("inside the event listner");
-            event.preventDefault();
-      const email = document.getElementById("email").value;
-      fetch("https://script.google.com/macros/s/AKfycby4r_UE9wkzxR91hHynIFxWZOCdayrh80fHJoyMCk_Ya0RGIldfjn_SrTnYNwFT-tjJkw/exec", {
-        method: "POST",
-        body: JSON.stringify({ email: email }),
-        headers: {
-          "Content-Type": "application/json"
-        }
-      })
-        .then((response) => response.text())
-        .then((data) => {
-          console.log(data);
-        });
-    });
-    
   
   
 $(document).ready(function(){
