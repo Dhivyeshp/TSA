@@ -417,30 +417,6 @@ nav ul li{
     background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
     .btn-learn {
       width: 120px;
@@ -460,11 +436,6 @@ nav ul li{
       background-image: linear-gradient(to right, #ffffff, #ffffff, #fff5f5, #f7fcff);
       box-shadow: 0 4px 15px 0 rgba(66, 66, 66, 0.75);
     }
-
-
-
-
-
 
 
 @property --angle {
@@ -668,7 +639,7 @@ nav ul li{
     }
 
     html{
-      scroll-behavior: smooth;
+      scroll-behavior:auto;
     }
 
 
