@@ -598,3 +598,17 @@ nav ul li{
     html{
       scroll-behavior:auto;
     }
+
+
+
+
+    form {
+      width: 300px;
+      margin: 0 auto;
+    }
+    
+    label {
+      font-size: 20px;
+      color: blue;
+    }
+    

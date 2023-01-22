@@ -1,5 +1,7 @@
 
-  $(document).ready(function(){
+  
+  
+$(document).ready(function(){
 
     window.onload = function() {
       AOS.init();
@@ -28,9 +30,6 @@
     elementsToObserve.forEach((element) => {
       observer.observe(element);
     });
-
-
-
 
 
     const observer2 = new IntersectionObserver((entries) => {
@@ -95,3 +94,6 @@
     console.log(document.querySelector(".subtext-two").classList);
 
   });
+
+
+ 
