@@ -512,13 +512,13 @@ nav ul li{
  
     .firstsection {
         
-        height: 800px;
+        height: 900px;
         scroll-behavior: smooth;
     }
 
     .firstsection .bg-image-1 {
      
-      height: 800px;
+      height: 900px;
       background-image: url(  https://cdn.sanity.io/images/2yyup5mx/production/d5a915cd9db3444998926f61645b6f83a53aced0-5000x2813.jpg?w=2048&q=75&fit=clip&auto=format);
       background-repeat: no-repeat;
       background-size: cover;
@@ -530,13 +530,13 @@ nav ul li{
  
     .secondsection {
         
-        height: 800px;
+        height: 900px;
         scroll-behavior: smooth;
     }
 
     .secondsection .bg-image-2 {
      
-      height: 800px;
+      height: 900px;
       background-image: url(https://cdn.sanity.io/images/2yyup5mx/production/03be7c2a156be29539d57f03cb9063937a9a1d8d-8000x4500.jpg?w=2048&q=75&fit=clip&auto=format);
       background-repeat: no-repeat;
       background-size: cover;
@@ -545,13 +545,13 @@ nav ul li{
 
     .thirdsection {
         
-      height: 800px;
+      height: 900px;
       scroll-behavior: smooth;
   }
 
   .thirdsection .bg-image-3 {
    
-    height: 800px;
+    height: 900px;
     background-image: url(https://cdn.sanity.io/images/2yyup5mx/production/06cb0813467b40fa021e7aef3c4875ef5a22e17d-5184x3456.jpg?w=2048&q=75&fit=clip&auto=format);
     background-repeat: no-repeat;
     background-size: cover;
