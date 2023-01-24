@@ -35,7 +35,9 @@ header{
     }
   }
   
-  .nav-links,.navbar,.learn,.box,.fade-in {
+  .nav-links,.navbar,.learn,.box,.fade-in 
+  
+  {
     
     cursor: pointer;
     animation: fadeInOutAnimation 1.5s ease-in;
@@ -251,7 +253,7 @@ span:nth-child(18) {
   align-items: center;
   position: absolute;
   top: 550px;
-  right: 1200px;
+  right: 100px;
 
   width: 180px;
   height: 60px;
@@ -273,22 +275,6 @@ svg {
   stroke-dashoffset: 100;
   transition: 1s ease-in-out;
 }
-
-.btn:hover {
-  transition: 1s ease-in-out;
-  background: #01a0fc;
-} 
-
-.btn:hover svg {
-  stroke-dashoffset: -400;
-}
-
-.btn span {
-  color: white;
-  font-size: 18px;
-  font-weight: 100;
-}
-
 
 
 
@@ -521,24 +507,59 @@ nav ul li{
     
     }
 
+   
 
-  .firstsection {
-    background-image: url(https://cdn.sanity.io/images/2yyup5mx/production/03be7c2a156be29539d57f03cb9063937a9a1d8d-8000x4500.jpg?w=2048&q=75&fit=clip&auto=format);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
-    box-shadow: 0.4rem 0.4rem 0.45rem rgba(0, 0, 30, 1);
-    scroll-behavior: smooth;
-    }
  
-    .secondsection {
-        background-image: url(https://cdn.sanity.io/images/2yyup5mx/production/d5a915cd9db3444998926f61645b6f83a53aced0-5000x2813.jpg?w=2048&q=75&fit=clip&auto=format);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 800px;
+    .firstsection {
+        
+        height: 900px;
         scroll-behavior: smooth;
     }
+
+    .firstsection .bg-image-1 {
+     
+      height: 900px;
+      background-image: url(  https://cdn.sanity.io/images/2yyup5mx/production/d5a915cd9db3444998926f61645b6f83a53aced0-5000x2813.jpg?w=2048&q=75&fit=clip&auto=format);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+
+
+
  
+    .secondsection {
+        
+        height: 900px;
+        scroll-behavior: smooth;
+    }
+
+    .secondsection .bg-image-2 {
+     
+      height: 900px;
+      background-image: url(https://cdn.sanity.io/images/2yyup5mx/production/03be7c2a156be29539d57f03cb9063937a9a1d8d-8000x4500.jpg?w=2048&q=75&fit=clip&auto=format);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+ 
+
+    .thirdsection {
+        
+      height: 900px;
+      scroll-behavior: smooth;
+  }
+
+  .thirdsection .bg-image-3 {
+   
+    height: 900px;
+    background-image: url(https://cdn.sanity.io/images/2yyup5mx/production/06cb0813467b40fa021e7aef3c4875ef5a22e17d-5184x3456.jpg?w=2048&q=75&fit=clip&auto=format);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+    
+    
     .box-main {
         display: flex;
         justify-content: center;
@@ -566,9 +587,7 @@ nav ul li{
     }
  
     .section {
-        background-image: url(https://www.pixel4k.com/wp-content/uploads/2020/08/blur-abstract_1596927849-2048x1152.jpg);
-        background-position-y: 80vh;
-        background-size: cover;
+     
         height: 500px;
         display: flex;
         align-items: center;
@@ -576,13 +595,23 @@ nav ul li{
         margin: auto;
     }
      
+    .background{
+      height: 600px;
+      position: relative;
+      top: 10px;
+      background-image: url("images/gradient.png");
+      background-repeat: none;
+      background-size: cover;
+    }
+  
     .text-footer {
+      
         text-align: center;
         padding: 30px 0;
         font-family: 'Ubuntu', sans-serif;
         display: flex;
         justify-content: center;
-        color: black;
+        color: white;
     }
 
 
@@ -612,3 +641,229 @@ nav ul li{
       color: blue;
     }
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+footer{
+  background: #f1f1f1;
+  padding: 90px 0;
+}
+ 
+.footer-container{
+  max-width: 2200px;
+  margin: auto;
+  padding: 100px 10px;
+  justify-content: space-between;
+  align-items: left;
+}
+ 
+.logo{
+  width: 180px;
+}
+ 
+.social-media{
+  margin: 20px 0;
+}
+ 
+.social-media a{
+  color: #001a21;
+  margin-right: 25px;
+  font-size: 22px;
+  text-decoration: none;
+  transition: .3s linear;
+}
+ 
+.social-media a:hover{
+  color: #fc5c65;
+}
+ 
+.right-col h1{
+  font-size: 26px;
+}
+ 
+.border{
+  width: 100px;
+  height: 4px;
+  background: #fc5c65;
+}
+ 
+.newsletter-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+ 
+.txtb{
+  height: 35px;
+  align-items: left;
+  align-content: left;
+  flex: 1;
+position: absolute;
+position: absolute; top: 44%; left: 40%; 
+padding: 18px 40px;
+  font-size: 16px;
+  background: transparent;
+  border: 0.5px solid white;
+
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  min-width: 260px;
+}
+ 
+
+
+.btn{
+  position: absolute; top: 44%; left: 49%;
+  font-size: 16px;
+  color: black;
+  background: #ddd;
+width: 100px;
+height: 37px;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+ 
+
+
+.page-content{
+  min-height: 100vh;
+  font-size: 40px;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+}
+ 
+@media screen and (max-width:960px) {
+  .footer-container{
+    max-width: 600px;
+  }
+  .right-col{
+    width: 100%;
+    margin-bottom: 60px;
+  }
+ 
+  .left-col{
+    width: 100%;
+    text-align: left;
+  }
+}
+ 
+
+
+
+
+.social-menu ul{
+  position: absolute;
+  top: 45%;
+  left: 34%;
+  padding: 0;
+  margin: 0;
+  transform: translate(-50%, -50%);
+   display: flex;
+    flex-direction: column;
+}
+
+.social-menu ul li{
+  list-style: none;
+  margin: 0 15px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.social-menu ul li .fab{
+  font-size: 20px;
+  line-height: 35px;
+  transition: .3s;
+  color: #000;
+}
+
+.social-menu ul li .fab:hover{
+  color: #fff;
+}
+
+.social-menu ul li a{
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  transition: .6s;
+  box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social-menu ul li a:hover{
+  transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+  background-color: rgba(0, 0, 0, 0.829);
+}
+.social-menu ul li:nth-child(2) a:hover{
+  background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+  background-color: #0077b5;
+}
+.social-menu ul li:nth-child(4) a:hover{
+  background-color: #000;
+}
+
+
+
+
+
+.footerlist {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footerlist li {
+  display: block;
+  font-size: 20px;
+}
+
+.footerlist li {
+  left: 350px;
+  top: -145px;
+  
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+
+.footbar a{
+  color: white;
+}
+
