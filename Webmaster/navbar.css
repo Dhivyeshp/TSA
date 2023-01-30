@@ -9,10 +9,6 @@
  
 }
 
-.footerbar{
-  position: absolute;
-  top: -300px;
-}
 
 header{
     height: 10vh;
@@ -24,7 +20,15 @@ header{
 
 
 
-
+.navcontainer{
+  
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: row;
+  perspective: 1000px;
+  perspective-origin: center;
+}
 
 img{
 	float:left;
