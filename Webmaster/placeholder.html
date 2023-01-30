@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vehicle & Safety</title>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <link href="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
+    </head>
+
+    <style>
+        body
+        {
+            /* background-image:url('https://wallpaperaccess.com/full/1268171.jpg'); */
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+            width: 1000px;
+            height: 10000px;
+            display: flex;
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            background-size: 100% 100%;
+        }
+
+        .fade-in 
+        {
+            animation: fadein 3s;
+        }
+
+        @keyframes fadein 
+        {
+            from { opacity: 0;}
+            to   { opacity: 1;}
+        }
+
+        .title 
+        {
+            font-size:100px;
+            font-weight: 100;
+            color:white;
+            font-family:'Courier New', Courier, monospace;
+            position: absolute; top: 300px; left:250px
+        }
+
+        .description
+        {
+            font-size: 30px;
+            color:white;
+            font-family:'Courier New', Courier, monospace;
+            position: absolute; top: 1000px; left: 200px; right: 200px;
+        }
+
+        .pic1
+        {
+            position: absolute; top: 1970px; left: 720px;
+            height: 600px; 
+            width: 700px;
+        }
+
+
+        .message
+        {
+            color: white;
+            font-size: 100px;
+            font-weight: 50;
+            align-items: center;
+            white-space: nowrap;
+            animation: slide-left 40s linear infinite;
+            font-family:Arial, Helvetica, sans-serif;
+            position: absolute; top: 1700px;
+        }
+
+        @keyframes slide-left 
+        {
+            from 
+            {
+                -webkit-transform: translateX(0);
+                        transform: translateX(0);
+            }
+            to 
+            {
+                -webkit-transform: translateX(-300%);
+                        transform: translateX(-300%);
+            }
+        }
+
+        .vehicles
+        {
+            font-size: 25px;
+            color:white;
+            font-family:'Courier New', Courier, monospace;
+            position: absolute; top: 2000px; left: 50px; right: 800px;
+        }
+
+    </style>
+
+    <body>
+        <div class="title fade-in">Vehicle & Safety</div>
+
+        <div class="description" data-aos="fade-up">
+            Space Horizon is a space tourism company that specializes in providing customers with the opportunity to 
+            experience space travel. The company uses specially designed vehicles for space tourism, such as 
+            reusable spacecraft, that are focused on safety and passenger comfort. Safety measures may include the use 
+            of redundant systems, emergency procedures and protective shielding to protect passengers from the harsh 
+            conditions of space. The company may also provide training and preparation for passengers before their trip,
+            as well as support during the flight and after landing. Additionally, the company may also be subject to laws 
+            and regulations regarding space tourism and must comply with them. It is important to note that space tourism 
+            is still an emerging industry and safety standards may be still developing.
+        </div>
+
+        <div class="message">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Safety Is Our Most Important Objective!
+        </div>
+
+        <div class="vehicles" data-aos="fade-right">
+            At Space Horizon, we are proud to offer our customers the latest and most advanced spacecrafts in the industry. Our vehicles are designed with safety, comfort, and performance in mind, and are operated by our highly trained and experienced pilots and crew.
+            <br>
+            <br>Here is a brief overview of the vehicles we currently offer:
+            <br>
+            <br>
+            <br><strong>Sky Balloon:</strong> The Sky Balloon is our custom-designed vehicle for group and private space travel experiences. This spacecraft is tailored to meet the specific needs of each group, and can be configured for suborbital or orbital flights.
+        </div>
+
+        <div><img class="pic1" data-aos="fade-left" src= "https://cdn.mos.cms.futurecdn.net/2wYydh7xw72D4KJecT5cDV.jpg"></div>
+
+    </body>
+    <script src="main.js"></script>
+</html>
