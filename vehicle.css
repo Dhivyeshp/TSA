@@ -1,0 +1,221 @@
+/*-------------------------------------scroll bar customization-------------------------------------------*/
+body::-webkit-scrollbar 
+{
+    width: 8px;
+} 
+
+body::-webkit-scrollbar-thumb 
+{
+    border: 1000px solid rgb(134, 133, 133);
+    border-radius: 40px;
+    background-clip: padding-box;
+    transition: height 0.2s ease-in-out;
+} 
+
+body::-webkit-scrollbar-track 
+{
+    scroll-padding-right: 100px;
+    background-color: transparent;
+} 
+
+body
+{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    width: 1000px;
+    height: 6000px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: 100% 100%;
+    text-align: center;
+
+
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-size:32px;
+    padding-top:40px;
+    overflow:visible;
+    backface-visibility: hidden;
+    perspective: 1000;
+    transform: translate3d(0,0,0);
+    overflow-x: hidden;
+}
+
+.fade-in 
+{
+    animation: fadein 5s;
+}
+
+@keyframes fadein 
+{
+    from { opacity: 0;}
+    to   { opacity: 1;}
+}
+
+.title 
+{
+    font-size:100px;
+    font-weight:lighter;
+    color:white;
+    font-family:'Courier New', Courier, monospace;
+    position: absolute; top: 300px; left:250px
+}
+
+.description
+{
+    font-size: 30px;
+    color:white;
+    font-weight:lighter;
+    font-family: 'Work Sans', sans-serif;
+    position: absolute; top: 630px; left: 300px; right: -200px;
+    overflow:visible;
+    text-align: center;
+    white-space:normal;
+
+}
+
+.vehicles
+{
+    font-size: 30px;
+    color:white;
+    font-weight:lighter;
+    font-family: 'Work Sans', sans-serif;
+    position: absolute; top: 1295px; left: 50px; right: 310px;
+    overflow:visible;
+    text-align: center;
+    white-space:normal;
+
+}
+
+.pic1
+{
+    position: absolute; top: 1300px; left: 710px;
+    height: 600px; 
+    width: 700px;
+}
+
+
+.message1
+{
+    color: white;
+    font-size: 60px;
+    font-weight:bolder;
+    white-space: nowrap;
+    font-family: 'Work Sans', sans-serif;
+    position: absolute; top: 2300px; left: 250px;
+    animation: showup 7s infinite;
+}
+
+.message2
+{
+    color: white;
+    font-size: 60px;
+    white-space: nowrap;
+    font-family: 'Work Sans', sans-serif;
+    position: absolute; top: 2300px; left: 580px;
+    animation: showup 7s infinite;
+
+
+}
+
+@keyframes slide-left 
+{
+    from 
+    {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    to 
+    {
+        -webkit-transform: translateX(-300%);
+                transform: translateX(-300%);
+    }
+}
+
+
+/*--------------------------------------------------------------------------*/
+
+
+div
+{
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+span:last-of-type 
+{
+    width: 0px;
+    animation: reveal 7s infinite;
+}
+
+span:last-of-type 
+{
+    margin-left:-355px;
+    animation: slidein 7s infinite;
+}
+
+
+@keyframes showup 
+{
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein 
+{
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal 
+{
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
+
+.safety
+{
+    font-size: 30px;
+    color:white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight:lighter;
+    position: absolute; top: 2750px; left: 150px; right: -300px;
+    overflow: visible;
+    text-align: center;
+    white-space: normal;
+}
+
+.safety-list
+{
+    font-size: 25px;
+    color:white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight:lighter;
+    position: absolute; top: 3500px; left: 800px; right: -450px;
+    overflow: visible;
+    text-align: left;
+    white-space: normal;
+}
+
+.pic2
+{
+    position: absolute; top: 3470px; left: 10px;
+    height: 400px; 
+    width: 700px; 
+}
+
+.pic3
+{
+    position: absolute; top: 3900px; left: 10px;
+    height: 400px; 
+    width: 700px; 
+}
