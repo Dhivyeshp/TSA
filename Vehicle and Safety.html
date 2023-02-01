@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
     <head>
         <link rel="stylesheet" href="style.css">
         <meta charset="UTF-8">
@@ -13,275 +14,307 @@
         <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
     </head>
 
-<style>
-/* ------------------------------------------------Background Code----------------------------------------------------------- */
+    <style>
+
+/*-------------------------------------scroll bar customization-------------------------------------------*/
+        body::-webkit-scrollbar 
+        {
+            width: 10px;
+        } 
+        
+        body::-webkit-scrollbar-thumb 
+        {
+            background-color:rgb(248, 245, 245);
+        } 
+        
+        body::-webkit-scrollbar-track 
+        {
+            background-color: black;
+        } 
 
         body
         {
-            background-image:url('https://wallpaperaccess.com/full/1268171.jpg');
+            background-color: rgb(0, 0, 0);
             text-align: center;
-            
-            
+            width: 1000px;
+            height: 6000px;
             display: flex;
             background-repeat: no-repeat;
             background-attachment:fixed;
             background-size: 100% 100%;
-            backdrop-filter: blur(10px);
-        }
-
-/* ------------------------------------------------Grid Layout Code----------------------------------------------------------- */        
-        .wrapper 
-        {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-auto-rows: 100px;
-        }
-
-/* ------------------------------------------------Menu Bar----------------------------------------------------------- */
-        .navbar
-        {
-            grid-column-start: 1;
-            grid-column-end: 5;
-            grid-row-start: 1;
-            grid-row-end: 2;
-            font-family: Arial, Helvetica, sans-serif;
-      
-            background-size: cover;
-            display: flex;
-        }
-
-
-/* ------------------------------------------------Title Code----------------------------------------------------------- */
-        .box1 
-        {
-            grid-column-start: 1;
-            grid-column-end: 5;
-            grid-row-start: 2;
-            grid-row-end: 4;
-
-            font-size:60px;
-            color:white;
-            vertical-align: middle;
-            font-family:'Courier New', Courier, monospace;
-            font-weight: 900;
-        }
-
-/* ------------------------------------------------Vehicle Image Code----------------------------------------------------------- */
-        .box2 
-        {
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 3;
-            grid-row-end: 6;
-
-            position: relative;
-            animation-name: imageSlideIn;
-            animation-duration: 2s;  
-            animation-delay: 0s;
-            animation-fill-mode: both;
-        }
-
-        @keyframes imageSlideIn {
-            from {left: -1000px;}
-            to {left: 0px;}
-        }
-.shadow
-/* ------------------------------------------------Vehicle Text Code----------------------------------------------------------- */    
-        .box3 
-        {
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 3;
-            grid-row-end: 6;
-
-            padding-right: 100px;
-            padding-left: 100px;
-            font-size:20px;
-            color:white;
-            font-family:'Courier New', Courier, monospace;
-
-            position: relative;
-            animation-name: imageSlideIn;
-            animation-duration: 2s;  
-            animation-delay: 0s;
-            animation-fill-mode: both;
-        }
-
-/* ------------------------------------------------Spacesuit Text Code----------------------------------------------------------- */
-        .box4 
-        {
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 7;
-            grid-row-end: 10;
-
-            padding-right: 100px;
-            padding-left: 100px;
-            font-size:20px;
-            color:white;
-            font-family:'Courier New', Courier, monospace;
-
-            position: relative;
-            animation-name: imageSlideIn1;
-            animation-duration: 2s;  
-            animation-delay: 0s;
-            animation-fill-mode: both;
-        }
-
-/* ------------------------------------------------Spacesuit Image Code----------------------------------------------------------- */
-        .box5 
-        {
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 7;
-            grid-row-end: 10;
-            position: relative;
-            animation-name: imageSlideIn1;
-            animation-duration: 2s;  
-            animation-delay: 0s;
-            animation-fill-mode: both;
-        }
-
-        @keyframes imageSlideIn1 {
-            from {right: -1000px;}
-            to {right: 0px;}
-        }
-
-/* ------------------------------------------------Sign Up Box Code----------------------------------------------------------- */
-        .box6 
-        {
-            grid-column-start: 1;
-            grid-column-end: 4;
-            grid-row-start: 11;
-            grid-row-end: 13;
-
-            font-size:20px;
-            color:white;
-            font-family:'Courier New', Courier, monospace;
-        }
-
-/* ------------------------------------------------Button Code----------------------------------------------------------- */
-        .button 
-        {
-            background-color: transparent;
-            border-color:white;
-            color: white;
             text-align: center;
-            font-size: 20px;
-            padding: 10px;
-            transition: all 0.5s;
-            cursor: pointer;
-            font-family: 'Courier New', Courier, monospace;
-        }
 
-        .button span 
-        {
-            cursor: pointer;
-            display: inline-block;
-            position: relative;
-            transition: 0.5s;
-        }
-
-        .button span:after 
-        {
-            content: '\00bb';
-            position: absolute;
-            opacity: 0;
-            top: 0;
-            right: -20px;
-            transition: 0.5s;
-        }
-
-        .button:hover span {padding-right: 20px;}
-
-        .button:hover span:after 
-        {
-            opacity: 10;
-            right: 0;
-        }
-/* ------------------------------------------------Text Input Code----------------------------------------------------------- */        
-        input
-        {
-            border-top-style: groove;
-            border-right-style: groove;
-            border-left-style: groove;
-            border-bottom-style:groove;
-
-            background-color: transparent;
-            border-color: white;
             color: white;
-            font-size: 20px;
-            font-family: 'Courier New', Courier, monospace;
-            padding: 10px;
+            font-family:'Courier New', Courier, monospace;
+            font-size:32px;
+            padding-top:40px;
+            overflow:visible;
+            backface-visibility: hidden;
+            perspective: 1000;
+            transform: translate3d(0,0,0);
+            overflow-x: hidden;
         }
 
-        ::placeholder {color:white;}
+        .fade-in 
+        {
+            animation: fadein 5s;
+        }
 
-/* ------------------------------------------------Image Shadow Code----------------------------------------------------------- */         
-        .shadow {box-shadow: 10px 10px 10px black;}
+        @keyframes fadein 
+        {
+            from { opacity: 0;}
+            to   { opacity: 1;}
+        }
 
-</style>
+        .title 
+        {
+            font-size:100px;
+            font-weight: 100;
+            color:white;
+            font-family:'Courier New', Courier, monospace;
+            position: absolute; top: 300px; left:250px
+        }
+
+        .description
+        {
+            font-size: 30px;
+            color:white;
+            font-family:'Courier New', Courier, monospace;
+            position: absolute; top: 600px; left: 300px; right: -200px;
+            overflow:visible;
+            text-align: center;
+            white-space:normal;
+
+        }
+
+        .vehicles
+        {
+            font-size: 25px;
+            color:white;
+            font-family:'Courier New', Courier, monospace;
+            position: absolute; top: 1330px; left: 50px; right: 310px;
+            overflow:visible;
+            text-align: center;
+            white-space:normal;
+
+        }
+
+        .pic1
+        {
+            position: absolute; top: 1300px; left: 710px;
+            height: 600px; 
+            width: 700px;
+        }
+
+
+        .message1
+        {
+            color: white;
+            font-size: 60px;
+            font-weight:bolder;
+            white-space: nowrap;
+            font-family:'Courier New', Courier, monospace;
+            position: absolute; top: 2000px; left: 150px;
+            animation: showup 7s infinite;
+        }
+
+        .message2
+        {
+            color: white;
+            font-size: 60px;
+            white-space: nowrap;
+            font-family:'Courier New', Courier, monospace;
+            position: absolute; top: 2000px; left: 550px;
+            animation: showup 7s infinite;
+
+
+        }
+
+        @keyframes slide-left 
+        {
+            from 
+            {
+                -webkit-transform: translateX(0);
+                        transform: translateX(0);
+            }
+            to 
+            {
+                -webkit-transform: translateX(-300%);
+                        transform: translateX(-300%);
+            }
+        }
+
+
+        /*--------------------------------------------------------------------------*/
+ 
+
+        div
+        {
+            display:inline-block;
+            overflow:hidden;
+            white-space:nowrap;
+        }
+
+        span:last-of-type 
+        {
+            width: 0px;
+            animation: reveal 7s infinite;
+        }
+
+        span:last-of-type 
+        {
+            margin-left:-355px;
+            animation: slidein 7s infinite;
+        }
+        
+
+        @keyframes showup 
+        {
+            0% {opacity:0;}
+            20% {opacity:1;}
+            80% {opacity:1;}
+            100% {opacity:0;}
+        }
+
+        @keyframes slidein 
+        {
+            0% { margin-left:-800px; }
+            20% { margin-left:-800px; }
+            35% { margin-left:0px; }
+            100% { margin-left:0px; }
+        }
+
+        @keyframes reveal 
+        {
+            0% {opacity:0;width:0px;}
+            20% {opacity:1;width:0px;}
+            30% {width:355px;}
+            80% {opacity:1;}
+            100% {opacity:0;width:355px;}
+        }
+
+        .safety
+        {
+            font-size: 25px;
+            color:white;
+            font-family:'Courier New', Courier, monospace;
+            position: absolute; top: 2150px; left: 150px; right: -300px;
+            overflow: visible;
+            text-align: center;
+            white-space: normal;
+        }
+
+        .safety-list
+        {
+            font-size: 25px;
+            color:white;
+            font-family:'Courier New', Courier, monospace;
+            position: absolute; top: 2500px; left: 800px; right: -450px;
+            overflow: visible;
+            text-align: left;
+            white-space: normal;
+        }
+
+        .pic2
+        {
+            position: absolute; top: 2470px; left: 10px;
+            height: 400px; 
+            width: 700px; 
+        }
+
+        .pic3
+        {
+            position: absolute; top: 2900px; left: 10px;
+            height: 400px; 
+            width: 700px; 
+        }
+
+
+    </style>
+
     <body>
-        <h1 id="msg"></h1>
-        <div class="wrapper">
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-            <div class="box0">
-                <nav class="navbar" class="box1">
-                    <img src="images/logo.png" alt="Smiley face">
-                    <div class="nav-links">
-                          <ul class="menu3">
-                              <li><a href="Basic Infomation.html">Basic Information</a></li>
-                              <li><a href="Vehicle and Safety.html">Vehicles & Safety</a></li>
-                              <li><a href="#">Launch & Recovery</a></li>
-                              <li><a href="#">News</a></li>
-                          </ul>
-                          <button class="btn-hover">Fly With Us</button>
-                    </div>
-                  </nav>
-                <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400&display=swap" rel="stylesheet">
-            </div>
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-            <div class="box1">Vehicle & Safety</div>
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-            <div class="box2"><img class="shadow" src= "https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQzNi0xLWlzczA0M2UxOTM1NTYuanBn.jpg?s=oPICZzXth7W5mFcmThsDvXdhJVsPrNvTXh6DPELb_kw" alt="Looking at Earth from Spacecraft" height="300" width="550"></div>
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-            <div class="box3">
-                At Space Horizon, we are proud to offer our customers the latest and most advanced spacecrafts in the industry. Our vehicles are designed with safety, comfort, and performance in mind, and are operated by our highly trained and experienced pilots and crew.
-                Here is a brief overview of the vehicles we currently offer:
-                The Orion: Our flagship spacecraft, the Orion, is a state-of-the-art suborbital vehicle that can reach an altitude of over 62 miles (100km) and offer a weightless experience for several minutes. This spacecraft is designed to offer the most thrilling and immersive space travel experience, with large windows for unparalleled views of the Earth and space.
-                The Explorer: The Explorer is our orbital spacecraft, which is capable of reaching orbit around the Earth. This vehicle offers a unique and unparalleled experience, allowing customers to experience the sensation of weightlessness and see the Earth from space.
-                The Voyager: The Voyager is our custom-designed vehicle for group and private space travel experiences. This spacecraft is tailored to meet the specific needs of each group, and can be configured for suborbital or orbital flights.
-            </div>
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-            <div class="box4">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
-                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</div>
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-            <div class="box5"><img class="shadow" src = "https://wallpaperaccess.com/full/3981469.jpg" alt="Protection from the harsh environment of space" height="300" width="550"></div>
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-            <div class="box6">Enter your email to sign up for Space Horizon updates:<br><br>
-                <form>
-                    <input type="text" name="email" placeholder="Email Address" size="30"></input>
-                    <button class="button" id="sub"><span>Sign Up </span></button><br><br><br>
-                </form>
-                <script>
-                    let form = document.querySelector("form");
-                    form.addEventListener("submit", (e)=>{
-                        e.preventDefault();
-                        document.querySelector("#sub").value="Submiting...";
-                        let data = new FormData(form);
-                        fetch("https://script.google.com/macros/s/AKfycbwLmiGVpKPNsYv9z12S8HjIARF4owCiJ6eG1PNJofNNoSUfcH6TuUUHS7VEMXD68NTMfg/exec", {
-                            method:"post",
-                            body: data
-                        })
-                            .then(res => res.text())
-                            .then(data =>{
-                                document.querySelector("#msg").innerHTML=data;
-                                document.querySelector("#sub").value="Submit";
-                            });
-                    })
-                </script>
-                Would you want to supply Space Horizon? Contact us at supplier@spacehorizon.com.<br>
-                Click here for information about Space Horizon's trademarks, copyrights, and other intellectual property.
-            </div>
+        <div class="title fade-in">Vehicle & Safety</div>
+
+        <div class="description" data-aos="fade-up">
+            Space Horizon is a space tourism company that specializes in providing customers with the opportunity to 
+            experience space travel. The company uses specially designed vehicles for space tourism, such as 
+            reusable spacecraft, that are focused on safety and passenger comfort. Safety measures may include the use 
+            of redundant systems, emergency procedures and protective shielding to protect passengers from the harsh 
+            conditions of space. The company may also provide training and preparation for passengers before their trip,
+            as well as support during the flight and after landing. Additionally, the company may also be subject to laws 
+            and regulations regarding space tourism and must comply with them. It is important to note that space tourism 
+            is still an emerging industry and safety standards may be still developing.
         </div>
+
+    
+
+        <div class="vehicles" data-aos="fade-right">
+            <br>At Space Horizon, we are proud to offer our customers the latest and most advanced spacecrafts in the industry. Our vehicles are designed with safety, comfort, and performance in mind, and are operated by our highly trained and experienced pilots and crew.
+            <br>
+            <br>Here is a brief overview of the vehicle we currently offer:
+            <br>
+            <br>
+            <br><strong>Sky Balloon: </strong>The Sky Balloon is our custom-designed vehicle for group and private space travel experiences. This spacecraft is tailored to meet the specific needs of each group, and can be configured for suborbital or orbital flights.
+        </div>
+
+        <div>
+            <img class="pic1" data-aos="fade-left" src= "https://cdn.mos.cms.futurecdn.net/2wYydh7xw72D4KJecT5cDV.jpg">
+        </div>
+
+        <div class="message1">
+            Your Safety
+        </div> 
+
+        <div class="message2">
+            <span>&nbsp;Is Our Most Objective</span>
+        </div>
+
+        <div class="safety" data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0">>
+            At Space Horizon, the safety of our guests is our top priority. Our team of experts has designed 
+            and built our sky balloon vehicles to meet the most rigorous safety standards, and we regularly 
+            inspect and maintain each vessel to ensure that they operate at peak performance. In the unlikely 
+            event of an emergency, our trained crew is equipped with the latest technology and procedures to 
+            ensure the safe return of our guests. We also conduct extensive training for all of our staff, so 
+            that everyone is prepared for any situation that may arise. We take pride in our commitment to 
+            safety and are confident that you will have a truly unforgettable experience with us.
+        </div>
+
+        <div class="safety-list" data-aos="fade-left">
+            <ol>
+                <li>Reinforced pressure vessel for optimal durability and protection</li>
+                <br>
+                <li>Advanced emergency ejection system for immediate evacuation</li>
+                <br>
+                <li>Dual redundant control systems for added safety and reliability</li>
+                <br>
+                <li>High-tech communication systems for seamless communication with ground crew</li>
+                <br>
+                <li>Advanced life support systems, including redundant oxygen supply and emergency supplies</li>
+                <br>
+                <li>Fire suppression systems to quickly extinguish any onboard fires</li>
+                <br>
+                <li>Multiple backup power supplies for added security</li>
+                <br>
+                <li>Impact-resistant materials and construction techniques for maximum protection during landing</li>
+                <br>
+                <li>In-flight monitoring systems for continuous monitoring of all critical systems</li>
+                <br>
+                <li>Regular safety inspections and maintenance procedures to ensure the longevity and reliability of our vehicles</li>
+                <br>
+            </ol>
+        </div>
+
+        <div>
+            <img class="pic2" data-aos="fade-right" src= "images\space vehicle.png">
+        </div>
+
+        <div>
+            <img class="pic3" data-aos="fade-right" src= "images\pic3.png">
+        </div>
+
     </body>
+    <script src="main.js"></script>
+</html>
