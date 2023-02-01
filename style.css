@@ -317,7 +317,7 @@ img{
 	top: -149px;
   left: 150px;
   align-items: center;
-  margin-top: 35px;
+  margin-top: 55px;
 }
 .navbar{
   
@@ -332,21 +332,26 @@ height: 100px;
 
 
 .navbar a{
-  color: rgb(255, 255, 255);
-    transition: color 0.5s ease;}
+  color: rgb(131, 131, 131);
+    transition: color 0.7s ease;
+  }
 
-.navbar .nav-links ul {
-    display: flex;
-    z-index: 1;
+  .navbar a:hover{
+      color: white;
 
+  }
+ .menu3  {
+      position: absolute;
+      right: 30px;
 }
- 
-.navbar .nav-links ul li {
-    margin: 0 50px;
-    margin-top: 35px;
-    position: relative;
-    z-index: 1;
+.navbar .nav-links ul {
+  padding-right: 290px;
+}
 
+.navbar .nav-links ul li {
+  padding-top: 50px;
+  padding-right: 45px;
+    display: inline-block;
 }
 
 nav ul li{
@@ -356,17 +361,10 @@ nav ul li{
 	font-size: 18px;
 	font-weight: 200;
 	cursor: pointer;
-  color: rgb(255, 255, 255);
 }
 
-.menu3 li{
-	right: -800px;
-
-}
 .menu3 li:after {
 	content: "";
-	position: absolute;
-  top: 20px;
 	width: 0%;
 	height: 1px;
 	display: block;
@@ -383,8 +381,8 @@ nav ul li{
 
   .btn-hover{ 
   position: absolute;
-  top: 2px;
-  right: 210px;
+  top: 20px;
+  right: 140px;
 
   }
 
@@ -420,7 +418,7 @@ nav ul li{
 
 
 .btn-hover {
-  border: 1.9px solid rgb(197, 197, 197);      background-image: linear-gradient(to left, 
+  border: 2px solid rgb(253, 253, 253);      background-image: linear-gradient(to left, 
   rgba(255, 255, 255, 0.15), 
   rgba(255, 255, 255, 0.15), 
   rgba(255, 245, 245, 0.05), 
@@ -948,6 +946,7 @@ height: 37px;
   align-items: left;
   justify-content: center;
 }
+
  
 @media screen and (max-width:960px) {
   .footer-container{
@@ -1055,44 +1054,122 @@ height: 37px;
 }
 
 
-/* Monitor */
-@media only screen and (min-width: 1440px) {
-  .main-subtext {
-    filter: drop-shadow(10px 5px 10px #000000);
-    font-weight: 1;
-    position: absolute;
-    left: 158px;
-    top: 350px;
-    font-size: 75px;
-    width: 1700px;
-    color: white;
-  }
-  
-  video {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .video-wrapper {
-    border: 2px solid #000;
-    width: 100%;
-    height: 1000px;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
 
-  
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 20%;
+  transform: translateX(0%);
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50px;
+  left: 726px;
+
+  width: 26px;
+  height: 26px;
+
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #696969;
+
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+ 
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: 100%;
+
+  width: 200px;
+  height: 100%;
+
+  margin: 0;
+  padding: 80px 0;
+
+  list-style: none;
+
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+
+  transition-duration: .25s;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+
+  color: rgb(87, 87, 87);
+
+  font-family:sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+
+  text-decoration: none;
+
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+
+/* Everthing larger than a regular monitor */
+@media only screen and (min-width: 1701px) and (max-width: 3200px){
+  .menu__btn{
+    display: none;
+    visibility: hidden;
+    }
+    .logoimage{
+      display: none;
+      visibility: hidden;
+    }
+
 }
 
 
 
-/* Laptop */
-@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+/* Monitor */
+@media only screen and (min-width: 1440px) and (max-width: 1700px){
   .main-subtext {
     left: 68px;
     top: 250px;
@@ -1100,7 +1177,10 @@ height: 37px;
     width: 1200px;
   }
 
-  
+    .logoimage{
+    display: none;
+    visibility: hidden;
+  }
 .subtext-two {
   
   width: 650px;
@@ -1121,29 +1201,84 @@ height: 37px;
 
 img{
 	float:left;
-	width:220px;
-	height:220px;
+	width:280px;
+	height:280px;
 	position: absolute;
-	top: -100px;
+	top: -130px;
   left: 70px;
   align-items: center;
-  margin-top: 35px;
+  margin-top: 55px;
+}
+
+
+  .btn-hover {
+    float: right;
+  }
+
+.menu__btn{
+  display: none;
+  visibility: hidden;
+  }
+  .logoimage{
+    display: none;
+    visibility: hidden;
+  }
+}
+
+
+
+/* Laptop */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .main-subtext {
+    left: 68px;
+    top: 220px;
+    font-size: 60px;
+    width: 1100px;
+  }
+
+  
+.subtext-two {
+  
+  width: 650px;
+  position: absolute;
+  font-size: 25px;
+  left: 68px;
+  top: 390px;
+  color: white;
+  font-weight: lighter;
+}
+
+
+.btn-hover-new{ 
+  position: absolute;
+  left: 45px;
+  top: 460px;
+}
+
+img{
+	float:left;
+	width:260px;
+	height:260px;
+	position: absolute;
+	top: -120px;
+  left: 70px;
+  align-items: center;
+  margin-top: 55px;
 }
 .navbar .nav-links ul li {
-  margin: 0 20px;
-  margin-top: 35px;
+  margin: 0 10px;
+  margin-top: 55px;
 
 }
 .menu3 li{
-	right: -420px;
+	right: -610px;
   font-size: 15px;
 }
 
 .btn-hover{ 
   position: absolute;
-  top: 5px;
-  right: 50px;
-
+  top: 25px;
+  right: 70px;
   }
 
   .btn-hover {
@@ -1151,23 +1286,185 @@ img{
     font-size: 14px;
     height: 36px;
 }
+
+.menu3  {
+  position: absolute;
+  right: 20px;
+}
+.navbar .nav-links ul {
+padding-right: 200px;
+}
+
+.navbar .nav-links ul li {
+padding-top: 1px;
+padding-right: 15px;
+display: inline-block;
+}
+
+
+
+
+.menu__btn{
+  display: none;
+  visibility: hidden;
+  }
+  .logoimage{
+    display: none;
+    visibility: hidden;
+  }
 }
 
 
 /* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) { 
+  .main-subtext {
+    left: 68px;
+    top: 200px;
+    font-size: 60px;
+    width: 700px;
+  }
+
+  
+.subtext-two {
+  
+  width: 650px;
+  position: absolute;
+  font-size: 25px;
+  left: 68px;
+  top: 440px;
+  color: white;
+  font-weight: lighter;
+}
 
 
+.btn-hover-new{ 
+  position: absolute;
+  left: 45px;
+  top: 510px;
+}
+img{
+	float:left;
+	width:270px;
+	height:270px;
+	position: absolute;
+	top: -127px;
+  left: 75px;
+  align-items: center;
+  margin-top: 55px;
+}
 
+
+.menu3  {
+  position: absolute;
+  right: 20px;display: none;
+  visibility: hidden;
+}
+.navbar .nav-links ul {
+padding-right: 90px;
+}
+
+.navbar .nav-links ul li {
+padding-top: 53px;
+font-size: 16px;
+padding-right: 15px;
+display: inline-block;
+}
+
+
+.btn-hover{ 
+  position: absolute;
+  top: 25px;
+  right: -60px;
+  }
+
+  .btn-hover {
+    width: 100px;
+    font-size: 14px;
+    height: 36px;
+}
+
+.menu__btn{
+  right: 1000px;
+  }
+
+  .logoimage{
+    display: none;
+    visibility: hidden;
+  }
 
 }
+ 
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    left: 319px;
+  
+    width: 26px;
+    height: 26px;
+  
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .logoimage{
+    display: none;
+    visibility: hidden;
+  }
+    
+  .menu__box{
+    visibility: visible;
+  }
 
 
-
-
-
+.nav-links{
+  display: none;
+  visibility: hidden;
 }
 
+img{
+	float:left;
+	width:270px;
+	height:270px;
+	position: absolute;
+	top: -145px;
+  left: 24px;
+  align-items: center;
+  margin-top: 55px;
+}
+
+
+.main-subtext {
+  left: 27px;
+  top: 90px;
+  font-size: 30px;
+  width: 300px;
+}
+
+
+.subtext-two {
+width: 250px;
+position: absolute;
+font-size: 15px;
+left: 27px;
+top: 250px;
+color: white;
+font-weight: lighter;
+}
+
+
+.btn-hover-new{ 
+position: absolute;
+left: 7px;
+top: 310px;
+width: 90px;
+height: 30px;
+font-size: 11px;
+}
+
+}
