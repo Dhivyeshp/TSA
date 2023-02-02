@@ -22,13 +22,14 @@ header{
 
 
 
+
 .bg-video {
   height: 1400px;
-  width: 100%;
+  width: cover;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -10;
   -webkit-mask-image: linear-gradient( black, transparent);
   mask-image: linear-gradient( black, transparent);
 }
@@ -38,7 +39,6 @@ video {
   width: 100%;
   object-fit: cover;
 }
-
 
 
 
@@ -322,7 +322,6 @@ img{
 .navbar{
   
  
-  background-color:rgba(0, 0, 0, 0.25);
   
 width:100%;
 height: 100px;
@@ -542,8 +541,9 @@ nav ul li{
       margin-left: 160px;
       z-index: -1;
       width: 100%;
-
+      transition: transform 0.3s ease-in-out;
     }
+
     .favoritedestination{
       position: absolute;
       margin-top:  1000px;
@@ -566,8 +566,8 @@ nav ul li{
               box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
       font-family: 'Poppins',sans-serif;
       z-index: -1;
-  }
- 
+    }
+
   
   .card1{
     height: 450px;
@@ -605,7 +605,25 @@ nav ul li{
   z-index: -1;
 }
 
-  
+ 
+.card3{
+  height: 450px;
+  width: 320px;
+  background-image: url("images/card3.jpg");
+  background-position: -50px;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.06);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  position: absolute;
+  margin-left: 1350px;    
+  border-radius: 8px;
+  -webkit-box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
+          box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
+  font-family: 'Poppins',sans-serif;
+  z-index: -1;
+}
+ 
   .primary-text{
       color: #d5d5d5;
       font-size: 20px;
@@ -689,7 +707,7 @@ nav ul li{
  
     .secondsection {
         
-        height: 1000px;  overflow-y: scroll;
+        height: 1000px;  
         scroll-behavior: smooth;
     }
 
