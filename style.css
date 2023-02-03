@@ -1421,8 +1421,8 @@ display: inline-block;
 }
 
   .logoimage{
-    margin-top: 60px;
-    margin-left: -80px
+    display: none;
+  visibility: hidden;
   }
   .wrapper ul{
     position: absolute;
@@ -1459,9 +1459,8 @@ display: inline-block;
   
  
 .logoimage{
-  z-index: 100;
-  margin-top: 65px;
-  margin-left: -50px;
+  display: none;
+  visibility: hidden;
 }
 .wrapper ul{
   position: absolute;
@@ -1545,9 +1544,8 @@ font-size: 11px;
   
  
 .logoimage{
-  z-index: 100;
-  margin-top: 65px;
-  margin-left: -50px;
+  display: none;
+  visibility: hidden;
 }
 .wrapper ul{
   position: absolute;
