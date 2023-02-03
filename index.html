@@ -12,19 +12,44 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 
-   
     
     <link href="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
   
     <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
 </head>
+<style>
+    /* Defines the width of the carousel and centers it on the page */
+    .slick-carousel {
+  margin: 0 auto;
+  width: 1300px;
+  height: 500px;
+  align-items: center;
+}
 
-
+/* The width of each slide */
+.slick-slide {
+ width: 350px;
+  height: 1000px;
+}
+.slick-slide {
+  margin: 0 200px;
+}
+/* Color of the arrows */
+.slick-next::before, .slick-prev::before {
+  color: rgb(255, 255, 255);
+}
+.slick-dots li button:before {
+  color: rgb(255, 255, 255);
+}
+    
+</style>
 
 <body style="background-color: black; ">
-   
 
         <header>
               <div class="container" style="z-index: 1;">
@@ -42,12 +67,8 @@
                         </ul>
                         </div>
                 
-
                     </nav>
                 
-        
-    
-    
     <input type="checkbox" id="active">
     <label for="active" class="menu-btn"><span></span></label>
     <label for="active" class="close"></label>
@@ -65,12 +86,9 @@
     text-fill-color: transparent;">Fly With Us</a></li>
 </ul>
 </div>
-
-
                       </div>
                 </div>
-            </div>
-
+           
 
                     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400&display=swap" rel="stylesheet">
 <div style="z-index: -1;">
@@ -98,8 +116,7 @@
                         ">Discover More</button>
                     </div>  
                   
-                    <section class="favoritedestinationsection" >
-                        <div class="card-container" style="height: 300px; ">
+                   
                     <div class="favoritedestination">
                        <h5 data-aos="fade-in"
                        data-aos-anchor-placement="top-middle"
@@ -107,64 +124,73 @@
                        data-aos-duration="400"
                        data-aos-easing="ease-in"
                        data-aos-once="false" >Favorite Destination</h5>
+                        <!-- Container for the Slick Carousel -->
+   
+<div class="slick-carousel">
+    <div>
+      <div class="card" >
+                                
+        <div class="details">
+                <h6 class="primary-text"> Astor </h6>
+                <h6 class="secondary-text"> Lored ipsum sisk sfjndskfn sdfjslkfjdskl sfgfdsf sfsdfsf sdfsdfs </h6>
+                <h6 class="third-text"> $10,000 </h6> <h6 class="perperson">/person</h6>
+        </div>
+      </div>  </div>
+    <div>
+  <div class="card1" >
+                     
+            <div class="details">
+                    <h6 class="primary-text"> Satuma </h6>
+                    <h6 class="secondary-text"> Lored ipsum sisk sfjndskfn sdfjslkfjdskl sfgfdsf sfsdfsf sdfsdfs </h6>
+                    <h6 class="third-text"> $12,500 </h6> <h6 class="perperson">/person</h6>
+        </div>
+      </div>  </div>
+    <div>
+      <div class="card2" >
                         
-                       <div class="card" data-aos="fade-zoom-in"
-                       data-aos-easing="ease-in-back"
-                       data-aos-delay="300"
-                       data-aos-offset="0">
-                            
-                            <div class="details">
-                                    <h6 class="primary-text"> Astor </h6>
-                                    <h6 class="secondary-text"> Lored ipsum sisk sfjndskfn sdfjslkfjdskl sfgfdsf sfsdfsf sdfsdfs </h6>
-                                    <h6 class="third-text"> $10,000 </h6> <h6 class="perperson">/person</h6>
-                        </div>
+        <div class="details">
+                <h6 class="primary-text"> Leona </h6>
+                <h6 class="secondary-text"> Lored ipsum sisk sfjndskfn sdfjslkfjdskl sfgfdsf sfsdfsf sdfsdfs </h6>
+                <h6 class="third-text"> $15,000 </h6> <h6 class="perperson">/person</h6>
+    </div>
+  </div>     </div>
+    <div>
+      <div class="card3">
+                
+        <div class="details">
+                <h6 class="primary-text"> Leona </h6>
+                <h6 class="secondary-text"> Lored ipsum sisk sfjndskfn sdfjslkfjdskl sfgfdsf sfsdfsf sdfsdfs </h6>
+                <h6 class="third-text"> $15,000 </h6> <h6 class="perperson">/person</h6>
+    </div>
+  </div>     </div>
+  
+    <div>
+      <div class="card1" >
+                     
+        <div class="details">
+                <h6 class="primary-text"> Satuma </h6>
+                <h6 class="secondary-text"> Lored ipsum sisk sfjndskfn sdfjslkfjdskl sfgfdsf sfsdfsf sdfsdfs </h6>
+                <h6 class="third-text"> $12,500 </h6> <h6 class="perperson">/person</h6>
+    </div>
+  </div>  
+  </div>
+  <div>
+  
+    <div class="card1" >
+                     
+      <div class="details">
+              <h6 class="primary-text"> Satuma </h6>
+              <h6 class="secondary-text"> Lored ipsum sisk sfjndskfn sdfjslkfjdskl sfgfdsf sfsdfsf sdfsdfs </h6>
+              <h6 class="third-text"> $12,600 </h6> <h6 class="perperson">/person</h6>
+  </div>
+  </div>
+  </div>
+  </div>
+  
                     </div>
-
-                        <div class="card1" data-aos="fade-zoom-in"
-                        data-aos-easing="ease-in-back"
-                        data-aos-delay="300"
-                        data-aos-offset="0">
-                            
-                            <div class="details">
-                                    <h6 class="primary-text"> Satuma </h6>
-                                    <h6 class="secondary-text"> Lored ipsum sisk sfjndskfn sdfjslkfjdskl sfgfdsf sfsdfsf sdfsdfs </h6>
-                                    <h6 class="third-text"> $12,500 </h6> <h6 class="perperson">/person</h6>
-                        </div>
-                    </div>
-
-                        <div class="card2" data-aos="fade-zoom-in"
-                        data-aos-easing="ease-in-back"
-                        data-aos-delay="300"
-                        data-aos-offset="0">
-                            
-                            <div class="details">
-                                    <h6 class="primary-text"> Leona </h6>
-                                    <h6 class="secondary-text"> Lored ipsum sisk sfjndskfn sdfjslkfjdskl sfgfdsf sfsdfsf sdfsdfs </h6>
-                                    <h6 class="third-text"> $15,000 </h6> <h6 class="perperson">/person</h6>
-                        </div>
-                    </div>   
-
-                    <div class="card3" data-aos="fade-zoom-in"
-                    data-aos-easing="ease-in-back"
-                    data-aos-delay="300"
-                    data-aos-offset="0">
-                        
-                        <div class="details">
-                                <h6 class="primary-text"> Leona </h6>
-                                <h6 class="secondary-text"> Lored ipsum sisk sfjndskfn sdfjslkfjdskl sfgfdsf sfsdfsf sdfsdfs </h6>
-                                <h6 class="third-text"> $15,000 </h6> <h6 class="perperson">/person</h6>
-                    </div>
-                </div>   
-
-
-
-                       </div>  </div>       
-             </section> 
-              
-                    
             <video autoplay loop muted class="bg-video">
-                <source src="bgvideo1.mp4" type="video/mp4">
-                <source src="bgvideo1.webm" type="video/webm">
+                <source src="bgvideo.mp4" type="video/mp4">
+                <source src="bgvideo.webm" type="video/webm">
               </video> 
                
             </header>
@@ -299,5 +325,23 @@
       </footer>
 
     <script src="main.js"></script>
+
+   
+          <!-- Link to Slick JS -->
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+          <!-- Initialize the Slick Carousel -->
+          <script type="text/javascript">
+            $(document).ready(function() {
+              $('.slick-carousel').slick({
+        infinite: true,
+        slidesToShow: 3, // Shows a three slides at a time
+        slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
+        arrows: true, // Adds arrows to sides of slider
+        dots: true // Adds the dots on the bottom
+                    
+      });
+            });
+          </script>
+          
     </body>
 </html>
