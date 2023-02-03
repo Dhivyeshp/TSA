@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
 
+  
     window.onload = function() {
       AOS.init();
       console.log("AOS loaded");
