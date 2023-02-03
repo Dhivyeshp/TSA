@@ -1,102 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-
+  <link rel="stylesheet" href="navbar.css">
+  <title>Basic Information</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <link href="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
 </head>
+  <style>
+header
+{
+  color:rgb(255, 255, 255);
+  height: 125vh;
+  width: 165vh;
+  display: flex;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: 100% 100%;
+  vertical-align: middle;
 
-<style>
+}
+.box1 
+{
+  position: absolute; top: 120px; left: 1115px; right: 1115px;
+  font-size :25px;
+  /* align-items: center; */
+}
+.box2 
+{
+  position: absolute; top: 225px; left: 150px; right: 1475px;
+  color:rgb(255, 255, 255);
+  font-size:20px;    
+}
+.box3
+{
+  position: absolute; top: 250px; left: 1550px; right: 1550px;
+}
 
- 
+.box4
+{
+  position: absolute; top: 625px; left: 315px; right: 315px;
+}
+.box5
+{
+  position: absolute; top: 645px; left: 1275px; right: 150px;
+  color:rgb(255, 255, 255);
+  font-size:20px;
+}
+.box6
+{
+  position: absolute; top: 1050px; left: 100px; right: 1450px;
+
+  color:rgb(255, 255, 255);
+  font-size:20px;
+}
+.box7
+{
+  position: absolute; top: 1000px; left: 1550px; right: 1550px;
+}
+
+.box8
+{
+  position: absolute; top: 1300px; left: 0px; right: 0px;
+  font-size:20px;
+  color:white;
+  font-family:'Courier New', Courier, monospace;
+}
+
+body
+{
+  background-image: url(https://siamagazin.com/wp-content/uploads/2020/06/3t2y4u565k-min.jpg);
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+  display: flex;
+  text-align: center;
+
+}
+
+.blur
+{
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+}
+
+.button 
+  {
+      background-color: transparent;
+      border-color:white;
+      color: white;
+      text-align: center;
+      font-size: 20px;
+      padding: 10px;
+      transition: all 0.5s;
+      cursor: pointer;
+      font-family: 'Courier New', Courier, monospace;
+  }
+
+  .button span 
+  {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+  }
+
+  .button span:after 
+  {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+  }
+
+  .button:hover span {padding-right: 20px;}
+
+  .button:hover span:after 
+  {
+      opacity: 10;
+      right: 0;
+  }
+
+  input
+  {
+      border-top-style: groove;
+      border-right-style: groove;
+      border-left-style: groove;
+      border-bottom-style:groove;
+
+      background-color: transparent;
+      border-color: white;
+      color: white;
+      font-size: 20px;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 10px;
+  }
 </style>
+  <header>
+    <div class="container">
+      <nav class="navbar">
+          <img src="images/logo.png" alt="Smiley face">
+          <div class="nav-links">
+          <ul class="menu3">
+      <li><a href="Basic Infomation.html">Basic Information</a></li>
+      <li><a href="Vehicle and Safety.html">Vehicles & Safety</a></li>
+      <li><a href="#">Launch & Recovery</a></li>
+      <li><a href="#">News</a></li>
+          </ul>
+          <button class="btn-hover">Fly With Us</button>
+          </div>
+      </nav>
+  </header>>
 
-
-<body>
-
-<div class="slick-carousel">
-  <div>
-    <div class="card" >
-                              
-      <div class="details">
-              <h6 class="primary-text"> Astor </h6>
-              <h6 class="secondary-text"> Lored ipsum sisk sfjndskfn sdfjslkfjdskl sfgfdsf sfsdfsf sdfsdfs </h6>
-              <h6 class="third-text"> $10,000 </h6> <h6 class="perperson">/person</h6>
-      </div>
-    </div>  </div>
-  <div>
-<div class="card1" >
-                   
-          <div class="details">
-                  <h6 class="primary-text"> Satuma </h6>
-                  <h6 class="secondary-text"> Lored ipsum sisk sfjndskfn sdfjslkfjdskl sfgfdsf sfsdfsf sdfsdfs </h6>
-                  <h6 class="third-text"> $12,500 </h6> <h6 class="perperson">/person</h6>
-      </div>
-    </div>  </div>
-  <div>
-    <div class="card2" >
-                      
-      <div class="details">
-              <h6 class="primary-text"> Leona </h6>
-              <h6 class="secondary-text"> Lored ipsum sisk sfjndskfn sdfjslkfjdskl sfgfdsf sfsdfsf sdfsdfs </h6>
-              <h6 class="third-text"> $15,000 </h6> <h6 class="perperson">/person</h6>
-  </div>
-</div>     </div>
-  <div>
-    <div class="card3">
-              
-      <div class="details">
-              <h6 class="primary-text"> Leona </h6>
-              <h6 class="secondary-text"> Lored ipsum sisk sfjndskfn sdfjslkfjdskl sfgfdsf sfsdfsf sdfsdfs </h6>
-              <h6 class="third-text"> $15,000 </h6> <h6 class="perperson">/person</h6>
-  </div>
-</div>     </div>
-
-  <div>
-    <div class="card1" >
-                   
-      <div class="details">
-              <h6 class="primary-text"> Satuma </h6>
-              <h6 class="secondary-text"> Lored ipsum sisk sfjndskfn sdfjslkfjdskl sfgfdsf sfsdfsf sdfsdfs </h6>
-              <h6 class="third-text"> $12,500 </h6> <h6 class="perperson">/person</h6>
-  </div>
-</div>  
-</div>
-<div>
-
-  <div class="card1" >
-                   
-    <div class="details">
-            <h6 class="primary-text"> Satuma </h6>
-            <h6 class="secondary-text"> Lored ipsum sisk sfjndskfn sdfjslkfjdskl sfgfdsf sfsdfsf sdfsdfs </h6>
-            <h6 class="third-text"> $12,600 </h6> <h6 class="perperson">/person</h6>
-</div>
-</div>
-</div>
-</div>
-
-<!-- jQuery CDN -->
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<!-- slick Carousel CDN -->
-<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
-
-<script>
-  $('.slick-carousel').slick({
-  infinite: true,
-  slidesToShow: 3, // Shows a three slides at a time
-  slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
-  arrows: true, // Adds arrows to sides of slider
-  dots: true // Adds the dots on the bottom
-});
-</script>
-
-
-</body>
+  <body>
+      <div class="box1"><header><h1>Basic Information</h1></header></div>
+      <div class="box2"><p><b1>ABOUT US</b1></p><p1>Welcome to Space Horizon, the premier provider of space tourism experiences. We are a team of dedicated professionals with a passion for space exploration and a commitment to making the dream of space travel a reality for people from all walks of life. Our company was founded with the goal of providing safe and affordable access to space for everyone. We believe that the future of space travel is not just for astronauts and scientists, but for anyone who has ever looked up at the night sky and dreamed of experiencing the wonder of space firsthand.</p1></div> 
+      <div class="box3"><img src= "images/About Us.png" alt="Looking at Earth from Spacecraft"></div>
+      <div class="box4"><img src= "images/Four Seasons.png"></div>
+      <div class="box5"><p><b2>Subtitle 1</b2></p><p2>We offer a wide range of space tourism experiences, from suborbital flights to orbiting vacations, as well as custom-designed trips for groups and individuals. All of our trips are fully licensed and insured, and our pilots and crew are highly trained and experienced.</p2></div>
+      <div class="box6"><p><b2>Subtitle 2</b2></p><p2>We are constantly working to improve and expand our offerings, and we are committed to providing our customers with the best possible experience. From the moment you book your trip with us, we will be with you every step of the way, providing support and assistance to ensure that your space travel experience is truly unforgettable.</p2></div>
+      <div class="box7"><img src= "images/Group Balloons.png"></div>
+      <div class="box8">Enter your email to sign up for Space Horizon updates:<br><br> 
+      <input type="text" id="Name" name="Name" placeholder="Email Address"></input>
+      <button class="button"><span>Sign Up </span></button><br><br><br>
+        Would you want to supply Space Horizon? Contact us at supplier@spacehorizon.com.<br>
+       
+        Click here for information about Space Horizon's trademarks, copyrights, and other intellectual property.  
+    </div>
+  </body>
+  <script src="main.js"></script>
 </html>
