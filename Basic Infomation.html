@@ -10,168 +10,195 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <link href="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
-</head>
+  </head>
+
   <style>
+*{
+    box-sizing: border-box;
+  }
+
 header
 {
-  color:rgb(255, 255, 255);
-  height: 125vh;
-  width: 165vh;
+  height: 100vh;
+  width: 200vh;
+}
+
+body {
+  margin: 0;
+  overflow-y: scroll;
+}
+
+.grid {
+  height: 235vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid__item {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel-1 {
+
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 50;
+  background: #000702;
+  color: #fff;
+}
+
+.panel-2
+{
+  background-image: url(https://images.pexels.com/photos/7672884/pexels-photo-7672884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-repeat: no-repeat;
-  background-attachment:fixed;
-  background-size: 100% 100%;
-  vertical-align: middle;
-
-}
-.box1 
-{
-  position: absolute; top: 120px; left: 1115px; right: 1115px;
-  font-size :25px;
-  /* align-items: center; */
-}
-.box2 
-{
-  position: absolute; top: 225px; left: 150px; right: 1475px;
-  color:rgb(255, 255, 255);
-  font-size:20px;    
-}
-.box3
-{
-  position: absolute; top: 250px; left: 1550px; right: 1550px;
-}
-
-.box4
-{
-  position: absolute; top: 625px; left: 315px; right: 315px;
-}
-.box5
-{
-  position: absolute; top: 645px; left: 1275px; right: 150px;
-  color:rgb(255, 255, 255);
-  font-size:20px;
-}
-.box6
-{
-  position: absolute; top: 1050px; left: 100px; right: 1450px;
-
-  color:rgb(255, 255, 255);
-  font-size:20px;
-}
-.box7
-{
-  position: absolute; top: 1000px; left: 1550px; right: 1550px;
-}
-
-.box8
-{
-  position: absolute; top: 1300px; left: 0px; right: 0px;
-  font-size:20px;
-  color:white;
-  font-family:'Courier New', Courier, monospace;
-}
-
-body
-{
-  background-image: url(https://siamagazin.com/wp-content/uploads/2020/06/3t2y4u565k-min.jpg);
-  background-repeat: no-repeat;
-  background-attachment:fixed;
   background-size: cover;
-  display: flex;
-  text-align: center;
-
 }
 
-.blur
+.panel-3
 {
-  filter: blur(10px);
-  -webkit-filter: blur(10px);
+background-image: url("images/Group Balloons.png");
+background-repeat: no-repeat;
+background-size: cover;
 }
 
-.button 
-  {
-      background-color: transparent;
-      border-color:white;
-      color: white;
-      text-align: center;
-      font-size: 20px;
-      padding: 10px;
-      transition: all 0.5s;
-      cursor: pointer;
-      font-family: 'Courier New', Courier, monospace;
-  }
+.panel-4
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size: 20px;
+font-weight: 100;
+background: #000702;
+color: #fff;
+}
 
-  .button span 
-  {
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-      transition: 0.5s;
-  }
+.panel-5
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size: 18px;
+font-weight: 100;
+background: #000702;
+color: #fff;
+}
 
-  .button span:after 
-  {
-      content: '\00bb';
-      position: absolute;
-      opacity: 0;
-      top: 0;
-      right: -20px;
-      transition: 0.5s;
-  }
+.panel-6
+{
+  background-image: url(https://images.pexels.com/photos/586103/pexels-photo-586103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  .button:hover span {padding-right: 20px;}
+.panel-7
+{
+background-image: url(https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+background-repeat: no-repeat;
+background-size: cover;
 
-  .button:hover span:after 
-  {
-      opacity: 10;
-      right: 0;
-  }
+}
 
-  input
-  {
-      border-top-style: groove;
-      border-right-style: groove;
-      border-left-style: groove;
-      border-bottom-style:groove;
+.panel-8
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size: 18px;
+font-weight: 100;
+background: #000702;
+color: #fff;
+}
 
-      background-color: transparent;
-      border-color: white;
-      color: white;
-      font-size: 20px;
-      font-family: 'Courier New', Courier, monospace;
-      padding: 10px;
-  }
+.content {
+  max-width: 1200px;
+}
 </style>
   <header>
-    <div class="container">
-      <nav class="navbar">
-          <img src="images/logo.png" alt="Smiley face">
-          <div class="nav-links">
-          <ul class="menu3">
-      <li><a href="Basic Infomation.html">Basic Information</a></li>
-      <li><a href="Vehicle and Safety.html">Vehicles & Safety</a></li>
-      <li><a href="#">Launch & Recovery</a></li>
-      <li><a href="#">News</a></li>
-          </ul>
-          <button class="btn-hover">Fly With Us</button>
-          </div>
-      </nav>
+    
   </header>>
 
   <body>
-      <div class="box1"><header><h1>Basic Information</h1></header></div>
-      <div class="box2"><p><b1>ABOUT US</b1></p><p1>Welcome to Space Horizon, the premier provider of space tourism experiences. We are a team of dedicated professionals with a passion for space exploration and a commitment to making the dream of space travel a reality for people from all walks of life. Our company was founded with the goal of providing safe and affordable access to space for everyone. We believe that the future of space travel is not just for astronauts and scientists, but for anyone who has ever looked up at the night sky and dreamed of experiencing the wonder of space firsthand.</p1></div> 
-      <div class="box3"><img src= "images/About Us.png" alt="Looking at Earth from Spacecraft"></div>
-      <div class="box4"><img src= "images/Four Seasons.png"></div>
-      <div class="box5"><p><b2>Subtitle 1</b2></p><p2>We offer a wide range of space tourism experiences, from suborbital flights to orbiting vacations, as well as custom-designed trips for groups and individuals. All of our trips are fully licensed and insured, and our pilots and crew are highly trained and experienced.</p2></div>
-      <div class="box6"><p><b2>Subtitle 2</b2></p><p2>We are constantly working to improve and expand our offerings, and we are committed to providing our customers with the best possible experience. From the moment you book your trip with us, we will be with you every step of the way, providing support and assistance to ensure that your space travel experience is truly unforgettable.</p2></div>
-      <div class="box7"><img src= "images/Group Balloons.png"></div>
-      <div class="box8">Enter your email to sign up for Space Horizon updates:<br><br> 
-      <input type="text" id="Name" name="Name" placeholder="Email Address"></input>
-      <button class="button"><span>Sign Up </span></button><br><br><br>
-        Would you want to supply Space Horizon? Contact us at supplier@spacehorizon.com.<br>
-       
-        Click here for information about Space Horizon's trademarks, copyrights, and other intellectual property.  
+    <div class="grid">
+      <div class="grid__item panel-1">
+        <div class="content">
+          <h1>ABOUT US</h1>
+          <p>
+            Space Horizon is a revolutionary space tourism company founded in 2022 with a mission to make space accessible to everyone. Our team of expert astronauts and engineers have been at the forefront of space exploration and technology for over a decade.
+            With our state-of-the-art spacecrafts and cutting-edge launch systems, we're able to offer unparalleled experiences for thrill-seekers and space enthusiasts alike. Our innovative training programs and advanced safety measures ensure that every journey with us is not only exciting, but also safe.
+            At Space Horizon, we're more than just a company, we're a community of dreamers and explorers. We believe that the final frontier should be accessible to all, and we're committed to making that a reality. So come join us on this journey, and be a part of history in the making.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid__item panel-2">
+        <div class="content">
+        </div>
+      </div>
+
+      <div class="grid__item panel-3">
+        <div class="content">
+        </div>
+      </div>
+
+      <div class="grid__item panel-4">
+        <div class="content">
+          <h1>Our Fleet</h1>
+          <p>
+            Our fleet of specially designed space balloons offers a unique and unparalleled experience for 
+            thrill-seekers and space enthusiasts alike. Soar to new heights and marvel at the breathtaking 
+            views of the cosmos from the comfort of our state-of-the-art balloons. With a capacity to carry 
+            up to 12 passengers at a time, you and your friends can embark on the adventure of a lifetime. 
+            Each balloon is equipped with the latest in space travel technology and safety features, ensuring 
+            a smooth and unforgettable journey. Get ready to embark on a journey like no other and book your 
+            space balloon adventure today!
+          </p>
+        </div>
+      </div>
+
+      <div class="grid__item panel-5">
+        <div class="content">
+          <h1>Future Development</h1>
+          <p>
+            Space Horizon is proud to announce a significant breakthrough in our research and development 
+            department. Our dedicated scientists and engineers have been working tirelessly to revolutionize 
+            the space tourism industry, and we are thrilled to announce that their efforts have finally paid 
+            off. With this new technology, we can offer our customers even more exciting and immersive space 
+            travel experiences. This breakthrough has allowed us to significantly reduce the cost and increase
+            the safety of space travel, making it more accessible to people from all walks of life. Our team 
+            will continue to push the boundaries of space travel and we can't wait to share the results of 
+            their efforts with you in the near future. Book your space adventure with Space Horizon today and 
+            be a part of the next great frontier in space tourism!
+          </p>
+        </div>
+      </div>
+
+      <div class="grid__item panel-6">
+        <div class="content">
+        </div>
+      </div>
+
+      <div class="grid__item panel-7">
+        <div class="content">
+        </div>
+      </div>
+
+      <div class="grid__item panel-8">
+        <div class="content">
+          <h1>Benefit Of Space Horizon</h1>
+          <p>
+            At Space Horizon, we understand the importance of protecting our planet for future generations. That
+            's why we have made it a priority to ensure that our space tourism operations have a minimal impact 
+            on the environment. We have implemented a series of measures to reduce our carbon footprint, from 
+            using sustainable materials in the construction of our spacecrafts to powering our facilities with
+             renewable energy sources.Our spacecrafts are designed with the latest eco-friendly technology, 
+             including advanced propulsion systems that generate minimal emissions and innovative heat 
+             management systems to minimize energy waste. We have also implemented strict waste management 
+             protocols to ensure that any waste generated during our space missions is disposed of responsibly.
+            We are committed to continuous improvement and regularly review our operations to identify any 
+            areas where we can make further environmentally positive changes. Our goal is to provide amazing 
+            space travel experiences while preserving the beauty and wonder of our planet for future generations.
+            Book your space adventure with Space Horizon today and feel good knowing that you are supporting a \
+            company that cares about the environment.
+          </p>
+        </div>
+      </div>
     </div>
   </body>
   <script src="main.js"></script>
