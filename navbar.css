@@ -15,8 +15,8 @@ body{
 
 }
 header{
-    height: 1800px;
-    width: 1200px;
+    height: 1250px;
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
 	  background-size: cover;
  
@@ -94,12 +94,12 @@ height: 100px;
 
 
 .navbar a{
-  color: rgb(131, 131, 131);
+  color: rgb(255, 255, 255);
     transition: color 0.7s ease;
   }
 
   .navbar a:hover{
-      color: white;
+      color: rgb(255, 255, 255)
 
   }
  .menu3  {
