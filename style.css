@@ -35,6 +35,60 @@ header{
   -webkit-mask-image: linear-gradient( black, transparent);
   mask-image: linear-gradient( black, transparent);
 }
+.bg-video1{
+  height: 900px;
+  width: cover;
+  -webkit-mask-image: linear-gradient( rgb(255, 255, 255), transparent);
+  mask-image: linear-gradient( rgb(255, 255, 255), transparent);
+}
+
+
+
+
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.stroke-solid {
+  stroke-dashoffset: 0;
+  stroke-dashArray: 300;
+  stroke-width: 3px;
+  transition: stroke-dashoffset 1s ease, 
+              opacity 1s ease;
+}
+
+.icon {
+  transform: scale(.8);
+  transform-origin: 50% 50%;
+  transition: transform 200ms ease-out;
+  color: white;
+}
+#play:hover .stroke-solid {
+  opacity: 1;
+  stroke-dashoffset: 300;
+}
+
+#play:hover .icon {
+  transform: scale(.9);
+}
+
+#play{
+  margin-left: 2300px;
+  margin-top: 655px;
+}
+.pausetext{
+position: absolute;
+margin-left: 2000px;
+  margin-top: 570px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 100;
+  color: rgb(127, 127, 127);
+  z-index: 10;
+}
+
+
+
 
 video {
   height: 500px;
@@ -537,15 +591,26 @@ nav ul li{
 
     .favoritedestination h5{
       color: white;
-      font-family: 'Work Sans', sans-serif; font-weight: 300; text-align: left;
+      font-family: 'Work Sans', sans-serif; font-weight: 400; text-align: left;
       font-size: 60px;
       position: absolute;
-      margin-top: -700px;
+      margin-top: -750px;
       align-content: center;
       text-align: center;
       z-index: -1;
       width: 100%;
-      transition: transform 0.3s ease-in-out;
+    }
+
+    .favoritedestination p{
+      color: white;
+      font-family: 'Work Sans', sans-serif; font-weight: 300; text-align: left;
+      font-size: 20px;
+      position: absolute;
+      margin-top: -600px;
+      align-content: center;
+      text-align: center;
+      z-index: -1;
+      width: 500px;
     }
 
     .favoritedestination{
