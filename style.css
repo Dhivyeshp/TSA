@@ -27,7 +27,7 @@ header{
 
 .bg-video {
   height: 1400px;
-  width: cover;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -89,7 +89,7 @@ font-weight: 100;
 
 .pausetext1{
   position: absolute;
-  margin-left: 250px;
+  margin-left: 240px;
     margin-top: 720px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
@@ -644,11 +644,12 @@ nav ul li{
     }
 
     .favoritedestination{
+      margin-left: 600px;
       margin-top:  1000px;
       display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
       height: 600px;
     }
 
@@ -824,10 +825,9 @@ nav ul li{
   .thirdsection .bg-image-3 {
    
     height: 1000px;
-    background-image: url(crew.png);
+    background-image: url(https://cdn.sanity.io/images/2yyup5mx/production/06cb0813467b40fa021e7aef3c4875ef5a22e17d-5184x3456.jpg?w=2048&q=75&fit=clip&auto=format);
+    background-repeat: no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;-webkit-mask-image: linear-gradient( black, transparent);
-    mask-image: linear-gradient( black, transparent);
   }
 
  

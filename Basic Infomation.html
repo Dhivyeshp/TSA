@@ -10,6 +10,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <link href="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
   </head>
 
   <style>
@@ -19,19 +21,32 @@
 
 header
 {
-  height: 99vh;
+  height: 100vh;
   width: 100%;
 
-  background-image: url(https://images.pexels.com/photos/5439/earth-space.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
 
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 70px;
-  font-weight: 100;
   color: rgb(0, 0, 0);
+  
 }
 
+.basicbg {
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .navbar {
+    position: relative;
+    z-index: 1;
+  }
+
+.basicbg{
+  height: 1500px;
+  width: 100%;
+  margin-top: -130px;
+  z-index: -10;
+}
 
 body {
   margin: 0;
@@ -120,7 +135,10 @@ color: #fff;
   max-width: 1200px;
 }
 </style>
-  <header style="background-color: black; ">
+  <header>
+    
+   
+
     <div class="container" style="z-index: 1;">
       <div class="navcontainer">
           <nav class="navbar" >
@@ -136,9 +154,12 @@ color: #fff;
           <button class="btn-hover">Fly With Us</button>
               </ul>
               </div>
-      
+
+
           </nav>
       
+       
+
 <input type="checkbox" id="active">
 <label for="active" class="menu-btn"><span></span></label>
 <label for="active" class="close"></label>
@@ -159,9 +180,15 @@ text-fill-color: transparent;">Fly With Us</a></li>
             </div>
       </div>
 
-      <h1 style="position: absolute; top: 370px; left: 300px;">ABOUT SPACE HORIZON</h1>
-    <p style="position: absolute; top: 540px; left: 300px;"> "Making the impossible possible - Space Horizon is committed to delivering an incredible space travel 
-        experience, combining comfort, safety, and adventure......"</p>
+      
+      <h1 style="position: absolute;  text-shadow: #000702; top: 370px; left: 300px;  font-family: 'Oswald', sans-serif; font-size: 85px; color: white;" >ABOUT SPACE HORIZON</h1>
+    <p style="position: absolute; text-shadow: #000702; width: 800px; top: 510px; left: 300px;     font-family: Arial, Helvetica, sans-serif;  color: white;"> Making the impossible possible - Space Horizon is committed to delivering an incredible space travel 
+        experience, combining comfort, safety, and adventure.</p>
+
+        <video id="basicbg" autoplay loop muted class="basicbg">
+          <source src="basic.mp4" type="video/mp4">
+        </video> 
+        
   </header>
 
   <body>
