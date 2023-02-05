@@ -15,7 +15,7 @@ body{
 
 }
 header{
-    height: 1800px;
+    height: 1900px;
     width: 1200px;
     font-family: Arial, Helvetica, sans-serif;
 	  background-size: cover;
@@ -27,7 +27,7 @@ header{
 
 .bg-video {
   height: 1400px;
-  width: cover;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -35,6 +35,72 @@ header{
   -webkit-mask-image: linear-gradient( black, transparent);
   mask-image: linear-gradient( black, transparent);
 }
+.bg-video1{
+  height: 900px;
+  width: cover;
+  -webkit-mask-image: linear-gradient( rgb(255, 255, 255), transparent);
+  mask-image: linear-gradient( rgb(255, 255, 255), transparent);
+}
+
+
+
+
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.stroke-solid {
+  stroke-dashoffset: 0;
+  stroke-dashArray: 300;
+  stroke-width: 3px;
+  transition: stroke-dashoffset 1s ease, 
+              opacity 1s ease;
+}
+
+.icon {
+  transform: scale(.8);
+  transform-origin: 50% 50%;
+  transition: transform 200ms ease-out;
+  color: white;
+}
+#play:hover .stroke-solid {
+  opacity: 1;
+  stroke-dashoffset: 300;
+}
+
+#play:hover .icon {
+  transform: scale(.9);
+}
+
+#play{
+  margin-left: 2300px;
+  margin-top: 655px;
+}
+
+
+
+#play1:hover .stroke-solid {
+  opacity: 1;
+  stroke-dashoffset: 300;
+}
+
+#play1:hover .icon {
+  transform: scale(.9);
+}
+
+#play1{
+  position: absolute;
+  z-index: 10;
+  margin-left: 160px;
+  margin-top: 3605px;
+}
+
+
+
+
+
+
 
 video {
   height: 500px;
@@ -537,23 +603,35 @@ nav ul li{
 
     .favoritedestination h5{
       color: white;
-      font-family: 'Work Sans', sans-serif; font-weight: 300; text-align: left;
+      font-family: 'Work Sans', sans-serif; font-weight: 400; text-align: left;
       font-size: 60px;
       position: absolute;
-      margin-top: -700px;
+      margin-top: -750px;
       align-content: center;
       text-align: center;
       z-index: -1;
       width: 100%;
-      transition: transform 0.3s ease-in-out;
+    }
+
+    .favoritedestination p{
+      color: white;
+      font-family: 'Work Sans', sans-serif; font-weight: 300; text-align: left;
+      font-size: 20px;
+      position: absolute;
+      margin-top: -600px;
+      align-content: center;
+      text-align: center;
+      z-index: -1;
+      width: 500px;
     }
 
     .favoritedestination{
-      margin-top:  1000px;
+      margin-left: 800px;
+      margin-top:  1100px;
       display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: cover;
       height: 600px;
     }
 
@@ -693,15 +771,19 @@ nav ul li{
     .firstsection {
         height: 1000px;
         scroll-behavior: smooth;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
     }
 
     .firstsection .bg-image-1 {
 
       height: 1000px;
-      background-image: url(  https://cdn.sanity.io/images/2yyup5mx/production/d5a915cd9db3444998926f61645b6f83a53aced0-5000x2813.jpg?w=2048&q=75&fit=clip&auto=format);
+      background-image: url(images/design.jpg);
       background-repeat: no-repeat;
-
+      box-shadow: #000;
+      -webkit-mask-image: linear-gradient( black, transparent);
+  mask-image: linear-gradient( black, transparent);
       background-size: cover;
+      box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
     }
 
  
@@ -729,7 +811,7 @@ nav ul li{
   .thirdsection .bg-image-3 {
    
     height: 1000px;
-    background-image: url(https://cdn.sanity.io/images/2yyup5mx/production/06cb0813467b40fa021e7aef3c4875ef5a22e17d-5184x3456.jpg?w=2048&q=75&fit=clip&auto=format);
+    background-image: url(crew.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1195,12 +1277,25 @@ input[type="checkbox"]{
       visibility: hidden;
     }
 
+    #play{
+      margin-left: 2320px;
+      margin-top: 655px;
+    }
+  
+
 }
 
 
 
 /* Monitor */
 @media only screen and (min-width: 1440px) and (max-width: 1700px){
+
+  #play{
+    margin-left:1275px;
+    margin-top: 515px;
+  }
+
+
   .main-subtext {
     left: 68px;
     top: 250px;
@@ -1242,10 +1337,6 @@ input[type="checkbox"]{
 }
 
 
-  .btn-hover {
-    float: right;
-  }
-
 
   .logoimage{
     display: none;
@@ -1263,6 +1354,14 @@ input[type="checkbox"]{
 
 /* Laptop */
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  
+  
+#play{
+  margin-left:1190px;
+  margin-top: 475px;
+}
+
+
   .main-subtext {
     left: 68px;
     top: 220px;
@@ -1302,7 +1401,6 @@ input[type="checkbox"]{
 .navbar .nav-links ul li {
   margin: 0 10px;
   margin-top: 55px;
-
 }
 .menu3 li{
 	right: -610px;
@@ -1347,9 +1445,63 @@ display: inline-block;
   }
 }
 
+  /* Ipad Landscape */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1224px) 
+and (orientation: landscape) {
+  #play{
+    margin-left:1010px;
+    margin-top: 480px;
+  }
+  .favoritedestination{
+    margin-left: 550px;
+    margin-top:  900px;
+    display: flex;
+align-items: center;
+justify-content: center;
+width: 100px;
+    height: 800px;
+  }
+  .slick-carousel {
+    margin: 0 auto;
+    width: 1000px;
+    height: 600px;
+    align-items: center;
+    margin-top: 200px;
+  }
+   .slick-slide {
+     margin: 0 80px;
+   }
+}
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) { 
+  .favoritedestination{
+    margin-left: 50px;
+    margin-top:  900px;
+    display: flex;
+align-items: center;
+justify-content: center;
+width: 700px;
+    height: 800px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .slick-carousel {
+    margin: 0 auto;
+    width: 600px;
+    align-items: center;
+    margin-top: 10px;
+  }
+   .slick-slide {
+     margin: 0 200px;
+   }
+  #play{
+    margin-left:650px;
+    margin-top: 525px;
+  }
+
+
   .main-subtext {
     left: 68px;
     top: 200px;
@@ -1416,7 +1568,7 @@ display: inline-block;
     height: 36px;
 }
 .menu-btn{
-  margin-right: 250px;
+  margin-right: 80px;
   margin-top: 20px;
 }
 
@@ -1456,8 +1608,13 @@ display: inline-block;
 
 /* Mobile */
 @media only screen and (min-width: 500px) and (max-width: 767px) {
-  
- 
+  #play{
+    margin-left:435px;
+    margin-top: 125px;
+    visibility: hidden;
+
+  }
+
 .logoimage{
   display: none;
   visibility: hidden;
@@ -1541,7 +1698,15 @@ font-size: 11px;
 
 /* Smaller Mobiles */
 @media only screen and (max-width: 499px) {
-  
+  #play{
+    margin-left:435px;
+    margin-top: 125px;
+    visibility: hidden;
+
+  }
+
+
+ 
  
 .logoimage{
   display: none;
