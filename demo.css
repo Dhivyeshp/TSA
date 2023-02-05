@@ -38,6 +38,7 @@
       body
       {
         background-color: black;
+        overflow-x: hidden;
       }
       
       .parallax-item {
@@ -121,9 +122,34 @@
         position: absolute; top: 210vh; left: 130vh;
       }
 
+
+
       .parallax-item:nth-child(4) 
       {
-        background: #1565c0;
+        background: url("https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg?w=2000&t=st=1675547617~exp=1675548217~hmac=e8e057e02fb04d42cdd5c22dea5f37ce20ab96427271d28268c95aa097b2cfcf");
+        min-height: 90vh;
+        background-size: cover;
+        background-attachment: fixed;
+
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        font-family: Work Sans, sans-serif;
+        padding-left: 400px;
+        padding-right: 400px;
+      }
+
+      .parallax-item:nth-child(5) 
+      {
+        background: url("https://images.pexels.com/photos/586056/pexels-photo-586056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+        min-height: 100vh;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      .parallax-item:nth-child(6) 
+      {
+        background: #c08115;
       }
       
       @media screen and (max-width: 768px) 
