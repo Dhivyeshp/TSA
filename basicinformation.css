@@ -1,0 +1,132 @@
+
+    *{
+      box-sizing: border-box;
+      }
+  
+  header
+  {
+    height: 100vh;
+    width: 100%;
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    
+  }
+  
+  .basicbg {
+      position: absolute;
+      z-index: -1;
+    }
+    
+    .navbar {
+      position: relative;
+      z-index: 1;
+    }
+  
+  .basicbg{
+    height: 1500px;
+    width: 100%;
+    margin-top: -130px;
+    z-index: -10;
+  }
+  
+  body {
+    margin: 0;
+    overflow-y: scroll;
+  }
+  
+  .grid {
+    height: 235vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .grid__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .grid p
+  {
+    margin-top: 50px;
+    font-family: 'Barlow', sans-serif;
+  }
+  
+  .grid h1 
+  {
+    font-family: 'Roboto', sans-serif;
+    color: #051fb1;
+    font-weight: 20;
+  }
+  
+  .panel-1 {
+    font-size: 35px;
+    font-weight: 50;
+    background: #ffffff;
+    color: #000000;
+  }
+  
+  .panel-2
+  {
+    background-image: url(https://images.pexels.com/photos/7672884/pexels-photo-7672884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .panel-3
+  {
+  background-image: url("images/Group Balloons.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+  .panel-4
+  {
+  font-size: 35px;
+  font-weight: 100;
+  background: #ffffff;
+  color: #000000;
+  }
+  
+  .panel-5
+  {
+  font-size: 35px;
+  font-weight: 100;
+  background: #ffffff;
+  color: #000000;
+  }
+  
+  .panel-6
+  {
+    background-image: url(https://images.pexels.com/photos/586103/pexels-photo-586103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .panel-7
+  {
+  background-image: url(https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  }
+  
+  .panel-8
+  {
+  font-size: 35px;
+  font-weight: 100;
+  background: #ffffff;
+  color: #000000;
+  }
+  
+  .content {
+    max-width: 1200px;
+  }
+  
