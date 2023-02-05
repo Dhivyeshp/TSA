@@ -1,188 +1,191 @@
-/*-------------------------------------scroll bar customization-------------------------------------------*/
-body::-webkit-scrollbar 
-{
-    width: 8px;
-} 
+        /*-------------------------------------scroll bar customization-------------------------------------------*/
+        body::-webkit-scrollbar 
+        {
+            width: 8px;
+        } 
 
-body::-webkit-scrollbar-thumb 
-{
-    border: 1000px solid rgb(134, 133, 133);
-    border-radius: 40px;
-    background-clip: padding-box;
-    transition: height 0.2s ease-in-out;
-} 
+        body::-webkit-scrollbar-thumb 
+        {
+            border: 1000px solid rgb(134, 133, 133);
+            border-radius: 40px;
+            background-clip: padding-box;
+            transition: height 0.2s ease-in-out;
+        } 
 
-body::-webkit-scrollbar-track 
-{
-    scroll-padding-right: 100px;
-    background-color: transparent;
-} 
-/*---------------------------------------------------------------------------------------------------------*/
-
-.background
-{
-    position: absolute; top: 100px; left: 800px;
-    height: 700px; 
-    width: 700px;
-}
-
-.motto
-{
-    font-size:20px;
-    font-weight:lighter;
-    color:white;
-    font-family: 'Work Sans', sans-serif;
-    position: absolute; top: 410px; left:50px;
-    text-align: left;
-}
-
-
-body
-{
-    background-color: rgb(0, 0, 0);
-    width: 1000px;
-    height: 6000px;
+        body::-webkit-scrollbar-track 
+        {
+            scroll-padding-right: 100px;
+            background-color: transparent;
+        } 
+        /*-------------------------------------------------------Animations-----------------------------------------------------------------*/
+        .fade-in 
+        {
+            animation: fadein 5s;
+        }
+        
+        @keyframes fadein 
+        {
+            from { opacity: 0;}
+            to   { opacity: 1;}
+        }
+      
     
-    overflow:visible;
-    backface-visibility: hidden;
-    perspective: 1000;
-    transform: translate3d(0,0,0);
-    overflow-x: hidden;
-}
+      html 
+      {
+        scroll-behavior: smooth;
+      }
 
-.fade-in 
-{
-    animation: fadein 5s;
-}
+      body
+      {
+        background-color: black;
+        overflow-x: hidden;
+      }
+      
+      .parallax-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-family: Montserrat, sans-serif;
+        width: 100%;
+        min-height: 100vh;
+      }
 
-@keyframes fadein 
-{
-    from { opacity: 0;}
-    to   { opacity: 1;}
-}
+      .parallax-item:first-child 
+      {
+        background: url("images/background1.png");
+        backdrop-filter: 10px;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 100vh;
+      }
+      
+      .parallax-item:nth-child(1) h2 
+      {
+        color: white;
+        font-family: Work Sans, sans-serif;
+        font-size: 100px;
+        align-items: center;
+      }
 
-.title 
-{
-    font-size:50px;
-    font-weight:bolder;
-    color:white;
-    font-family:'Courier New', Courier, monospace;
-    position: absolute; top: 350px; left:50px
-}
+      .parallax-item:nth-child(1) h4
+      {
+        color: white;
+        font-family: Work Sans, sans-serif;
+        position: absolute;
+        top: 60vh;
+        font-size: 20px;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      
+      .parallax-item:nth-child(2) 
+      {
+        background: url("https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg?w=2000&t=st=1675547617~exp=1675548217~hmac=e8e057e02fb04d42cdd5c22dea5f37ce20ab96427271d28268c95aa097b2cfcf");
+        min-height: 90vh;
+        background-size: cover;
+        background-attachment: fixed;
 
-.description
-{
-    font-size: 30px;
-    color:white;
-    font-weight:lighter;
-    font-family: 'Work Sans', sans-serif;
-    position: absolute; top: 700px; left: 300px; right: -200px;
-    overflow:visible;
-    text-align: center;
-    white-space:normal;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        font-family: Work Sans, sans-serif;
+        padding-left: 400px;
+        padding-right: 400px;
+      }
+      
+      .parallax-item:nth-child(3) 
+      {
+        background: url("https://media.istockphoto.com/id/1148136785/photo/purple-pink-black-abstract-background.jpg?s=612x612&w=0&k=20&c=G5G41QrXqIjq9un7wYRMMyozM_4pgcb-CRs7dJXzj8g=");
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 200vh;
+        max-height: 200vh;
+      }
 
-}
+      .parallax-item:nth-child(3) h2
+      {
+        position: absolute; top: 210vh;
+        font-size: 25px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        padding-left: 50px;
+        padding-right: 700px;
+      }
 
-.vehicles
-{
-    font-size: 30px;
-    color:white;
-    font-weight:lighter;
-    font-family: 'Work Sans', sans-serif;
-    position: absolute; top: 1365px; left: 50px; right: 310px;
-    overflow:visible;
-    text-align: center;
-    white-space:normal;
-}
+      .parallax-item:nth-child(3) img
+      {
+        width: 500px;
+        height: 500px;
+        border-radius: 20%;
 
-.pic1
-{
-    position: absolute; top: 1370px; left: 710px;
-    height: 600px; 
-    width: 700px;
-}
-/*--------------------------------------------------------------------------*/
-
-
-div
-{
-    display:inline-block;
-    overflow:hidden;
-    white-space:nowrap;
-}
-
-span:last-of-type 
-{
-    width: 0px;
-    animation: reveal 7s infinite;
-}
-
-span:last-of-type 
-{
-    margin-left:-355px;
-    animation: slidein 7s infinite;
-}
+        position: absolute; top: 210vh; left: 130vh;
+      }
 
 
-@keyframes showup 
-{
-    0% {opacity:0;}
-    20% {opacity:1;}
-    80% {opacity:1;}
-    100% {opacity:0;}
-}
 
-@keyframes slidein 
-{
-    0% { margin-left:-800px; }
-    20% { margin-left:-800px; }
-    35% { margin-left:0px; }
-    100% { margin-left:0px; }
-}
+      .parallax-item:nth-child(4) 
+      {
+        background: url("https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg?w=2000&t=st=1675547617~exp=1675548217~hmac=e8e057e02fb04d42cdd5c22dea5f37ce20ab96427271d28268c95aa097b2cfcf");
+        min-height: 90vh;
+        background-size: cover;
+        background-attachment: fixed;
 
-@keyframes reveal 
-{
-    0% {opacity:0;width:0px;}
-    20% {opacity:1;width:0px;}
-    30% {width:355px;}
-    80% {opacity:1;}
-    100% {opacity:0;width:355px;}
-}
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        font-family: Work Sans, sans-serif;
+        padding-left: 400px;
+        padding-right: 400px;
+      }
 
-.safety
-{
-    font-size: 30px;
-    color:white;
-    font-family: 'Work Sans', sans-serif;
-    font-weight:lighter;
-    position: absolute; top: 2750px; left: 150px; right: -300px;
-    overflow: visible;
-    text-align: center;
-    white-space: normal;
-}
+      .parallax-item:nth-child(5) 
+      {
+        background: url("https://img.freepik.com/free-photo/galaxy-night-landscape_23-2148895320.jpg?w=2000&t=st=1675626138~exp=1675626738~hmac=f0641d28c5fefe758318ce06f49a2a9a85e111749a331410b431753bc84de952");
+        min-height: 100vh;
+        background-size: cover;
+        background-attachment: fixed;
+      }
 
-.safety-list
-{
-    font-size: 25px;
-    color:white;
-    font-family: 'Work Sans', sans-serif;
-    font-weight:lighter;
-    position: absolute; top: 3500px; left: 800px; right: -450px;
-    overflow: visible;
-    text-align: left;
-    white-space: normal;
-}
+      .parallax-item:nth-child(5) h1
+      {
+        color: white;
+        font-size: 50px;
+        font-family: Work Sans, sans-serif;
+        position: absolute;
+        top: 490vh;
+        left: 10vh;
+      }
 
-.pic2
-{
-    position: absolute; top: 3470px; left: 10px;
-    height: 400px; 
-    width: 700px; 
-}
+      .parallax-item:nth-child(5) img
+      {
+        border-radius: 20%;
+        position: absolute;
+        left: 120vh;
+        width: 650px;
+        height: 600px;
+      }
 
-.pic3
-{
-    position: absolute; top: 3900px; left: 10px;
-    height: 400px; 
-    width: 700px; 
-}
+      .parallax-item:nth-child(5) h3
+      {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        padding-left: 30px;
+        padding-right: 700px;
+      }
+
+      .parallax-item:nth-child(6) 
+      {
+        background: #c08115;
+        min-height: 40vh;
+      }
+      
+      @media screen and (max-width: 768px) 
+      {
+        .parallax-item h2 
+        {
+          font-size: 1.5rem;
+        }
+      }
