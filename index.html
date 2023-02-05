@@ -55,19 +55,189 @@
   right: -150px;
 } 
     
+/* Everthing larger than a regular monitor */
+
+@media only screen and (min-width: 1701px) and (max-width: 3200px){
+  .favoritedestination{
+    margin-left: 600px;
+    margin-top:  1100px;
+    display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+    height: 600px;
+  }
+}
+
+
+/* Monitor */
+@media only screen and (min-width: 1440px) and (max-width: 1700px){
+  .favoritedestination{
+    margin-left: 240px;
+    margin-top:  1100px;
+    display: flex;
+align-items: center;
+justify-content: center;
+width: 1000px;
+    height: 600px;
+  }
+
+  .slick-carousel {
+    margin: 0 auto;
+    width: 1000px;
+    height: 600px;
+    align-items: center;
+    margin-top: 200px;
+  }
+   .slick-slide {
+     margin: 0 55px;
+   }
+   .slick-dots {
+  bottom: 100px; /* adjust as needed */
+
+}
+  }
+
+/* Laptop */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  header{
+    height: 1700px;
+  
+ 
+}
+.favoritedestination{
+  margin-left: 405px;
+  margin-top:  900px;
+  display: flex;
+align-items: center;
+justify-content: center;
+width: 500px;
+  height: 600px;
+}
+.slick-carousel {
+  margin: 0 auto;
+  width: 1000px;
+  height: 600px;
+  align-items: center;
+  margin-top: 200px;
+}
+ .slick-slide {
+   margin: 0 35px;
+ }
+
+ .slick-prev{
+  left: -100px;
+} 
+.slick-next{
+  right: -100px;
+} 
+.slick-dots {
+  bottom: 100px; /* adjust as needed */
+
+  }
+}
+
+
+  /* Ipad Landscape */
+
+  @media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1224px) 
+and (orientation: landscape) {
+  header{
+    height: 1800px;
+  
+ 
+}
+  #play{
+    margin-left:1010px;
+    margin-top: 480px;
+  }
+  .favoritedestination{
+    margin-left: 540px;
+    margin-top:  900px;
+    display: flex;
+align-items: center;
+justify-content: center;
+width: 100px;
+    height: 800px;
+  }
+  .slick-carousel {
+    margin: 0 auto;
+    width: 900px;
+    height: 600px;
+    align-items: center;
+    margin-top: 200px;
+  }
+   .slick-slide {
+     margin: 0 180px;
+   }
+   .slick-prev{
+  left: -50px;
+} 
+.slick-next{
+  right: -50px;
+} 
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px) { 
+  header{
+    height: 1600px;
+}
+   .slick-prev{
+  left: -50px;
+} 
+.slick-next{
+  right: -50px;
+} 
+  .favoritedestination{
+    margin-left: 50px;
+    margin-top:  700px;
+    display: flex;
+align-items: center;
+justify-content: center;
+width: 700px;
+    height: 800px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .slick-carousel {
+    margin: 0 auto;
+    width: 600px;
+    align-items: center;
+    margin-top: 30px;
+  }
+   .slick-slide {
+     margin: 0 170px;
+   }
+  }
+
+  
+
+/* Smaller Mobiles */
+@media only screen and (max-width: 767px) {
+  header{
+    height: 700px;
+}
+
+
+  .favoritedestination{
+    visibility: hidden;
+} 
+}     
 </style>
 
 <body style="background-color: black; ">
 
         <header>
-              <div class="container" style="z-index: 1;">
+              <div class="container" style="z-index: 1; width: cover;">
                 <div class="navcontainer">
                     <nav class="navbar" >
                       <a href="index.html">
                         <img src="images/logo.png"  alt="A picture of a sunset over the ocean">
                       </a>
                         <div class="nav-links">
-                        <ul class="menu3"  class="fading-text" >
+                        <ul class="menu3"  class="fading-text">
                     <li><a href="Basic Infomation.html">Basic Information</a></li>
                     <li><a href="Vehicle and Safety.html">Vehicles & Safety</a></li>
                     <li><a href="launchandrecovery.html">Launch & Recovery</a></li>
@@ -126,7 +296,6 @@
                     </div>  
 
 
-                    <h3 class="pausetext">Click here to pause the video -></h1>
 
         
                       <div class="playbtn">
@@ -221,7 +390,7 @@
   
                     </div>
             <video id="bg-video" autoplay loop muted class="bg-video">
-                <source src="bgvideo.mp4" type="video/mp4">
+                <source src="bgvideo11.mp4" type="video/mp4">
                 <source src="bgvideo.webm" type="video/webm">
               </video> 
                
@@ -254,7 +423,6 @@
             </div>
         </div>
        
-        <h3 class="pausetext1">-- Click here to pause the video</h1>
 
         
           <div class="playbtn">
