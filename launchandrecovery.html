@@ -1,129 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Horizon</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="footer.css">
+  </head>
 
-</head>
 <style> 
-body{
+body
+{
     background-color: black;
+    margin: 0;
+    overflow-y: scroll;
 }
 
-.head{
-    color: white;
-
-    text-align: left;
-
-    font-size: 450%;
-    
-    font-family: Arial, Helvetica, sans-serif;
-    
+*{
+    box-sizing: border-box;
+   }
   
-    height: 700px;
-
-    padding-left: 40px;
-
-    padding-top: 200px;
-    
-}
-.phar{
-    color: white;
-    font-size: 30%;
-    padding-left: 5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
-
-}
-.ded{font-size: 220%;
-text-align: left;
-padding-left: 40px;
-padding-top: 250px;
-font-family: Arial, Helvetica, sans-serif;
-color: black;
-}
-
-@keyframes fadeInOutAnimation {
-    0% {
-      opacity: 0;
-
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  .iamg 
-
+  header
   {
-
-    cursor: pointer;
-    animation: fadeInOutAnimation 1.5s ease-in;
-    animation-timing-function: ease-in;
-  }
-
-
-
-
-</style>
-<body>
+    height: 100vh;
+    width: 100%;
   
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
     
+  }
+  
+  .basicbg {
+      position: absolute;
+      z-index: -1;
+    }
+    
+    .navbar {
+      position: relative;
+      z-index: 1;
+    }
+  
+  .basicbg{
+    height: 200vh;
+    width: 100%;
+    margin-top: -130px;
+    z-index: -10;
+  }
+  
+  .grid {
+    height: 435vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .grid__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .grid p
+  {
+    margin-top: 50px;
+    font-family: 'Barlow', sans-serif;
+  }
+  
+  .grid h1 
+  {
+    font-family: 'Roboto', sans-serif;
+    color: #051fb1;
+    font-weight: 20;
+  }
+  
+  .panel-1 {
+    font-size: 35px;
+    font-weight: 50;
+    background: #ffffff;
+    color: #000000;
+  }
+  
+  .panel-2
+  {
+    background-image: url(https://images.pexels.com/photos/7672884/pexels-photo-7672884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .panel-3
+  {
+    background-image: url("images/Group Balloons.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .panel-4
+  {
+    font-size: 35px;
+    font-weight: 100;
+    background: #ffffff;
+    color: #000000;
+  }
+  
+  .panel-5
+  {
+    font-size: 35px;
+    font-weight: 100;
+    background: #ffffff;
+    color: #000000;
+  }
+  
+  .panel-6
+  {
+    background-image: url(https://images.pexels.com/photos/586103/pexels-photo-586103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .panel-7
+  {
+  background-image: url(https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  }
+  
+  .panel-8
+  {
+  font-size: 35px;
+  font-weight: 100;
+  background: #ffffff;
+  color: #000000;
+  }
+  
+  .content 
+  {
+    max-width: 1200px;
+  }
+</style>
 
-   <div class="head" style="background-image:url(https://images.pexels.com/photos/2159/flight-sky-earth-space.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);">
-    <div style="padding: top 150px;
-    padding-left: 60px;
-    color: lightblue;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-decoration: underline;"><small style="font-size: 20%;"><b>Innovate Safely</b></small></div>
-    <strong>LAUNCH AND <br> RECOVERY</strong>
-    <div class="phar"><small style="font-weight: 200;">we care about <b>youre experiences</b></small></div>
 
-</div>
-
-<div style="background-color:white; 
-height: 600px;">
-<div><strong style="font-size: 120%; position: absolute; padding-top: 220px;
-padding-left: 90px;
-color: darkblue;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-text-decoration: underline ;
-font-weight: 300;
-"><b>Seating</b></strong></div>
-
-<div class="ded"> <p> <b>PEAK</b> COMFORT <b>&</b> <br> <b> EXTREME</b> SAFETY  </b></p></div>
- 
-<div style="
-position: absolute;
-left: 450px;
-top: 875px;"> 
-
-</div>
-<div style="padding-left: 40px; padding-top: 15px; font-family: Arial, Helvetica, sans-serif; color: rgb(15, 15, 15);"><small style="font-size: 110%;"><b>Revolutionize</b> travel with this <b>ergonmic</b> <br>seat deign, designed  with your <b>comfort</b><br> and <b>safety</b>  in mind</small></div>
-</div>
-
-<footer >
-  <div class="footercontainer">
-    <ul>
-      <li>SPACE HORIZON © 2023</li>
-      <li><a href="#">TWITTER</a></li>
-      <li><a href="#">YOUTUBE</a></li>
-      <li><a href="#">LINKEDIN</a></li>
-      <li><a href="#">INSTAGRAM</a></li>
-      <li><a href="#">FLICKR</a></li>
-      <li><a href="#">PRIVACY POLICY</a></li>
-    </ul>
+<body>
+  <header>
+    <div class="container" style="z-index: 1;">
+      <div class="navcontainer">
+          <nav class="navbar" >
+            <a href="index.html">
+              <img src="images/logo.png"  alt="A picture of a sunset over the ocean">
+            </a>
+          <div class="nav-links">
+            <ul class="menu3"  class="fading-text" >
+              <li><a href="Basic Infomation.html">Basic Information</a></li>
+              <li><a href="Vehicle and Safety.html">Vehicles & Safety</a></li>
+              <li><a href="launchandrecovery.html">Launch & Recovery</a></li>
+              <li><a href="news.html">News</a></li>
+              <button class="btn-hover">Fly With Us</button>
+            </ul>
+          </div>
+          </nav>
+          <input type="checkbox" id="active">
+          <label for="active" class="menu-btn"><span></span></label>
+          <label for="active" class="close"></label>
+          <div class="wrapper">
+          <img class="logoimage" src="images/logo1.png"  alt="A picture of a sunset over the ocean">
+        <ul>
+          <li><a href="Basic Infomation.html">Basic Information</a></li>
+          <li><a href="Vehicle and Safety.html">Vehicles & Safety</a></li>
+          <li><a href="#">Launch & Recovery</a></li>
+          <li><a href="news.html">News</a></li>
+          <li>
+            <a href="#"  style="  background: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;">Fly With Us
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-</footer>
+
+  <h1 style="position: absolute;  text-shadow: #000702; top: 370px; left: 300px;  font-family: 'Oswald', sans-serif; font-size: 85px; color: white;" >Launch And Recovery</h1>
+  
+</header>
 
 
+<div class="grid">
+  <div class="grid__item panel-1">
+    <div class="content">
+      <h1>About Us</h1>
+       
+      <p>
+        Space Horizon is a revolutionary space tourism company founded in 2022 with a mission to make space accessible to everyone. Our team of expert astronauts and engineers have been at the forefront of space exploration and technology for over a decade.
+        With our state-of-the-art spacecrafts and cutting-edge launch systems, we're able to offer unparalleled experiences for thrill-seekers and space enthusiasts alike. 
+      </p>
+    </div>
+  </div>
 
+  <div class="grid__item panel-2">
+    <div class="content">
+    </div>
+  </div>
 
-</body>
+  <div class="grid__item panel-3">
+    <div class="content">
+    </div>
+  </div>
 
+  <div class="grid__item panel-4">
+    <div class="content">
+      <h1>Our Fleet</h1>
+      <p>
+        Our fleet of specially designed space balloons offers a unique and unparalleled experience for 
+        thrill-seekers and space enthusiasts alike. Soar to new heights and marvel at the breathtaking 
+        views of the cosmos from the comfort of our state-of-the-art balloons. With a capacity to carry 
+        up to 12 passengers at a time, you and your friends can embark on the adventure of a lifetime. 
+      </p>
+    </div>
+  </div>
 
+  <div class="grid__item panel-5">
+    <div class="content">
+      <h1>Future Development</h1>
+      <p>
+        Space Horizon is proud to announce a significant breakthrough in our research and development 
+        department. Our dedicated scientists and engineers have been working tirelessly to revolutionize 
+        the space tourism industry, and we are thrilled to announce that their efforts have finally paid 
+        off. With this new technology, we can offer our customers even more exciting and immersive space 
+        travel experiences. 
+      </p>
+    </div>
+  </div>
+
+  <div class="grid__item panel-6">
+    <div class="content">
+    </div>
+  </div>
+
+  <div class="grid__item panel-7">
+    <div class="content">
+    </div>
+  </div>
+
+  <div class="grid__item panel-8">
+    <div class="content">
+      <h1>Benefit Of Space Horizon</h1>
+      <p>
+        At Space Horizon, we understand the importance of protecting our planet for future generations. That
+        's why we have made it a priority to ensure that our space tourism operations have a minimal impact 
+        on the environment. We have implemented a series of measures to reduce our carbon footprint, from 
+        using sustainable materials in the construction of our spacecrafts to powering our facilities with
+        renewable energy sources.
+      </p>
+    </div>
+  </div>
+</div>
+  
+
+    <footer >
+      <div class="footercontainer">
+        <ul>
+          <li>SPACE HORIZON © 2023</li>
+          <li><a href="#">TWITTER</a></li>
+          <li><a href="#">YOUTUBE</a></li>
+          <li><a href="#">LINKEDIN</a></li>
+          <li><a href="#">INSTAGRAM</a></li>
+          <li><a href="#">FLICKR</a></li>
+          <li><a href="#">PRIVACY POLICY</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
