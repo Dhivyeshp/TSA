@@ -1,191 +1,277 @@
-        /*-------------------------------------scroll bar customization-------------------------------------------*/
-        body::-webkit-scrollbar 
-        {
-            width: 8px;
-        } 
+ /*-------------------------------------scroll bar customization-------------------------------------------*/
+ body::-webkit-scrollbar 
+ {
+     width: 8px;
+ } 
 
-        body::-webkit-scrollbar-thumb 
-        {
-            border: 1000px solid rgb(134, 133, 133);
-            border-radius: 40px;
-            background-clip: padding-box;
-            transition: height 0.2s ease-in-out;
-        } 
+ body::-webkit-scrollbar-thumb 
+ {
+     border: 1000px solid rgb(134, 133, 133);
+     border-radius: 40px;
+     background-clip: padding-box;
+     transition: height 0.2s ease-in-out;
+ } 
 
-        body::-webkit-scrollbar-track 
-        {
-            scroll-padding-right: 100px;
-            background-color: transparent;
-        } 
-        /*-------------------------------------------------------Animations-----------------------------------------------------------------*/
-        .fade-in 
-        {
-            animation: fadein 5s;
-        }
-        
-        @keyframes fadein 
-        {
-            from { opacity: 0;}
-            to   { opacity: 1;}
-        }
-      
-    
-      html 
-      {
-        scroll-behavior: smooth;
-      }
-
-      body
-      {
-        background-color: black;
-        overflow-x: hidden;
-      }
-      
-      .parallax-item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
-        font-family: Montserrat, sans-serif;
-        width: 100%;
-        min-height: 100vh;
-      }
-
-      .parallax-item:first-child 
-      {
-        background: url("images/background1.png");
-        backdrop-filter: 10px;
-        background-size: cover;
-        background-attachment: fixed;
-        min-height: 100vh;
-      }
-      
-      .parallax-item:nth-child(1) h2 
-      {
-        color: white;
-        font-family: Work Sans, sans-serif;
-        font-size: 100px;
-        align-items: center;
-      }
-
-      .parallax-item:nth-child(1) h4
-      {
-        color: white;
-        font-family: Work Sans, sans-serif;
-        position: absolute;
-        top: 60vh;
-        font-size: 20px;
-        align-items: center;
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-      
-      .parallax-item:nth-child(2) 
-      {
-        background: url("https://wallpapercave.com/wp/wp3006038.png");
-        min-height: 90vh;
-        background-size: cover;
-        background-attachment: fixed;
-
-        color: white;
-        font-size: 20px;
-        text-align: center;
-        font-family: Work Sans, sans-serif;
-        padding-left: 400px;
-        padding-right: 400px;
-      }
-      
-      .parallax-item:nth-child(3) 
-      {
-        background: url("https://media.istockphoto.com/id/1148136785/photo/purple-pink-black-abstract-background.jpg?s=612x612&w=0&k=20&c=G5G41QrXqIjq9un7wYRMMyozM_4pgcb-CRs7dJXzj8g=");
-        background-size: cover;
-        background-attachment: fixed;
-        min-height: 200vh;
-        max-height: 200vh;
-      }
-
-      .parallax-item:nth-child(3) h2
-      {
-        position: absolute; top: 210vh;
-        font-size: 25px;
-        font-family: 'Roboto', sans-serif;
-        color: white;
-        padding-left: 50px;
-        padding-right: 700px;
-      }
-
-      .parallax-item:nth-child(3) img
-      {
-        width: 500px;
-        height: 500px;
-        border-radius: 20%;
-
-        position: absolute; top: 210vh; left: 130vh;
-      }
+ body::-webkit-scrollbar-track 
+ {
+     scroll-padding-right: 100px;
+     background-color: transparent;
+ } 
+ /*-------------------------------------------------------Animations-----------------------------------------------------------------*/
+ .fade-in 
+ {
+     animation: fadein 5s;
+ }
+ 
+ @keyframes fadein 
+ {
+     from { opacity: 0;}
+     to   { opacity: 1;}
+ }
 
 
+html 
+{
+ scroll-behavior: smooth;
+}
 
-      .parallax-item:nth-child(4) 
-      {
-        background: url("https://wallpapercave.com/wp/wp3006038.png");
-        min-height: 90vh;
-        background-size: cover;
-        background-attachment: fixed;
+body
+{
+ background-color: black;
+ overflow-x: hidden;
+}
 
-        color: white;
-        font-size: 20px;
-        text-align: center;
-        font-family: Work Sans, sans-serif;
-        padding-left: 400px;
-        padding-right: 400px;
-      }
+.parallax-item {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-weight: bold;
+ font-family: Montserrat, sans-serif;
+ width: 100%;
+ min-height: 100vh;
+}
 
-      .parallax-item:nth-child(5) 
-      {
-        background: url("https://img.rawpixel.com/private/static/images/website/2022-05/sv199402-image-kwvx84lm.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=8a946bc51c9584f66c7723e14330e51b");
-        min-height: 100vh;
-        background-size: cover;
-        background-attachment: fixed;
-      }
+.parallax-item:nth-child(1) 
+{
+ background: url("images/background1.png");
+ background-size: cover;
+ background-attachment: fixed;
+ min-height: 100vh;
+ max-height: 100vh;
+}
 
-      .parallax-item:nth-child(5) h1
-      {
-        color: white;
-        font-size: 50px;
-        font-family: Work Sans, sans-serif;
-        position: absolute;
-        top: 490vh;
-        left: 10vh;
-      }
+.parallax-item:nth-child(1) h2 
+{
+ color: white;
+ font-family: Work Sans, sans-serif;
+ font-size: 100px;
+ align-items: center;
+}
 
-      .parallax-item:nth-child(5) img
-      {
-        border-radius: 20%;
-        position: absolute;
-        left: 120vh;
-        width: 650px;
-        height: 600px;
-      }
+.parallax-item:nth-child(1) h4
+{
+ color: white;
+ font-family: Work Sans, sans-serif;
+ position: absolute;
+ top: 60vh;
+ font-size: 20px;
+ align-items: center;
+ padding-left: 10px;
+ padding-right: 10px;
+}
 
-      .parallax-item:nth-child(5) h3
-      {
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        font-size: 20px;
-        padding-left: 30px;
-        padding-right: 700px;
-      }
+.parallax-item:nth-child(2) 
+{
+ background: url("https://wallpapercave.com/wp/wp3006038.png");
+ min-height: 100vh;
+ max-height: 100vh;
+ background-size: cover;
+ background-attachment: fixed;
 
-      .parallax-item:nth-child(6) 
-      {
-        background: #c08115;
-        min-height: 40vh;
-      }
-      
-      @media screen and (max-width: 768px) 
-      {
-        .parallax-item h2 
-        {
-          font-size: 1.5rem;
-        }
-      }
+ color: white;
+ font-size: 20px;
+ text-align: center;
+ font-family: Work Sans, sans-serif;
+ padding-left: 400px;
+ padding-right: 400px;
+}
+
+.parallax-item:nth-child(3) 
+{
+ background: url("https://media.istockphoto.com/id/1148136785/photo/purple-pink-black-abstract-background.jpg?s=612x612&w=0&k=20&c=G5G41QrXqIjq9un7wYRMMyozM_4pgcb-CRs7dJXzj8g=");
+ background-size: cover;
+ background-attachment: fixed;
+ min-height: 200vh;
+ max-height: 200vh;
+}
+
+.parallax-item:nth-child(3) h2
+{
+ position: absolute; top: 210vh;
+ font-size: 25px;
+ font-family: 'Roboto', sans-serif;
+ color: white;
+ padding-left: 50px;
+ padding-right: 700px;
+}
+
+.parallax-item:nth-child(3) img
+{
+ width: 500px;
+ height: 500px;
+ border-radius: 20%;
+
+ position: absolute; top: 210vh; left: 130vh;
+}
+
+
+
+.parallax-item:nth-child(4) 
+{
+ background: url("https://wallpapercave.com/wp/wp3006038.png");
+ min-height: 100vh;
+ max-height: 100vh;
+ background-size: cover;
+ background-attachment: fixed;
+
+ color: white;
+ font-size: 20px;
+ text-align: center;
+ font-family: Work Sans, sans-serif;
+ padding-left: 400px;
+ padding-right: 400px;
+}
+
+.parallax-item:nth-child(5) 
+{
+ background: url("https://img.rawpixel.com/private/static/images/website/2022-05/sv199402-image-kwvx84lm.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=8a946bc51c9584f66c7723e14330e51b");
+ min-height: 100vh;
+ max-height: 100vh;
+ background-size:cover;
+ background-attachment: fixed;
+}
+
+.parallax-item:nth-child(5) h1
+{
+ color: white;
+ font-size: 50px;
+ font-family: Work Sans, sans-serif;
+ position: absolute;
+ top: 490vh;
+ left: 10vh;
+}
+
+.parallax-item:nth-child(5) img
+{
+ border-radius: 20%;
+ position: absolute;
+ left: 120vh;
+ width: 650px;
+ height: 600px;
+}
+
+.parallax-item:nth-child(5) h3
+{
+ color: white;
+ font-family: 'Roboto', sans-serif;
+ font-size: 20px;
+ padding-left: 30px;
+ padding-right: 700px;
+}
+
+/*------------------------------------------------responsiveness------------------------------------------------------*/
+
+/*---------------------------------------mobiles----------------------------------------*/
+@media only screen and (min-width: 320px) and (max-width: 426px) 
+{
+ /*--------------1st panel---------------*/
+ .parallax-item:nth-child(1) h2
+ {
+   text-align: center;
+   font-size: 50px;
+ }
+
+ .parallax-item:nth-child(1) h4
+ {
+   font-size: 15px;
+   text-align: center;
+ }
+
+ /*--------------2nd panel---------------*/
+ .parallax-item:nth-child(2)
+ {
+   padding-left: 0px;
+   padding-right: 0px;
+ }
+
+
+ .parallax-item:nth-child(2) h3
+ {
+   position:absolute;
+   font-size: 15px;
+   top: 120vh;
+ }
+
+ /*--------------3rd panel---------------*/
+ .parallax-item:nth-child(3) h1
+ {
+   position: absolute;
+   top: 205vh;
+   font-size: 40px;
+ }
+
+ .parallax-item:nth-child(3) h2
+ {
+   position: absolute;
+   top: 215vh;
+   font-size: 40px;
+ }
+
+
+
+
+}
+
+/*---------------------------------------tablets----------------------------------------*/
+@media only screen and (min-width: 427px) and (max-width: 769px) 
+{
+ .parallax-item:nth-child(1) h2
+ {
+   text-align: center;
+   font-size: 50px;
+ }
+
+ .parallax-item:nth-child(1) h4
+ {
+   text-align: center;
+ }
+
+ /*--------------2nd panel---------------*/
+ .parallax-item:nth-child(2)
+ {
+   padding-left: 0px;
+   padding-right: 0px;
+ }
+}
+
+/*---------------------------------------laptops----------------------------------------*/
+@media only screen and (min-width: 770px) and (max-width: 1025px) 
+{ 
+ .parallax-item:nth-child(1) h2
+ {
+   text-align: center;
+   font-size: 70px;
+ }
+
+ .parallax-item:nth-child(1) h4
+ {
+   text-align: center;
+ }
+
+ /*--------------2nd panel---------------*/
+ .parallax-item:nth-child(2)
+ {
+   padding-left: 0px;
+   padding-right: 0px;
+ }
+}
