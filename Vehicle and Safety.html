@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
         <link rel="stylesheet" href="navbar2.css">
         <link rel="stylesheet" href="vehicle.css">
+        <link rel="stylesheet" href="footer.css">
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,42 +21,43 @@
     </head>
 
     <header>
-        <div class="container">
+        <div class="container" style="z-index: 1; width: cover;">
             <div class="navcontainer">
                 <nav class="navbar" >
+                  <a href="index.html">
                     <img src="images/logo.png"  alt="A picture of a sunset over the ocean">
-      
+                  </a>
                     <div class="nav-links">
-                    <ul class="menu3"  class="fading-text" >
+                    <ul class="menu3"  class="fading-text">
                 <li><a href="Basic Infomation.html">Basic Information</a></li>
                 <li><a href="Vehicle and Safety.html">Vehicles & Safety</a></li>
-                <li><a href="#">Launch & Recovery</a></li>
+                <li><a href="launchandrecovery.html">Launch & Recovery</a></li>
                 <li><a href="news.html">News</a></li>
                 <button class="btn-hover">Fly With Us</button>
                     </ul>
                     </div>
-      
+            
                 </nav>
-      
-      <input type="checkbox" id="active">
-      <label for="active" class="menu-btn"><span></span></label>
-      <label for="active" class="close"></label>
-      <div class="wrapper">
-      <img class="logoimage" src="images/logo1.png"  alt="A picture of a sunset over the ocean">
-      <ul>
-      <li><a href="Basic Infomation.html">Basic Information</a></li>
-      <li><a href="Vehicle and Safety.html">Vehicles & Safety</a></li>
-      <li><a href="#">Launch & Recovery</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="#"  style="  background: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      -text-fill-color: transparent;">Fly With Us</a></li>
-      </ul>
-      </div>
-      </div>
-    </div>
+            
+<input type="checkbox" id="active">
+<label for="active" class="menu-btn"><span></span></label>
+<label for="active" class="close"></label>
+<div class="wrapper">
+    <img class="logoimage" src="images/logo1.png"  alt="A picture of a sunset over the ocean">
+  <ul>
+<li><a href="Basic Infomation.html">Basic Information</a></li>
+<li><a href="Vehicle and Safety.html">Vehicles & Safety</a></li>
+<li><a href="launchandrecovery.html">Launch & Recovery</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="#"  style="  background: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;">Fly With Us</a></li>
+</ul>
+</div>
+                  </div>
+            </div>
     </header>
 
     <body>
@@ -79,12 +81,7 @@
             </div>
 
             <div class="parallax-item">
-                <h1 style="color: white;
-                            font-size: 50px;
-                            font-family: Work Sans, sans-serif;
-                            position: absolute;
-                            top: 200vh;
-                            left: 10vh;">Vehicles</h1>
+                <h1 style="color: white; font-family: Work Sans, sans-serif;">Vehicles</h1>
                 <h2 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <br>At Space Horizon, we are proud to offer our customers the latest and most advanced spacecrafts in the industry. Our vehicles are designed with safety, comfort, and performance in mind, and are operated by our highly trained and experienced pilots and crew.
                     <br>
@@ -133,34 +130,23 @@
                 </h3>
                 
             </div>
-
-            <div class="parallax-item">
-                    <!-- <ol>
-                        <li>Reinforced pressure vessel for optimal durability and protection</li>
-                        <br>
-                        <li>Advanced emergency ejection system for immediate evacuation</li>
-                        <br>
-                        <li>Dual redundant control systems for added safety and reliability</li>
-                        <br>
-                        <li>High-tech communication systems for seamless communication with ground crew</li>
-                        <br>
-                        <li>Advanced life support systems, including redundant oxygen supply and emergency supplies</li>
-                        <br>
-                        <li>Fire suppression systems to quickly extinguish any onboard fires</li>
-                        <br>
-                        <li>Multiple backup power supplies for added security</li>
-                        <br>
-                        <li>Impact-resistant materials and construction techniques for maximum protection during landing</li>
-                        <br>
-                        <li>In-flight monitoring systems for continuous monitoring of all critical systems</li>
-                        <br>
-                        <li>Regular safety inspections and maintenance procedures to ensure the longevity and reliability of our vehicles</li>
-                        <br>
-                    </ol> -->
-            </div>
-
           </section>
+
     </body>
+
+    <footer>
+        <div class="footercontainer">
+          <ul>
+            <li>SPACE HORIZON © 2023</li>
+            <li><a href="#">TWITTER</a></li>
+            <li><a href="#">YOUTUBE</a></li>
+            <li><a href="#">LINKEDIN</a></li>
+            <li><a href="#">INSTAGRAM</a></li>
+            <li><a href="#">FLICKR</a></li>
+            <li><a href="#">PRIVACY POLICY</a></li>
+          </ul>
+        </div>
+      </footer>
 
     <script>
         const parallax = document.getElementById("parallax");
