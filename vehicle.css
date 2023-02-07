@@ -45,15 +45,17 @@ body
  display: flex;
  align-items: center;
  justify-content: center;
- font-weight: bold;
- font-family: Montserrat, sans-serif;
+ font-weight: lighter;
+ font-family: 'Barlow', sans-serif;
+
  width: 100%;
  min-height: 100vh;
 }
 
 .parallax-item:nth-child(1) 
 {
- background: url("images/background1.png");
+ background: url("images/vehicle.jpg");
+ background-position: 50px;
  background-size: cover;
  background-attachment: fixed;
  min-height: 100vh;
@@ -63,7 +65,7 @@ body
 .parallax-item:nth-child(1) h2 
 {
  color: white;
- font-family: Work Sans, sans-serif;
+ font-family: 'Barlow', sans-serif;
  font-size: 100px;
  align-items: center;
 }
@@ -71,7 +73,7 @@ body
 .parallax-item:nth-child(1) h4
 {
  color: white;
- font-family: Work Sans, sans-serif;
+ font-family: 'Barlow', sans-serif;
  position: absolute;
  top: 60vh;
  font-size: 20px;
@@ -80,9 +82,17 @@ body
  padding-right: 10px;
 }
 
+.parallax-item h3{
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-weight: lighter;
+}
+
 .parallax-item:nth-child(2) 
 {
- background: url("https://wallpapercave.com/wp/wp3006038.png");
+ background: url("https://images.pexels.com/photos/23769/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
  min-height: 100vh;
  max-height: 100vh;
  background-size: cover;
@@ -98,7 +108,7 @@ body
 
 .parallax-item:nth-child(3) 
 {
- background: url("https://media.istockphoto.com/id/1148136785/photo/purple-pink-black-abstract-background.jpg?s=612x612&w=0&k=20&c=G5G41QrXqIjq9un7wYRMMyozM_4pgcb-CRs7dJXzj8g=");
+ background: url("images/Girl.jpg");
  background-size: cover;
  background-attachment: fixed;
  min-height: 200vh;
@@ -255,8 +265,32 @@ body
 }
 
 /*---------------------------------------laptops----------------------------------------*/
-@media only screen and (min-width: 770px) and (max-width: 1025px) 
+@media only screen and (min-width: 770px) and (max-width: 1725px) 
 { 
+  
+  .abouthead{
+    position: absolute;  
+    text-shadow: #000702; 
+    top: 180px; 
+    left: 150px;  
+    font-family: 'Oswald', sans-serif; 
+    font-size: 65px; 
+    color: white;
+  
+  }
+  
+  .headsubtext{
+  
+    position: absolute; 
+    text-shadow: #000702; 
+    width: 500px; 
+    top: 280px; 
+    left: 150px;    
+    font-size: 10px; 
+    font-family: Arial, Helvetica, sans-serif;  
+    color: white;
+  }
+
  .parallax-item:nth-child(1) h2
  {
    text-align: center;
