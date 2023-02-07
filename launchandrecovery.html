@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Horizon</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="basicinformation.css">
 
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
+
 <style> 
-body{
+body
+{
+    margin: 0;
+    overflow-y: scroll;
     background-color: black;
 }
 
@@ -18,9 +23,7 @@ header
 {
   width: 100%;
 
-
-  background-image: url("images/card1.jpg");    
-  z-index: -10;
+  background-image: url(https://www.teslarati.com/wp-content/uploads/2019/09/Starship-2019-SpaceX-Raptor-static-fire-1-crop.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -28,7 +31,105 @@ header
   font-size: 70px;
   font-weight: 100;
   color: rgb(0, 0, 0);
-      
+}
+
+.grid 
+{
+  height: 435vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid p
+{
+  margin-top: 20px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.grid h1 
+{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  color: #051fb1;
+  font-weight: 20;
+}
+
+.panel-1 
+{
+  font-size: 35px;
+  font-weight: 50;
+  background: #ffffff;
+  color: #000000;
+}
+
+.panel-2
+{
+  background-image: url(https://images.pexels.com/photos/7672884/pexels-photo-7672884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.panel-3
+{
+  background-image: url("images/Group Balloons.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.panel-4
+{
+  font-size: 35px;
+  font-weight: 100;
+  background: #ffffff;
+  color: #000000;
+}
+
+.panel-5
+{
+  font-size: 35px;
+  font-weight: 100;
+  background: #ffffff;
+  color: #000000;
+}
+
+.panel-6
+{
+  background-image: url(https://images.pexels.com/photos/586103/pexels-photo-586103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.panel-7
+{
+background-image: url(https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.panel-8
+{
+font-size: 35px;
+font-weight: 100;
+background: #ffffff;
+color: #000000;
+}
+
+.content 
+{
+  max-width: 1200px;
 }
 </style>
 
@@ -70,12 +171,82 @@ header
       </div>
     </div> 
   </header>
-</body>
 
-  <footer >
+  <div class="grid">
+    <div class="grid__item panel-1">
+      <div class="content">
+        <h1>Planning</h1>
+        <p>
+          The company plans the mission, including the launch window, the flight path, and the activities 
+          that will take place during the mission. The company performs final checks on the spacecraft and
+          all equipment, and makes any necessary adjustments before the launch.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid__item panel-2">
+      <div class="content">
+      </div>
+    </div>
+
+    <div class="grid__item panel-3">
+      <div class="content">
+      </div>
+    </div>
+
+    <div class="grid__item panel-4">
+      <div class="content">
+        <h1>Launch</h1>
+        <p>
+          Space Horizon's tourism rocket launch involves fueling the rocket with liquid oxygen and 
+          rocket-grade kerosene, conducting pre-launch checks, and igniting the engines for liftoff. 
+          The rocket then rises into the atmosphere, accelerating as it goes, before separating from its 
+          first stage and continuing its journey into space.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid__item panel-5">
+      <div class="content">
+        <h1>Journey</h1>
+        <p>
+            It could be a suborbital flight, reaching an altitude where the passengers can
+           experience a few minutes of weightlessness before returning to Earth. Or it could be an orbital
+            flight, reaching a specific altitude and velocity to orbit the Earth, allowing passengers to 
+            see the planet from above and experience a longer period of weightlessness. The journey and 
+            destination are carefully planned and executed to ensure the safety and comfort of the 
+            passengers. 
+        </p>
+      </div>
+    </div>
+
+    <div class="grid__item panel-6">
+      <div class="content">
+      </div>
+    </div>
+
+    <div class="grid__item panel-7">
+      <div class="content">
+      </div>
+    </div>
+
+    <div class="grid__item panel-8">
+      <div class="content">
+        <h1>Recovery</h1>
+        <p>
+          After the mission is completed, the company recovers the spacecraft and performs an 
+          nalysis to identify any issues and make improvements for future missions. This allows the 
+          rocket to be refurbished reused for future launches, reducing costs and increasing efficiency.
+          The exact method of recovery can vary depending on the type of rocket and the company's recovery capabilities.
+        </p>
+      </div>
+    </div>
+  </div>
+
+    <footer >
       <div class="footercontainer">
         <ul>
-          <li>SPACE HORIZON © 2023</li>
+          <li>SPACE HORIZON Â© 2023</li>
           <li><a href="#">TWITTER</a></li>
           <li><a href="#">YOUTUBE</a></li>
           <li><a href="#">LINKEDIN</a></li>

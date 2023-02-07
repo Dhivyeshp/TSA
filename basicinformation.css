@@ -136,8 +136,13 @@ color: #000000;
 }
 
 
+.abouthead{
+  z-index: -5;
+}
 
-
+.headsubtext{
+  z-index: -5;
+}
 /* Everthing larger than a regular monitor - Dhivyesh Widescreen Monitor */
 @media only screen and (min-width: 1701px) and (max-width: 3200px){
   .grid {
@@ -383,7 +388,9 @@ header{
 
 /* Smaller Mobiles */
 @media only screen and (max-width: 499px) {
-
+*{
+  overflow-x: hidden;
+}
 footer{
   visibility: hidden;
 }

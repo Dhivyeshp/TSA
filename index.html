@@ -104,13 +104,21 @@ width: 1000px;
 
 /* Laptop */
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+     
+  #play1{
+    position: absolute;
+    z-index: 10;
+    margin-left: 90px;
+    margin-top: 3305px;
+  }
+
   header{
     height: 1700px;
   
  
 }
 .favoritedestination{
-  margin-left: 405px;
+  margin-left: 200px;
   margin-top:  900px;
   display: flex;
 align-items: center;
@@ -186,6 +194,18 @@ width: 100px;
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) { 
+  .text-small{
+    width: 400px;
+  }
+    
+  .paras{
+    width: 400px;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+   padding-top: 100px;
+   } 
+
   header{
     height: 1600px;
 }
@@ -220,6 +240,43 @@ width: 700px;
 
 /* Smaller Mobiles */
 @media only screen and (max-width: 767px) {
+  .text-small{
+    width: 400px;
+  }
+    
+  .paras{
+    width: cover;
+    text-align: center;
+    margin-left: 0px;
+   
+   padding-top: 80px;
+   } 
+   .box-main {
+      position: absolute;
+      padding-top: 300px;
+       display: flex;
+        align-items: center;
+        color: white;
+        padding-left:  30px;
+        padding-right: 20px;
+        z-index: 1;
+
+    }
+ 
+  .fourthsection h1{
+    width: 400px;
+    font-family: 'Roboto', sans-serif;
+    color: blue;
+    font-size: 40px;
+  }
+
+  .fourthsection p{
+    font-family: 'Barlow', sans-serif;
+    font-size: 10px;
+
+  }
+
+
   header{
     height: 700px;
 }
@@ -295,8 +352,9 @@ width: 700px;
                       <p class="subtext-two" style="       z-index: -1;
                       font-family: 'Work Sans', sans-serif; font-weight: 395;">Be a part of us on a virtual space adventure. 
                         Discover the secrets of outer space together!</p>
-                        <button class="btn-hover-new" style="      z-index: -1;
-                        ">Discover More</button>
+                        <button class="btn-hover-new" style="z-index: 1;">
+                          <a href="fly.html">Discover More</a>
+                        </button>                        
                     </div>  
 
 
@@ -328,7 +386,7 @@ width: 700px;
                     <div class="favoritedestination">
                        <h5>Favorite Destination</h5>
                        <p> These are our clients favorite destinations! 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                      Feel free to scroll through them.</p>
                         <!-- Container for the Slick Carousel -->
    
 <div class="slick-carousel">
@@ -402,44 +460,46 @@ width: 700px;
 
             
  
-    <section class="firstsection" >
+    <section class="firstsection" style="overflow-x: hidden;">
         <div class="box-main">
             <div class="firstHalf" >
                 <h1 class="text-big" id="program"  >
                     Artfully designed for life-changing experiences.               </h1>
                 <p class="text-small">
-                    Propelled by a SpaceBalloon™ - a technology used for decades by the likes of NASA - Spaceship Neptune is the first carbon-neutral way to travel to space.     </p>
-                <button class="btn-learn">Learn More</button>
+                  Space horizon is powered by the well-established technology of the SpaceBalloon™, which is a pioneering, environmentally friendly means of traveling to space.     </p>
+                <button class="btn-learn" >
+                  <a href="Vehicle and Safety.html">Learn More</a>
+                </button>       
             </div>
         </div>
         <div class="bg-image-1"></div>
     </section>
  
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    
-    <section class="fourthsection">
+    <section class="fourthsection" style="overflow-x: hidden;">
       <div class="paras">
-          <h1 class="sectionTag text-big">Breaking Horizons.</h1>
+          <h1 class="sectionTag text-big">Explore the Final Frontier</h1>
 
           <p class="sectionSubTag text-small">
-              No rockets. No g-forces. Experience a gentle, meticulously crafted spaceflight in our one-of-a-kind Space Lounge during your six-hour journey, complete with meal and cocktails. 
+            Experience the thrill of space travel with our cutting-edge, carbon-neutral technology powered by the SpaceBalloon™. Join us on a journey to the stars and discover the wonders of the universe. 
       </div>
       
   </section>
 
-    <section class="secondsection"   >
+    <section class="secondsection" style="overflow-x: hidden;"  >
         <div class="box-main"  >
             <div class="secondHalf"  >
                 <h1 class="text-big" id="program" >
                     Reusable Rocket Engines               </h1>
                 <p class="text-small">
-                    Blue Origin's engines are powering the next generation of rockets for commercial, civil, national security and human spaceflight.                </p>
+                  Space Horizon is fueling the advancements in rocket technology for a variety of purposes, including commercial, civil, national defense and human space travel.                </p>
                 <button class="btn-learn" style="width: 135px;">Explore Engines</button>
             </div>
         </div>
        
 
         
-          <div class="playbtn">
+          <div class="playbtn" style="overflow-x: hidden;">
             <svg version="1.1" id="play1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="50px" width="50px"
              viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
               <path class="stroke-solid" fill="none" stroke="white"  d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
@@ -471,7 +531,7 @@ width: 700px;
     </section>
  
   
-    <section class="fourthsection">
+    <section class="fourthsection" style="overflow-x: hidden;">
       <div class="paras">
           <h1 class="sectionTag text-big">Breaking Horizons.</h1>
 
@@ -480,7 +540,7 @@ width: 700px;
       </div>        
   </section>
 
-    <section class="thirdsection"  >
+    <section class="thirdsection" style="overflow-x: hidden;" >
         <div class="box-main" >
             <div class="thirdHalf" >
                 <h1 class="text-big" id="program">
@@ -497,7 +557,7 @@ width: 700px;
    
  
     <footer >
-      <div class="footercontainer">
+      <div class="footercontainer" style="overflow-x: hidden;" >
         <ul>
           <li>SPACE HORIZON © 2023</li>
           <li><a href="#">TWITTER</a></li>
