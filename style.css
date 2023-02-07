@@ -285,8 +285,14 @@ span:nth-child(18) {
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
+    text-decoration: none;
 }
-
+.btn-hover-new a{
+  color: white;
+}
+.btn-learn a{
+  color: black;
+}
 .btn-hover-new:hover {
     background-position: 100% 0;
     -moz-transition: all .4s ease-in-out;
@@ -304,6 +310,7 @@ span:nth-child(18) {
     background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
+
 
 
 
@@ -977,8 +984,10 @@ nav ul li{
     }
  
     .text-small {
+      width: 800px;
         padding-top: 10px;
         font-size: 18px;
+        font-family: 'Barlow', sans-serif;
         font-weight: normal;
     }
  
@@ -1376,11 +1385,12 @@ input[type="checkbox"]{
 
 /* Laptop */
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
-  
+   
+
   
 #play{
   margin-left:1190px;
-  margin-top: 475px;
+  margin-top: 465px;
 }
 
 
