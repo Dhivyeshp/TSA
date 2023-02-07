@@ -140,7 +140,12 @@ color: #000000;
 
 /* Everthing larger than a regular monitor - Dhivyesh Widescreen Monitor */
 @media only screen and (min-width: 1701px) and (max-width: 3200px){
-
+  .grid {
+    width: 100%;
+    height: 210vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 .abouthead{
 position: absolute;  
 text-shadow: #000702; 
