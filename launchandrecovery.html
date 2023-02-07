@@ -14,116 +14,75 @@ body{
     background-color: black;
 }
 
-.head{
-    color: white;
+.header
+{
+  width: 100%;
 
-    text-align: left;
 
-    font-size: 450%;
-    
-    font-family: Arial, Helvetica, sans-serif;
-    
-  
-    height: 700px;
+  background-image: url(https://www.teslarati.com/wp-content/uploads/2019/09/Starship-2019-SpaceX-Raptor-static-fire-1-crop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    padding-left: 40px;
-
-    padding-top: 200px;
-    
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 70px;
+  font-weight: 100;
+  color: rgb(0, 0, 0);
+      
 }
-.phar{
-    color: white;
-    font-size: 30%;
-    padding-left: 5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
-
-}
-.ded{font-size: 220%;
-text-align: left;
-padding-left: 40px;
-padding-top: 250px;
-font-family: Arial, Helvetica, sans-serif;
-color: black;
-}
-
-@keyframes fadeInOutAnimation {
-    0% {
-      opacity: 0;
-
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  .iamg 
-
-  {
-
-    cursor: pointer;
-    animation: fadeInOutAnimation 1.5s ease-in;
-    animation-timing-function: ease-in;
-  }
-
-
-
-
 </style>
+
 <body>
-  
-    
-
-   <div class="head" style="background-image:url(https://images.pexels.com/photos/2159/flight-sky-earth-space.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);">
-    <div style="padding: top 150px;
-    padding-left: 60px;
-    color: lightblue;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-decoration: underline;"><small style="font-size: 20%;"><b>Innovate Safely</b></small></div>
-    <strong>LAUNCH AND <br> RECOVERY</strong>
-    <div class="phar"><small style="font-weight: 200;">we care about <b>youre experiences</b></small></div>
-
-</div>
-
-<div style="background-color:white; 
-height: 600px;">
-<div><strong style="font-size: 120%; position: absolute; padding-top: 220px;
-padding-left: 90px;
-color: darkblue;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-text-decoration: underline ;
-font-weight: 300;
-"><b>Seating</b></strong></div>
-
-<div class="ded"> <p> <b>PEAK</b> COMFORT <b>&</b> <br> <b> EXTREME</b> SAFETY  </b></p></div>
- 
-<div style="
-position: absolute;
-left: 450px;
-top: 875px;"> 
-
-</div>
-<div style="padding-left: 40px; padding-top: 15px; font-family: Arial, Helvetica, sans-serif; color: rgb(15, 15, 15);"><small style="font-size: 110%;"><b>Revolutionize</b> travel with this <b>ergonmic</b> <br>seat deign, designed  with your <b>comfort</b><br> and <b>safety</b>  in mind</small></div>
-</div>
-
-<footer >
-  <div class="footercontainer">
-    <ul>
-      <li>SPACE HORIZON © 2023</li>
-      <li><a href="#">TWITTER</a></li>
-      <li><a href="#">YOUTUBE</a></li>
-      <li><a href="#">LINKEDIN</a></li>
-      <li><a href="#">INSTAGRAM</a></li>
-      <li><a href="#">FLICKR</a></li>
-      <li><a href="#">PRIVACY POLICY</a></li>
-    </ul>
-  </div>
-</footer>
-
-
-
-
+  <header style="height: 100vh;">
+    <div class="container" style="z-index: 1;">
+      <div class="navcontainer">
+        <nav class="navbar" >
+          <a href="index.html">
+            <img src="images/logo.png"  alt="A picture of a sunset over the ocean">
+          </a>
+            <div class="nav-links">
+              <ul class="menu3"  class="fading-text" >
+                <li><a href="Basic Infomation.html">Basic Information</a></li>
+                <li><a href="Vehicle and Safety.html">Vehicles & Safety</a></li>
+                <li><a href="launchandrecovery.html">Launch & Recovery</a></li>
+                <li><a href="news.html">News</a></li>
+                <button class="btn-hover">Fly With Us</button>
+              </ul>
+            </div>
+        </nav>
+          <input type="checkbox" id="active">
+          <label for="active" class="menu-btn"><span></span></label>
+          <label for="active" class="close"></label>
+          <div class="wrapper">
+          <img class="logoimage" src="images/logo1.png"  alt="A picture of a sunset over the ocean">
+            <ul>
+              <li><a href="Basic Infomation.html">Basic Information</a></li>
+              <li><a href="Vehicle and Safety.html">Vehicles & Safety</a></li>
+              <li><a href="#">Launch & Recovery</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="#"  style="  background: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              text-fill-color: transparent;">Fly With Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+  </header>
 </body>
 
-
+  <footer >
+      <div class="footercontainer">
+        <ul>
+          <li>SPACE HORIZON © 2023</li>
+          <li><a href="#">TWITTER</a></li>
+          <li><a href="#">YOUTUBE</a></li>
+          <li><a href="#">LINKEDIN</a></li>
+          <li><a href="#">INSTAGRAM</a></li>
+          <li><a href="#">FLICKR</a></li>
+          <li><a href="#">PRIVACY POLICY</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
