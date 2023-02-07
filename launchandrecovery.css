@@ -1,0 +1,462 @@
+
+*{
+    box-sizing: border-box;
+   }
+  
+  header
+  {
+    width: 100%;
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    
+  }
+  
+  .basicbg {
+      position: absolute;
+      z-index: -1;
+    }
+    
+    .navbar {
+      position: relative;
+      z-index: 1;
+    }
+  
+  .basicbg{
+    width: 100%;
+    margin-top: -130px;
+    z-index: -10;
+  }
+  
+  body {
+    margin: 0;
+    overflow-y: scroll;
+  }
+  
+  .grid {
+    height: 435vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .grid__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .grid p
+  {
+    margin-top: 20px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .grid h1 
+  {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    color: #051fb1;
+    font-weight: 20;
+  }
+  
+  .panel-1 {
+    font-size: 35px;
+    font-weight: 50;
+    background: #ffffff;
+    color: #000000;
+  }
+  
+  .panel-2
+  {
+    background-image: url(https://images.pexels.com/photos/7672884/pexels-photo-7672884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .panel-3
+  {
+    background-image: url("images/Group Balloons.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .panel-4
+  {
+    font-size: 35px;
+    font-weight: 100;
+    background: #ffffff;
+    color: #000000;
+  }
+  
+  .panel-5
+  {
+    font-size: 35px;
+    font-weight: 100;
+    background: #ffffff;
+    color: #000000;
+  }
+  
+  .panel-6
+  {
+    background-image: url(https://images.pexels.com/photos/586103/pexels-photo-586103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .panel-7
+  {
+  background-image: url(https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  }
+  
+  .panel-8
+  {
+  font-size: 35px;
+  font-weight: 100;
+  background: #ffffff;
+  color: #000000;
+  }
+  
+  .content 
+  {
+    max-width: 1200px;
+  }
+  
+  
+  .abouthead{
+    z-index: -5;
+  }
+  
+  .headsubtext{
+    z-index: -5;
+  }
+  /* Everthing larger than a regular monitor - Dhivyesh Widescreen Monitor */
+  @media only screen and (min-width: 1701px) and (max-width: 3200px){
+    .grid {
+      width: 100%;
+      height: 210vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  .abouthead{
+  position: absolute;  
+  text-shadow: #000702; 
+  top: 370px; 
+  left: 300px;  
+  font-family: 'Oswald', sans-serif; 
+  font-size: 85px; 
+  color: white;
+  
+  }
+  
+  .headsubtext{
+  
+  position: absolute; 
+  text-shadow: #000702; 
+  width: 800px; 
+  top: 510px; 
+  left: 300px;    
+  font-size: 20px; 
+  font-family: Arial, Helvetica, sans-serif;  
+  color: white;
+  }
+  
+  }
+  
+  
+  /* Monitor */
+  @media only screen and (min-width: 1440px) and (max-width: 1700px){
+    .grid p
+    {
+      margin-top: 20px;
+      font-family: 'Barlow', sans-serif;
+      font-size: 18px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    
+    .grid h1 
+    {
+      padding-left: 40px;
+      padding-right: 40px;
+      font-size: 40px;
+      font-family: 'Roboto', sans-serif;
+      color: #051fb1;
+      font-weight: 20;
+    }
+    .grid {
+      width: 100%;
+      height: 190vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+  .abouthead{
+    position: absolute;  
+    text-shadow: #000702; 
+    top: 270px; 
+    left: 200px;  
+    font-family: 'Oswald', sans-serif; 
+    font-size: 85px; 
+    color: white;
+  
+  }
+  
+  .headsubtext{
+  
+    position: absolute; 
+    text-shadow: #000702; 
+    width: 800px; 
+    top: 410px; 
+    left: 200px;    
+    font-size: 20px; 
+    font-family: Arial, Helvetica, sans-serif;  
+    color: white;
+  }
+  
+  
+  .basicbg{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    z-index: -10;
+  }
+  }
+  
+  
+  
+  /* Laptop */
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    .grid {
+      width: 100%;
+      height: 190vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+  header{
+  height: 1500px;
+  }
+  .grid p
+  {
+    margin-top: 20px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  .grid h1 
+  {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #051fb1;
+    font-weight: 20;
+  }
+  
+  
+  .grid__item{
+  box-shadow: 10px 10px 5px #000000;
+  
+  }
+  
+  #basicbg {
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+  
+  position: absolute;
+  right: 0;
+  top: -450px;
+  width: cover;
+  height: 1800px;
+  }
+  
+  .abouthead{
+    position: absolute;  
+    text-shadow: #000702; 
+    top: 180px; 
+    left: 150px;  
+    font-family: 'Oswald', sans-serif; 
+    font-size: 65px; 
+    color: white;
+  
+  }
+  
+  .headsubtext{
+  
+    position: absolute; 
+    text-shadow: #000702; 
+    width: 500px; 
+    top: 280px; 
+    left: 150px;    
+    font-size: 10px; 
+    font-family: Arial, Helvetica, sans-serif;  
+    color: white;
+  }
+  }
+  
+  
+  /* Tablet */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) { 
+  
+    .grid {
+      width: 100%;
+      height: 170vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  header{
+    height: 1500px;
+   }
+    .grid p
+    {
+      margin-top: 20px;
+      font-family: 'Barlow', sans-serif;
+      font-size: 18px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    
+    .grid h1 
+    {
+      padding-left: 40px;
+      padding-right: 40px;
+      font-size: 40px;
+      font-family: 'Roboto', sans-serif;
+      color: #051fb1;
+      font-weight: 20;
+    }
+  
+    
+  .grid__item{
+    box-shadow: 10px 10px 5px #000000;
+  
+  }
+  
+  #basicbg {
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+  
+    position: absolute;
+    right: 0;
+    top: -450px;
+    width: cover;
+    height: 1800px;
+  }
+   
+    .abouthead{
+      position: absolute;  
+      text-shadow: #000702; 
+      top: 180px; 
+      left: 80px;  
+      font-family: 'Oswald', sans-serif; 
+      font-size: 65px; 
+      color: white;
+    
+    }
+    
+    .headsubtext{
+    
+      position: absolute; 
+      text-shadow: #000702; 
+      width: 500px; 
+      top: 280px; 
+      left: 80px;    
+      font-size: 10px; 
+      font-family: Arial, Helvetica, sans-serif;  
+      color: white;
+    }
+  }
+  
+  
+  /* Smaller Mobiles */
+  @media only screen and (max-width: 499px) {
+  *{
+    overflow-x: hidden;
+  }
+  footer{
+    visibility: hidden;
+  }
+  .grid {
+    width: 100%;
+    height: 130vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  header{
+    height: 1500px;
+   }
+    .grid p
+    {
+      margin-top: 20px;
+      font-family: 'Barlow', sans-serif;
+      font-size: 8px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    
+    .grid h1 
+    {
+      padding-left: 40px;
+      padding-right: 40px;
+      font-size: 20px;
+      font-family: 'Roboto', sans-serif;
+      color: #051fb1;
+      font-weight: 20;
+    }
+  
+  
+  
+  #basicbg {
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+  
+    position: absolute;
+    right: 0;
+    top: -450px;
+    width: cover;
+    height: 1800px;
+  }
+   
+    .abouthead{
+      position: absolute;  
+      text-shadow: #000702; 
+      top: 180px; 
+      left: 50px;  
+      font-family: 'Oswald', sans-serif; 
+      font-size: 55px; 
+      color: white;
+    
+    }
+    
+    .headsubtext{
+    
+      position: absolute; 
+      text-shadow: #000702; 
+      width: 500px; 
+      top: 380px; 
+      left: 50px;
+      width: 300px;    
+      font-size: 10px; 
+      font-family: Arial, Helvetica, sans-serif;  
+      color: white;
+    }
+  }
