@@ -84,6 +84,7 @@ height: 100px;
 
 
 
+
 .navbar a{
   color: rgb(255, 255, 255);
     transition: color 0.7s ease;
@@ -132,52 +133,52 @@ nav ul li{
 
 
   .btn-hover{ 
-  position: absolute;
-  top: 20px;
-  right: 140px;
-
-  }
-
-  .btn-hover {
-    background-color: Transparent;
-    width: 120px;
-    font-size: 16px;
-    font-weight: 200;
-    color: white;
-    margin: 20px;
-    height: 46px;
-    text-align:center;
-    background-size: 300% 100%;
-    border-radius: 90px;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-    
-}
-
-.btn-hover:hover {
-
-    background-position: 100% 0;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-        font-weight: 400;
-
-}
-
-
-.btn-hover {
-  border: 2px solid rgb(253, 253, 253);      background-image: linear-gradient(to left, 
-  rgba(255, 255, 255, 0.15), 
-  rgba(255, 255, 255, 0.15), 
-  rgba(255, 245, 245, 0.05), 
-  rgba(247, 252, 255, 0.05));
-
-
-}
+    position: absolute;
+    top: 20px;
+    right: 140px;
   
+    }
+  
+    .btn-hover {
+      background-color: Transparent;
+      width: 120px;
+      font-size: 16px;
+      font-weight: 200;
+      cursor: pointer;
+      color: white;
+      margin: 20px;
+      height: 46px;
+      text-align:center;
+      background-size: 300% 100%;
+      border-radius: 90px;
+      -moz-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+      
+  }
+  
+  .btn-hover:hover {
+  
+      background-position: 100% 0;
+      -moz-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+          font-weight: 400;
+  
+  }
+  
+  
+  .btn-hover {
+    border: 2px solid rgb(253, 253, 253);      background-image: linear-gradient(to left, 
+    rgba(255, 255, 255, 0.15), 
+    rgba(255, 255, 255, 0.15), 
+    rgba(255, 245, 245, 0.05), 
+    rgba(247, 252, 255, 0.05));
+  
+  
+  }
 
 
 
