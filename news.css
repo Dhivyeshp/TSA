@@ -1,3 +1,26 @@
+ /*-------------------------------------scroll bar customization-------------------------------------------*/
+ body::-webkit-scrollbar 
+ {
+     width: 8px;
+ } 
+
+ body::-webkit-scrollbar-thumb 
+ {
+     border: 1000px solid rgb(134, 133, 133);
+     border-radius: 40px;
+     background-clip: padding-box;
+     transition: height 0.2s ease-in-out;
+ } 
+
+ body::-webkit-scrollbar-track 
+ {
+     scroll-padding-right: 100px;
+     background-color: transparent;
+ } 
+
+ 
+
+
 *{
 	margin: 0;
 	padding: 0;
@@ -33,7 +56,6 @@ body{
   background: #131313;
   color: #ffffff;
   text-shadow: black;
-  font-family: 'Fira Sans';
   text-align: left;
  
 }
@@ -190,6 +212,7 @@ body{
 
 h4{
   text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight:400;
   transform: translateY(5px);

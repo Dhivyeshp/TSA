@@ -1,4 +1,23 @@
+ /*-------------------------------------scroll bar customization-------------------------------------------*/
+ body::-webkit-scrollbar 
+ {
+     width: 8px;
+ } 
 
+ body::-webkit-scrollbar-thumb 
+ {
+     border: 1000px solid rgb(134, 133, 133);
+     border-radius: 40px;
+     background-clip: padding-box;
+     transition: height 0.2s ease-in-out;
+ } 
+
+ body::-webkit-scrollbar-track 
+ {
+     scroll-padding-right: 100px;
+     background-color: transparent;
+ } 
+ 
 *{
   box-sizing: border-box;
  }
