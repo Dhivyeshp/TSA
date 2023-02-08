@@ -98,14 +98,15 @@
   
   .panel-2
   {
-    background-image: url(https://images.pexels.com/photos/7672884/pexels-photo-7672884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url(https://images.pexels.com/photos/7672261/pexels-photo-7672261.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: 50px;
     background-repeat: no-repeat;
     background-size: cover;
   }
   
   .panel-3
   {
-    background-image: url("images/Group Balloons.png");
+    background-image: url(https://images.pexels.com/photos/73871/rocket-launch-rocket-take-off-nasa-73871.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -128,14 +129,15 @@
   
   .panel-6
   {
-    background-image: url(https://images.pexels.com/photos/586103/pexels-photo-586103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url(https://images.pexels.com/photos/2156/sky-earth-space-working.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-repeat: no-repeat;
     background-size: cover;
   }
   
   .panel-7
   {
-  background-image: url(https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-image: url(https://images.pexels.com/photos/355938/pexels-photo-355938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: 10px;
   background-repeat: no-repeat;
   background-size: cover;
   

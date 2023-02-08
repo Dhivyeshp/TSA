@@ -18,7 +18,7 @@
      background-color: transparent;
  } 
 
- 
+
 
 
 *{
@@ -171,39 +171,39 @@ body{
 }
 
 .col:nth-of-type(1) .card-container:nth-of-type(1) .card:before{
-      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/pia22474-2000.jpg?itok=cajl1lYH');
+      background-image: url('https://images.pexels.com/photos/41162/moon-landing-apollo-11-nasa-buzz-aldrin-41162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
 
 .col:nth-of-type(2) .card-container:nth-of-type(1) .card:before{
-      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m18-090.jpg?itok=TQ8Fuk4x');
+      background-image: url('https://images.pexels.com/photos/39896/space-station-moon-landing-apollo-15-james-irwin-39896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
 
 .col:nth-of-type(3) .card-container:nth-of-type(1) .card:before{
-      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/40808879360_18c96d62f1_o.jpg?itok=NttmTWPK');
+      background-image: url('https://images.pexels.com/photos/2166/flight-sky-earth-space.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
 
 .col:nth-of-type(1) .card-container:nth-of-type(2) .card:before{
-      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/jwst-pv-145604copy.jpg?itok=Jq7GN-Rc');
+      background-image: url('https://images.pexels.com/photos/355956/pexels-photo-355956.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
 
 .col:nth-of-type(2) .card-container:nth-of-type(2) .card:before{
-      background-image: url('https://www.nasa.gov/sites/default/files/styles/ubernode_alt_horiz/public/thumbnails/image/worldview201709201920x1080.png');
+      background-image: url('https://images.pexels.com/photos/73910/mars-mars-rover-space-travel-robot-73910.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
 
 .col:nth-of-type(3) .card-container:nth-of-type(2) .card:before{
-      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/nasasibexobs.jpg?itok=U2LCp14i');
+      background-image: url('https://images.pexels.com/photos/355938/pexels-photo-355938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
 
 .col:nth-of-type(1) .card-container:nth-of-type(3) .card:before{
-      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/pia19808.jpg?itok=rgxgamMM');
+      background-image: url('https://images.pexels.com/photos/87080/space-shuttle-start-discovery-spaceport-87080.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
 
 .col:nth-of-type(2) .card-container:nth-of-type(3) .card:before{
-      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/e0102_lg.jpg?itok=sd9lOayI');
+      background-image: url('https://images.pexels.com/photos/355925/pexels-photo-355925.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
 
 .col:nth-of-type(3) .card-container:nth-of-type(3) .card:before{
-      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/asteroid20180605-home.jpg?itok=KSUffiCR');
+      background-image: url('https://images.pexels.com/photos/355925/pexels-photo-355925.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
 
 .card:after{
